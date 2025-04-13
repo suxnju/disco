@@ -1,0 +1,50 @@
+{
+    "0xed1b85d8a750fb3058cfc46d4508e791fe7a4d73": {
+        "desc.md": "A",
+        "disco.sol": "B",
+        "elipmoc.sol": "C",
+        "panoramix.sol": "D"
+    },
+    "0x2193b9f2b5e5051e41c32c71b25587d6a6f045c8": {
+        "panoramix.sol": "A",
+        "elipmoc.sol": "B",
+        "desc.md": "C",
+        "disco.sol": "D"
+    },
+    "0xedcfa34e275120e7d18edbbb0a6171d8ad3ccf54": {
+        "elipmoc.sol": "A",
+        "disco.sol": "B",
+        "desc.md": "C",
+        "panoramix.sol": "D"
+    },
+    "0xaae196b6e3f3ee34405e857e7bfb05d74c5cf775": {
+        "desc.md": "A",
+        "disco.sol": "B",
+        "elipmoc.sol": "C",
+        "panoramix.sol": "D"
+    },
+    "0xaa7427d8f17d87a28f5e1ba3adbb270badbe1011": {
+        "desc.md": "A",
+        "disco.sol": "B",
+        "elipmoc.sol": "C",
+        "panoramix.sol": "D"
+    },
+    "0xd56a61ad1b16f1f0326785902593c7adbf733e34": {
+        "desc.md": "A",
+        "disco.sol": "B",
+        "panoramix.sol": "C",
+        "elipmoc.sol": "D"
+    },
+    "0x6bb545b8a2e869009487eb7e5e045178b7221e36": {
+        "desc.md": "A",
+        "disco.sol": "B",
+        "panoramix.sol": "C",
+        "elipmoc.sol": "D"
+    },
+    "0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315": {
+        "desc.md": "A",
+        "elipmoc.sol": "B",
+        "disco.sol": "C",
+        "panoramix.sol": "D"
+    }
+}

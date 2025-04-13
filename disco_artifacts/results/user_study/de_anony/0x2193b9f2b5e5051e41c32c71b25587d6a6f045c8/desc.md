@@ -1,0 +1,332 @@
+For the payable constructor function.
+- When the ether just received (i.e., msg.value) is 0:
+  - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is not greater than SHA3(6):
+    - the balance of caller will be updated to 0x204fce5e3e25026110000000.
+    - the state variable totalsupply will be updated to 0x204fce5e3e25026110000000.
+    - the state variable name will be updated to 0.
+    - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than SHA3(3):
+      - the state variable decimals will be updated to 18.
+      - the state variable symbol will be updated to 0.
+      - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+        - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+        - the state variable fundswallet will be updated to caller.
+      - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+        - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+          - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+          - the state variable fundswallet will be updated to caller.
+        - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)):
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+            - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+            - the state variable fundswallet will be updated to caller.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+SHA3(5))):
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+SHA3(5)))):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+(1+SHA3(5)))):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+(1+SHA3(5))))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+(1+(1+SHA3(5)))))), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+(1+(1+SHA3(5))))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+    - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than SHA3(3):
+      - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+SHA3(3)):
+        - the state variable decimals will be updated to 18.
+        - the state variable symbol will be updated to 0.
+        - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+          - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+          - the state variable fundswallet will be updated to caller.
+        - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+            - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+            - the state variable fundswallet will be updated to caller.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)):
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+SHA3(5))):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+SHA3(5)))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+(1+SHA3(5)))), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+(1+SHA3(5))))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+      - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+SHA3(3)):
+        - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+SHA3(3))):
+          - the state variable decimals will be updated to 18.
+          - the state variable symbol will be updated to 0.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+            - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+            - the state variable fundswallet will be updated to caller.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+SHA3(5))), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+SHA3(5)))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+        - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+(1+SHA3(3))):
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+(1+SHA3(3)))):
+            - the state variable decimals will be updated to 18.
+            - the state variable symbol will be updated to 0.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+(1+(1+SHA3(3)))):
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+(1+(1+SHA3(3))))):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+(1+(1+(1+SHA3(3))))), and (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+(1+(1+(1+SHA3(3)))))):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+  - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is greater than SHA3(6):
+    - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is not greater than (1+SHA3(6)):
+      - the balance of caller will be updated to 0x204fce5e3e25026110000000.
+      - the state variable totalsupply will be updated to 0x204fce5e3e25026110000000.
+      - the state variable name will be updated to 0.
+      - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than SHA3(3):
+        - the state variable decimals will be updated to 18.
+        - the state variable symbol will be updated to 0.
+        - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+          - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+          - the state variable fundswallet will be updated to caller.
+        - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+            - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+            - the state variable fundswallet will be updated to caller.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)):
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+SHA3(5))):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+SHA3(5)))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+(1+SHA3(5)))), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+(1+SHA3(5))))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+      - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than SHA3(3):
+        - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+SHA3(3)):
+          - the state variable decimals will be updated to 18.
+          - the state variable symbol will be updated to 0.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+            - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+            - the state variable fundswallet will be updated to caller.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+SHA3(5))), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+SHA3(5)))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+        - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+SHA3(3)):
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+SHA3(3))):
+            - the state variable decimals will be updated to 18.
+            - the state variable symbol will be updated to 0.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+(1+SHA3(3))):
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+(1+SHA3(3)))):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+(1+(1+SHA3(3))))), and (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+(1+(1+SHA3(3)))):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+    - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is greater than (1+SHA3(6)):
+      - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is not greater than (1+(1+SHA3(6))):
+        - the balance of caller will be updated to 0x204fce5e3e25026110000000.
+        - the state variable totalsupply will be updated to 0x204fce5e3e25026110000000.
+        - the state variable name will be updated to 0.
+        - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than SHA3(3):
+          - the state variable decimals will be updated to 18.
+          - the state variable symbol will be updated to 0.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+            - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+            - the state variable fundswallet will be updated to caller.
+          - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+(1+SHA3(5))), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+(1+SHA3(5)))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+        - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than SHA3(3):
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+SHA3(3)):
+            - the state variable decimals will be updated to 18.
+            - the state variable symbol will be updated to 0.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+SHA3(3)):
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+SHA3(3))):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+(1+SHA3(3)))), and (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+(1+SHA3(3))):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+      - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is greater than (1+(1+SHA3(6))):
+        - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is not greater than (1+(1+(1+SHA3(6)))):
+          - the balance of caller will be updated to 0x204fce5e3e25026110000000.
+          - the state variable totalsupply will be updated to 0x204fce5e3e25026110000000.
+          - the state variable name will be updated to 0.
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than SHA3(3):
+            - the state variable decimals will be updated to 18.
+            - the state variable symbol will be updated to 0.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+              - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+              - the state variable fundswallet will be updated to caller.
+            - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+(1+SHA3(5))):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+          - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than SHA3(3):
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+SHA3(3)):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+(1+SHA3(3))), and (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than (1+SHA3(3)):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+        - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is greater than (1+(1+(1+SHA3(6)))):
+          - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is not greater than (1+(1+(1+(1+SHA3(6))))):
+            - the balance of caller will be updated to 0x204fce5e3e25026110000000.
+            - the state variable totalsupply will be updated to 0x204fce5e3e25026110000000.
+            - the state variable name will be updated to 0.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than SHA3(3):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than (1+SHA3(5)), and (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than (1+SHA3(3)), and (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is greater than SHA3(3):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+          - When (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is not greater than (1+(1+(1+(1+(1+SHA3(6)))))), and (SHA3(6)+((31+(((256*1 and version is 0)-1) and version/2))/32)) is greater than (1+(1+(1+(1+SHA3(6))))):
+            - the balance of caller will be updated to 0x204fce5e3e25026110000000.
+            - the state variable totalsupply will be updated to 0x204fce5e3e25026110000000.
+            - the state variable name will be updated to 0.
+            - When (SHA3(3)+((31+(((256*1 and name is 0)-1) and name/2))/32)) is not greater than SHA3(3):
+              - the state variable decimals will be updated to 18.
+              - the state variable symbol will be updated to 0.
+              - When (SHA3(5)+((31+(((256*1 and symbol is 0)-1) and symbol/2))/32)) is not greater than SHA3(5):
+                - the state variable unitsoneethcanbuy will be updated to 0x3635c9adc5dea00000.
+                - the state variable fundswallet will be updated to caller.
+- the state variable version will be updated to 0.
+
+For the payable fallback function.
+- the state variable totalethinwei will be updated to (the ether just received (i.e., msg.value)+totalethinwei).
+- When ((the ether just received (i.e., msg.value)+unitsoneethcanbuy)-the ether just received (i.e., msg.value)) is not greater than the balance of fundswallet:
+  - the balance of fundswallet will be updated to (the balance of fundswallet-((the ether just received (i.e., msg.value)+unitsoneethcanbuy)-the ether just received (i.e., msg.value))).
+  - the balance of caller will be updated to (((the ether just received (i.e., msg.value)+unitsoneethcanbuy)-the ether just received (i.e., msg.value))+the balance of caller).
+  - it transfers the ether just received (i.e., msg.value) to fundswallet.
+
+For the approve function, it has 2 arguments and the type of each argument is as follows: address, uint256.
+- the allowance from caller to the first argument will be updated to the second argument.
+
+For the transferFrom function, it has 3 arguments and the type of each argument is as follows: address, address, uint256.
+- When the third argument is not greater than the allowance from the first argument to caller, and the third argument is not greater than the balance of the first argument, and the third argument is greater than 0:
+  - the balance of the second argument will be updated to (the third argument+the balance of the second argument).
+  - the balance of the first argument will be updated to (the balance of the first argument-the third argument).
+  - the allowance from the first argument to caller will be updated to (the allowance from the first argument to caller-the third argument).
+
+For the transfer function, it has 2 arguments and the type of each argument is as follows: address, uint256.
+- When the second argument is greater than 0, and the second argument is not greater than the balance of caller:
+  - the balance of caller will be updated to (the balance of caller-the second argument).
+  - the balance of the first argument will be updated to (the second argument+the balance of the first argument).
+
+For the approveAndCall function, it has 3 arguments and the type of each argument is as follows: address, uint256, bytes.
+- the allowance from caller to the first argument will be updated to the second argument.
+- When 0 is not smaller than the third argument:
+  - it calls an external function whose signature is 0xx1000000 of contract the first argument.
+- When 0 is smaller than the third argument:
+  - When 32 is not smaller than the third argument:
+    - it calls an external function whose signature is 0xx1000000 of contract the first argument.
+  - When 32 is smaller than the third argument:
+    - When 64 is not smaller than the third argument:
+      - it calls an external function whose signature is 0xx1000000 of contract the first argument.
+    - When 64 is smaller than the third argument:
+      - When 96 is not smaller than the third argument:
+        - it calls an external function whose signature is 0xx1000000 of contract the first argument.
+      - When 96 is smaller than the third argument:
+        - When 128 is not smaller than the third argument:
+          - it calls an external function whose signature is 0xx1000000 of contract the first argument.
+        - When 128 is smaller than the third argument, and 160 is not smaller than the third argument:
+          - it calls an external function whose signature is 0xx1000000 of contract the first argument.
