@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.25;\r\n// https://www.youtube.com/channel/UCfCIlNwVtwcEn_Qscyhld_g/featured?view_as=subscriber\r\ncontract NOTBAD {\r\n    mapping (address => uint256) public invested;\r\n    mapping (address => uint256) public atBlock;\r\n    function () external payable\r\n{\r\n        if (invested[msg.sender] != 0) {\r\n            uint256 amount = invested[msg.sender] * (address(this).balance / (invested[msg.sender] * 100 )) / 100 * (block.number - atBlock[msg.sender]) / 6100;\r\n            msg.sender.transfer(amount);\r\n        }\r\n        atBlock[msg.sender] = block.number;\r\n        invested[msg.sender] += msg.value;\r\n    }\r\n}",
+	"ContractName": "NOTBAD",
+	"CompilerVersion": "v0.4.25+commit.59dbf8f1"
+}
