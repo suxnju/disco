@@ -1,0 +1,21 @@
+{
+	"address": "0x5a8658de344972fc8b6b6a01cd87a64bc7420a38",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2265,
+	"prompt_tokens": 1920,
+	"completion_tokens": 345,
+	"time_cost": 15.109224081039429,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator + not compatible with types bytes32 and uint256\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator + not compatible with types bytes32 and uint256\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 27
+}

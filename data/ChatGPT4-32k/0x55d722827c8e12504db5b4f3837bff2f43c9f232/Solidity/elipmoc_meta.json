@@ -1,0 +1,21 @@
+{
+	"address": "0x55d722827c8e12504db5b4f3837bff2f43c9f232",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3917,
+	"prompt_tokens": 2760,
+	"completion_tokens": 1157,
+	"time_cost": 73.2160165309906,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"address\" to \"uint256\".\t unary operator ! cannot be applied to type uint256\t no matching declaration found after argument-dependent lookup.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 15
+}

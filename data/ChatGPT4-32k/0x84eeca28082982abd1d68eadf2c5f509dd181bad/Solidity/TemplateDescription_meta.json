@@ -1,0 +1,21 @@
+{
+	"address": "0x84eeca28082982abd1d68eadf2c5f509dd181bad",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3067,
+	"prompt_tokens": 1973,
+	"completion_tokens": 1094,
+	"time_cost": 60.47702121734619,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier. did you mean \"lasthatch\"?\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 15
+}

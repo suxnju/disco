@@ -1,0 +1,21 @@
+{
+	"address": "0x7824134a725e63a5f0bb2bb47b57239adafc147b",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2155,
+	"prompt_tokens": 1439,
+	"completion_tokens": 716,
+	"time_cost": 40.338021755218506,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address is not implicitly convertible to expected type uint256.\t member \"transfer\" not found or not visible after argument-dependent lookup in address.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 12
+}

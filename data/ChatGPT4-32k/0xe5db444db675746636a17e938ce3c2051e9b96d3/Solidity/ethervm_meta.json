@@ -1,0 +1,21 @@
+{
+	"address": "0xe5db444db675746636a17e938ce3c2051e9b96d3",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 8785,
+	"prompt_tokens": 8183,
+	"completion_tokens": 602,
+	"time_cost": 30.83712363243103,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": "Yes",
+	"language": "Solidity",
+	"version": "0.5.1",
+	"n_sai": 8,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 4
+}

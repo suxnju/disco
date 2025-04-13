@@ -1,0 +1,21 @@
+{
+	"address": "0x087239350b3b9bcdad0e7e318ef9c4eaff5eaed3",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 10455,
+	"prompt_tokens": 9612,
+	"completion_tokens": 843,
+	"time_cost": 53.292290449142456,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator < not compatible with types bool and int_const 2\t explicit type conversion not allowed from \"bool\" to \"uint256\".\t operator < not compatible with types bool and int_const 2\t explicit type conversion not allowed from \"bool\" to \"uint256\".\t \"sha3\" has been deprecated in favour of \"keccak256\".\t type bytes32 is not implicitly convertible to expected type address.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t type bytes32 is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 46
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x102818f9fc7a845a30e5f521a57ce22f5f9629e6",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1939,
+	"prompt_tokens": 1231,
+	"completion_tokens": 708,
+	"time_cost": 24.131774187088013,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " unary operator ! cannot be applied to type uint256\t operator || not compatible with types bool and uint256\t unary operator ! cannot be applied to type uint256\t operator || not compatible with types bool and uint256\t unary operator ! cannot be applied to type uint256\t operator || not compatible with types bool and uint256\t unary operator ! cannot be applied to type uint256\t operator || not compatible with types bool and uint256\t type address is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 8
+}

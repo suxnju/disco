@@ -1,0 +1,38 @@
+{
+	"address": "0xfe6ea4625b57b6503677a1083ad9920bc9021b18",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Based on the decompiled code, the Solidity smart contract can be re-written as follows:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    address private _owner; \n\n    constructor() {\n        _owner = msg.sender;\n    }\n\n    fallback() external payable { \n    }\n\n    function distribution() public { \n        require(msg.sender == _owner, \"Only the owner can call this function\");\n        (bool success,) = _owner.call{value: address(this).balance}(\"\");\n        require(success, \"Transfer failed\");\n    }\n\n    function getOwner() public view returns (address) { \n        return _owner;\n    }\n\n    function getCurrentBalance() public view returns (uint256) { \n        return address(this).balance;\n    }\n}\n```\nPlease note that:\n1. This contract has an owner, which is the address that deploys the contract.\n2. There is a distribution function that can only be called by the owner, and it sends all the Ether stored in the contract to the owner.\n3. There is a function to get the current balance of the contract.\n4. The fallback function is payable, meaning it can accept Ether sent to the contract.\n5. The original decompiled code includes a function selector, which is not typically manually included in Solidity code, but automatically handled by the Solidity compiler. So, it's not included in the rewritten Solidity code.\n6. The contract uses Solidity version 0.8.0, and the \"call\" function has been updated to reflect the changes in this version.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701467686,
+	"id": "chatcmpl-8R5l8KDZV0VyucvQUz8SV6kXp0yHg",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.15 23:20 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n}\n\nfunction distribution() public nonPayable { \n    require(msg.sender == _owner);\n    v0 = _owner.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0); // checks call status, propagates error data on error\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction getCurrentBalance() public nonPayable { \n    return this.balance;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x5ee58efc) {\n            distribution();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0xa5749710 == function_selector) {\n            getCurrentBalance();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 23:20 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n}\n\nfunction distribution() public nonPayable { \n    require(msg.sender == _owner);\n    v0 = _owner.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0); // checks call status, propagates error data on error\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction getCurrentBalance() public nonPayable { \n    return this.balance;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x5ee58efc) {\n            distribution();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0xa5749710 == function_selector) {\n            getCurrentBalance();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 23:20 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n}\n\nfunction distribution() public nonPayable { \n    require(msg.sender == _owner);\n    v0 = _owner.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0); // checks call status, propagates error data on error\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction getCurrentBalance() public nonPayable { \n    return this.balance;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x5ee58efc) {\n            distribution();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0xa5749710 == function_selector) {\n            getCurrentBalance();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 16.268194437026978,
+	"usage": {
+		"completion_tokens": 332,
+		"prompt_tokens": 330,
+		"total_tokens": 662
+	}
+}

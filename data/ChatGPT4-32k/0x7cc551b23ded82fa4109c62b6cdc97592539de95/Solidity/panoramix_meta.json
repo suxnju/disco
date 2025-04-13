@@ -1,0 +1,21 @@
+{
+	"address": "0x7cc551b23ded82fa4109c62b6cdc97592539de95",
+	"model": "panoramix_4",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4323,
+	"prompt_tokens": 3645,
+	"completion_tokens": 678,
+	"time_cost": 35.11437964439392,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": "Yes",
+	"language": "Solidity",
+	"version": "0.5.16",
+	"n_sai": 7,
+	"time": 4,
+	"input_type": "panoramix",
+	"source_sai": 6
+}

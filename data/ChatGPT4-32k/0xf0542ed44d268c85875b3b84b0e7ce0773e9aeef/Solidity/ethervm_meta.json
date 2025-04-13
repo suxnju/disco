@@ -1,0 +1,21 @@
+{
+	"address": "0xf0542ed44d268c85875b3b84b0e7ce0773e9aeef",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 10146,
+	"prompt_tokens": 9527,
+	"completion_tokens": 619,
+	"time_cost": 52.50033760070801,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t return argument type mapping(uint256 => uint256) is not implicitly convertible to expected type (type of first return variable) uint256.\t type struct contract.user is only valid in storage because it contains a (nested) mapping.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 26
+}

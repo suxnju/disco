@@ -1,0 +1,21 @@
+{
+	"address": "0x6c221dea36d48512947bde8aeb58811db50dbf6f",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 600,
+	"prompt_tokens": 266,
+	"completion_tokens": 334,
+	"time_cost": 12.58482050895691,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0x6b6e4b338b4d5f7d847dab5492106751c57b7ff0\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t explicit type conversion not allowed from \"bool\" to \"uint256\".\t this looks like an address but has an invalid checksum. correct checksummed address: \"0xe09f3630663b6b86e82d750b00206f8f8c6f8ad4\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t explicit type conversion not allowed from \"bool\" to \"uint256\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 2
+}

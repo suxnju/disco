@@ -1,0 +1,21 @@
+{
+	"address": "0x4a627b324189014fa757ed7cc730b180879232d7",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4429,
+	"prompt_tokens": 3671,
+	"completion_tokens": 758,
+	"time_cost": 35.63031888008118,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " expected identifier, got 'lparen'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 25
+}

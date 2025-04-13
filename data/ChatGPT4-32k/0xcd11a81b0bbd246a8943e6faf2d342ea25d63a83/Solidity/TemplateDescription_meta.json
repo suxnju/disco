@@ -1,0 +1,21 @@
+{
+	"address": "0xcd11a81b0bbd246a8943e6faf2d342ea25d63a83",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1261,
+	"prompt_tokens": 808,
+	"completion_tokens": 453,
+	"time_cost": 35.76598858833313,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " type int_const 33540519 is not implicitly convertible to expected type address.\t type int_const 2158778573 is not implicitly convertible to expected type address.\t type int_const 1532892063 is not implicitly convertible to expected type address.\t type int_const 2014223715 is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 24
+}

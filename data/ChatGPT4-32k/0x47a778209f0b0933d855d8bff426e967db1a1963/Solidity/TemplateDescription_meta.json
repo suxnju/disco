@@ -1,0 +1,21 @@
+{
+	"address": "0x47a778209f0b0933d855d8bff426e967db1a1963",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2292,
+	"prompt_tokens": 1385,
+	"completion_tokens": 907,
+	"time_cost": 67.05276918411255,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator / not compatible with types uint256 and address payable\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 13
+}

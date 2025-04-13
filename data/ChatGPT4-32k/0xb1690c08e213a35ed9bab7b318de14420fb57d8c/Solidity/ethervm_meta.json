@@ -1,0 +1,21 @@
+{
+	"address": "0xb1690c08e213a35ed9bab7b318de14420fb57d8c",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 9483,
+	"prompt_tokens": 8716,
+	"completion_tokens": 767,
+	"time_cost": 45.14633798599243,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " member \"transfer\" not found or not visible after argument-dependent lookup in address.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 17
+}

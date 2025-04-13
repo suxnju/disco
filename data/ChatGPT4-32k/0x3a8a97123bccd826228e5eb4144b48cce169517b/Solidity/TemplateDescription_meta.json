@@ -1,0 +1,21 @@
+{
+	"address": "0x3a8a97123bccd826228e5eb4144b48cce169517b",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4367,
+	"prompt_tokens": 3726,
+	"completion_tokens": 641,
+	"time_cost": 53.63645052909851,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " different number of components on the left hand side (1) than on the right hand side (2).\t type bool is not implicitly convertible to expected type uint256.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 31
+}

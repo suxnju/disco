@@ -1,0 +1,21 @@
+{
+	"address": "0xd389c08bb987dd7daeb31f51fce1b5b73710b38e",
+	"model": "description_v1111_3",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6842,
+	"prompt_tokens": 5883,
+	"completion_tokens": 959,
+	"time_cost": 38.865137815475464,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": "Yes",
+	"version": "0.6.12",
+	"n_sai": 29,
+	"language": "Solidity",
+	"time": 3,
+	"input_type": "description_v1111",
+	"source_sai": 22
+}

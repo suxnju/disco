@@ -1,0 +1,21 @@
+{
+	"address": "0x30c92c69d38cfacbb28081490f8cd7558d441903",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 8814,
+	"prompt_tokens": 8087,
+	"completion_tokens": 727,
+	"time_cost": 48.197837829589844,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int_const 418296719726 is not implicitly convertible to expected type address.\t indexed expression has to be a type, mapping or array (is uint256)\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 68
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xc0a47dfe034b400b47bdad5fecda2621de6c4d95",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2917,
+	"prompt_tokens": 2242,
+	"completion_tokens": 675,
+	"time_cost": 43.99711608886719,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator == not compatible with types bytes32 and int_const 1401569038\t operator == not compatible with types bytes32 and int_const 373879694\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator == not compatible with types bytes32 and int_const 116572002\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator == not compatible with types bytes32 and int_const 1500972088\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator == not compatible with types bytes32 and int_const 2858788544\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator == not compatible with types bytes32 and int_const 472628504\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 7
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xa0a4a2af46af4cf37eacc495eedcae269ef2720e",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3779,
+	"prompt_tokens": 3266,
+	"completion_tokens": 513,
+	"time_cost": 24.31328320503235,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"@openzeppelin/contracts/token/erc721/erc721.sol\" not found: file outside of allowed directories.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 22
+}

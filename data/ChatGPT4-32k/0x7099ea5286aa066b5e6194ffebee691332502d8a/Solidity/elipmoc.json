@@ -1,0 +1,38 @@
+{
+	"address": "0x7099ea5286aa066b5e6194ffebee691332502d8a",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity smart contract code equivalent to the given decompiled code.\n\n```solidity\npragma solidity ^0.5.0;\n\ncontract MyContract {\n    address payable addr1 = 0xf4c6bb681800ffb96bc046f56af9f06ab5774156;\n    address payable addr2 = 0xd79d762727a6eeb9c47cfb6fb451c858dfbf8405;\n    address payable addr3 = 0x83c0efc6d8b16d87bfe1335ab6bcab3ed3960285;\n\n    function() external payable { }\n\n    function get() public {\n        require(addr1.call.value(address(this).balance / 3).gas(2300 * uint(!(address(this).balance / 3)))());\n        require(addr2.call.value(address(this).balance / 3).gas(2300 * uint(!(address(this).balance / 3)))());\n        require(addr3.call.value(address(this).balance).gas(2300 * uint(!address(this).balance))());\n    }\n\n    function deposit() public payable { }\n\n    function __function_selector__(bytes4 function_selector) public payable {\n        if (msg.data.length >= 4) {\n            if (function_selector == 0x6d4ce63c) {\n                get();\n            } else if (0xd0e30db0 == function_selector) {\n                deposit();\n            }\n        }\n        fallback();\n    }\n}\n```\nPlease note that certain assumptions were made about the contract while writing this. For instance, the addresses were assumed to be payable and the `fallback` function was assumed to be the externally payable function. The actual contract may have different specifics.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701460944,
+	"id": "chatcmpl-8R40O0rVKX8jfyKfH8esnN8huU9Ce",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.26 10:26 UTC\n\n\n\nfunction fallback() public payable { \n}\n\nfunction get() public nonPayable { \n    v0 = 0xf4c6bb681800ffb96bc046f56af9f06ab5774156.call().value(this.balance / 3).gas(2300 * !(this.balance / 3));\n    require(v0); // checks call status, propagates error data on error\n    v1 = 0xd79d762727a6eeb9c47cfb6fb451c858dfbf8405.call().value(this.balance / 3).gas(2300 * !(this.balance / 3));\n    require(v1); // checks call status, propagates error data on error\n    v2 = 0x83c0efc6d8b16d87bfe1335ab6bcab3ed3960285.call().value(this.balance).gas(2300 * !this.balance);\n    require(v2); // checks call status, propagates error data on error\n}\n\nfunction deposit() public payable { \n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x6d4ce63c) {\n            get();\n        } else if (0xd0e30db0 == function_selector) {\n            deposit();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.26 10:26 UTC\n\n\n\nfunction fallback() public payable { \n}\n\nfunction get() public nonPayable { \n    v0 = 0xf4c6bb681800ffb96bc046f56af9f06ab5774156.call().value(this.balance / 3).gas(2300 * !(this.balance / 3));\n    require(v0); // checks call status, propagates error data on error\n    v1 = 0xd79d762727a6eeb9c47cfb6fb451c858dfbf8405.call().value(this.balance / 3).gas(2300 * !(this.balance / 3));\n    require(v1); // checks call status, propagates error data on error\n    v2 = 0x83c0efc6d8b16d87bfe1335ab6bcab3ed3960285.call().value(this.balance).gas(2300 * !this.balance);\n    require(v2); // checks call status, propagates error data on error\n}\n\nfunction deposit() public payable { \n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x6d4ce63c) {\n            get();\n        } else if (0xd0e30db0 == function_selector) {\n            deposit();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.26 10:26 UTC\n\n\n\nfunction fallback() public payable { \n}\n\nfunction get() public nonPayable { \n    v0 = 0xf4c6bb681800ffb96bc046f56af9f06ab5774156.call().value(this.balance / 3).gas(2300 * !(this.balance / 3));\n    require(v0); // checks call status, propagates error data on error\n    v1 = 0xd79d762727a6eeb9c47cfb6fb451c858dfbf8405.call().value(this.balance / 3).gas(2300 * !(this.balance / 3));\n    require(v1); // checks call status, propagates error data on error\n    v2 = 0x83c0efc6d8b16d87bfe1335ab6bcab3ed3960285.call().value(this.balance).gas(2300 * !this.balance);\n    require(v2); // checks call status, propagates error data on error\n}\n\nfunction deposit() public payable { \n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x6d4ce63c) {\n            get();\n        } else if (0xd0e30db0 == function_selector) {\n            deposit();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 14.42495608329773,
+	"usage": {
+		"completion_tokens": 361,
+		"prompt_tokens": 407,
+		"total_tokens": 768
+	}
+}

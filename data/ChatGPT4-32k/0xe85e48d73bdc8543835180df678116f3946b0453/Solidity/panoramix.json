@@ -1,0 +1,38 @@
+{
+	"address": "0xe85e48d73bdc8543835180df678116f3946b0453",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Based on the provided decompiled code, the Solidity contract code would look like this:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract MyContract {\n\n    // Fallback function\n    fallback() external payable {\n        require(msg.data.length < 4, \"Data size is too large\");\n        require(msg.data.length == 0, \"Data size should be 0\");\n    }\n}\n```\nPlease note that the directive `pragma solidity` version may vary based on the Solidity compiler version you are using. The `fallback` function is a function that is executed when a contract is called but no other function matches the given function identifier, or if no data is supplied. \n\nThe fallback function must be marked `external` and it must have `payable` keyword if your contract needs to receive Ether together with a call. \n\nFallback functions cannot have arguments, cannot return anything and must have external visibility. It's also important to note that a contract can only have one fallback function.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700632348,
+	"id": "chatcmpl-8NaRwncpcrNTW0a576dZJeMjPuo3m",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\ndef _fallback(?) payable: # default function\n  require calldata.size < 4\n  require not calldata.size\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\ndef _fallback(?) payable: # default function\n  require calldata.size < 4\n  require not calldata.size\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\ndef _fallback(?) payable: # default function\n  require calldata.size < 4\n  require not calldata.size\n\n.",
+	"status": "1",
+	"time_cost": 17.030544757843018,
+	"usage": {
+		"completion_tokens": 217,
+		"prompt_tokens": 90,
+		"total_tokens": 307
+	}
+}

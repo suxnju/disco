@@ -1,0 +1,21 @@
+{
+	"address": "0xce616a55dd45ec16c3db4151ea4cb7f8f30b999a",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 388,
+	"prompt_tokens": 177,
+	"completion_tokens": 211,
+	"time_cost": 12.79368782043457,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected identifier, got 'payable'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 1
+}

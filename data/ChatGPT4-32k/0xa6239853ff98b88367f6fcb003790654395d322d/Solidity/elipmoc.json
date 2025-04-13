@@ -1,0 +1,38 @@
+{
+	"address": "0xa6239853ff98b88367f6fcb003790654395d322d",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "The corresponding Solidity smart contract based on the given decompiled code is as follows:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\ncontract MyContract {\n    mapping (address => uint256) private _functionSelector;\n    mapping (address => uint256) private _owner;\n\n    function functionSelector() public payable {\n        if (_functionSelector[msg.sender] != 0) {\n            bool success;\n            (success, ) = msg.sender.call{value: 10 * _owner[msg.sender] / 100 * (block.number - _owner[msg.sender]) / 6000, gas: 2300 * !(10 * _owner[msg.sender] / 100 * (block.number - _owner[msg.sender]) / 6000)}(\"\");\n            require(success, \"Transfer failed.\");\n        }\n        \n        _owner[msg.sender] = block.number;\n        _owner[msg.sender] += msg.value;\n    }\n}\n```\nThis contract includes a function `functionSelector()` which checks if a value in the `_functionSelector` mapping exists for the sender's address, then makes a call to the sender's address with a specified value and gas. After that, it sets the `_owner` mapping for the sender's address to the current block number and increases it by the sent value.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701469605,
+	"id": "chatcmpl-8R6G5OpMruoNgD6jrcew28HIsWlCs",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.22 15:25 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\nmapping (uint256 => [uint256]) owner_1; // STORAGE[0x1]\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (___function_selector__[msg.sender]) {\n        v0 = msg.sender.call().value(10 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 6000).gas(2300 * !(10 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 6000));\n    }\n    owner_1[msg.sender] = block.number;\n    owner_1[msg.sender] += msg.value;\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.22 15:25 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\nmapping (uint256 => [uint256]) owner_1; // STORAGE[0x1]\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (___function_selector__[msg.sender]) {\n        v0 = msg.sender.call().value(10 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 6000).gas(2300 * !(10 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 6000));\n    }\n    owner_1[msg.sender] = block.number;\n    owner_1[msg.sender] += msg.value;\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.22 15:25 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\nmapping (uint256 => [uint256]) owner_1; // STORAGE[0x1]\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (___function_selector__[msg.sender]) {\n        v0 = msg.sender.call().value(10 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 6000).gas(2300 * !(10 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 6000));\n    }\n    owner_1[msg.sender] = block.number;\n    owner_1[msg.sender] += msg.value;\n}\n.",
+	"status": "1",
+	"time_cost": 20.00925850868225,
+	"usage": {
+		"completion_tokens": 276,
+		"prompt_tokens": 271,
+		"total_tokens": 547
+	}
+}

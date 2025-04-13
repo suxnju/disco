@@ -1,0 +1,21 @@
+{
+	"address": "0x50cb61afa3f023d17276dcfb35abf85c710d1cff",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2647,
+	"prompt_tokens": 1759,
+	"completion_tokens": 888,
+	"time_cost": 59.690714597702026,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int_const 0 is not implicitly convertible to expected type address.\t wrong argument count for function call: 1 arguments given but expected 4.\t member \"balanceof\" not found or not visible after argument-dependent lookup in address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 19
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xbf2aeab03b82c182599930217272ef0fc5cf662b",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 30907,
+	"prompt_tokens": 30541,
+	"completion_tokens": 366,
+	"time_cost": 42.614909648895264,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " defining empty structs is disallowed.\t defining empty structs is disallowed.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t internal or recursive type is not allowed for public state variables.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 115
+}

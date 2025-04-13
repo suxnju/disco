@@ -1,0 +1,21 @@
+{
+	"address": "0x089431f295b58c17c0b1754be2e15d706e990151",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1884,
+	"prompt_tokens": 1436,
+	"completion_tokens": 448,
+	"time_cost": 23.00089931488037,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " \"msg.value\" and \"callvalue()\" can only be used in payable public functions. make the function \"payable\" or use an internal function to avoid this error.\t cannot withdraw more than zero\");\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 15
+}

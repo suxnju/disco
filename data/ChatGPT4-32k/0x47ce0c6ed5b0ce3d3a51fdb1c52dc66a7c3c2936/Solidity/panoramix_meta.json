@@ -1,0 +1,21 @@
+{
+	"address": "0x47ce0c6ed5b0ce3d3a51fdb1c52dc66a7c3c2936",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5846,
+	"prompt_tokens": 5061,
+	"completion_tokens": 785,
+	"time_cost": 31.725171327590942,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " source \"/home/suxing/go/src/ilf/data/llm-responses/gpt4-32k-all/panoramix/eval_result_panoramix_1/panoramix_1/0x47ce0c6ed5b0ce3d3a51fdb1c52dc66a7c3c2936/solidity/decompiledcode/mimcsponge.sol\" not found: file not found.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 17
+}

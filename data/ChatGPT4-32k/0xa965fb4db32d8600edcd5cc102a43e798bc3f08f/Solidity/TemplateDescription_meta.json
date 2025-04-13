@@ -1,0 +1,21 @@
+{
+	"address": "0xa965fb4db32d8600edcd5cc102a43e798bc3f08f",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3028,
+	"prompt_tokens": 2099,
+	"completion_tokens": 929,
+	"time_cost": 43.067359924316406,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected pragma, import directive or contract/interface/library/struct/enum definition.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 18
+}

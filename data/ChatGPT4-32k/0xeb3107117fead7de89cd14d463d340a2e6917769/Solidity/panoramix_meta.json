@@ -1,0 +1,21 @@
+{
+	"address": "0xeb3107117fead7de89cd14d463d340a2e6917769",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 463,
+	"prompt_tokens": 193,
+	"completion_tokens": 270,
+	"time_cost": 19.662185430526733,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " different number of arguments in return statement than in returns declaration.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 1
+}

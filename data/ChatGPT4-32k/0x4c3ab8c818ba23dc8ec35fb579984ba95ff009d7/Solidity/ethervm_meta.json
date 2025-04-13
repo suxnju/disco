@@ -1,0 +1,21 @@
+{
+	"address": "0x4c3ab8c818ba23dc8ec35fb579984ba95ff009d7",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 382,
+	"prompt_tokens": 126,
+	"completion_tokens": 256,
+	"time_cost": 12.555768489837646,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " literal, identifier or instruction expected.\t expected primary expression.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 25
+}

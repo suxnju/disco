@@ -1,0 +1,21 @@
+{
+	"address": "0x23ea10cc1e6ebdb499d24e45369a35f43627062f",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1876,
+	"prompt_tokens": 1371,
+	"completion_tokens": 505,
+	"time_cost": 20.845337390899658,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"uint8\" to \"bool\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 6
+}

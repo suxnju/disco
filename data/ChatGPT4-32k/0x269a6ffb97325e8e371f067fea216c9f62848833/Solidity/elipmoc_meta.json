@@ -1,0 +1,21 @@
+{
+	"address": "0x269a6ffb97325e8e371f067fea216c9f62848833",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 12951,
+	"prompt_tokens": 12198,
+	"completion_tokens": 753,
+	"time_cost": 38.26089334487915,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0xabb29fd841c9b919c3b681194c6173f30ff7055d\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t unary operator ! cannot be applied to type uint8\t no matching declaration found after argument-dependent lookup.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 61
+}

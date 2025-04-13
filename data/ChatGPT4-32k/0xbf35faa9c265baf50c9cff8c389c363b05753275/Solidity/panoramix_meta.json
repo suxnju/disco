@@ -1,0 +1,21 @@
+{
+	"address": "0xbf35faa9c265baf50c9cff8c389c363b05753275",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 14232,
+	"prompt_tokens": 13744,
+	"completion_tokens": 488,
+	"time_cost": 43.27119970321655,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " identifier already declared.\t identifier already declared.\t identifier already declared.\t type uint256 is not implicitly convertible to expected type bool.\t explicit type conversion not allowed from \"uint256\" to \"bool\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 52
+}

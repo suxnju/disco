@@ -1,0 +1,38 @@
+{
+	"address": "0xf67fbf1c2df2da7f96c7ffee9151eff7246d7922",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here's the Solidity contract code that corresponds to the given decompiled code:\n\n```solidity\npragma solidity ^0.7.0;\n\ncontract MyContract {\n    // Data structures and variables inferred from the use of storage instructions\n    address private _sender; \n\n    // Events\n    event Deposit(uint256 _value);\n    event Transfer(address _to, uint256 _value);\n\n    receive() external payable { \n        emit Deposit(msg.value);\n    }\n\n    function getBalance() public view returns (uint256) { \n        return address(this).balance;\n    }\n\n    function sendTo(address payable _to, uint256 _value) public { \n        require(msg.sender == _sender);\n        (bool success,) = _to.call{value: _value}(\"\");\n        require(success);\n        emit Transfer(_to, _value);\n    }\n    \n    // There is no direct equivalent in Solidity for the function selector code. \n    // The function selector is a part of the EVM and not present in Solidity.\n}\n```\nPlease note that the `__function_selector__` function in the decompiled code is a representation of the EVM's function dispatch mechanism, and there is no direct equivalent in Solidity. In Solidity, the function to be executed is determined automatically based on the function signature in the transaction data.\n\nNote also that the `nonPayable` modifier from the decompiled code is represented as a lack of the `payable` keyword in the Solidity code. This prevents a function from receiving Ether.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701470308,
+	"id": "chatcmpl-8R6RQu32RaOo9WQquIXzhkrW9OueV",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.24 09:32 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _send; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nDeposit(uint256);\nTransfer(address, uint256);\n\nfunction fallback() public payable { \n    emit Deposit(msg.value);\n}\n\nfunction getBalance() public nonPayable { \n    return (address(this)).balance;\n}\n\nfunction send(address varg0, uint256 varg1) public nonPayable { \n    require(msg.data.length - 4 >= 64);\n    require(msg.sender == _send);\n    v0 = varg0.call().value(varg1).gas(!varg1 * 2300);\n    require(v0); // checks call status, propagates error data on error\n    emit Transfer(varg0, varg1);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x12065fe0 == function_selector >> 224) {\n            getBalance();\n        } else if (0xd0679d34 == function_selector >> 224) {\n            send(address,uint256);\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 09:32 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _send; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nDeposit(uint256);\nTransfer(address, uint256);\n\nfunction fallback() public payable { \n    emit Deposit(msg.value);\n}\n\nfunction getBalance() public nonPayable { \n    return (address(this)).balance;\n}\n\nfunction send(address varg0, uint256 varg1) public nonPayable { \n    require(msg.data.length - 4 >= 64);\n    require(msg.sender == _send);\n    v0 = varg0.call().value(varg1).gas(!varg1 * 2300);\n    require(v0); // checks call status, propagates error data on error\n    emit Transfer(varg0, varg1);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x12065fe0 == function_selector >> 224) {\n            getBalance();\n        } else if (0xd0679d34 == function_selector >> 224) {\n            send(address,uint256);\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 09:32 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _send; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nDeposit(uint256);\nTransfer(address, uint256);\n\nfunction fallback() public payable { \n    emit Deposit(msg.value);\n}\n\nfunction getBalance() public nonPayable { \n    return (address(this)).balance;\n}\n\nfunction send(address varg0, uint256 varg1) public nonPayable { \n    require(msg.data.length - 4 >= 64);\n    require(msg.sender == _send);\n    v0 = varg0.call().value(varg1).gas(!varg1 * 2300);\n    require(v0); // checks call status, propagates error data on error\n    emit Transfer(varg0, varg1);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x12065fe0 == function_selector >> 224) {\n            getBalance();\n        } else if (0xd0679d34 == function_selector >> 224) {\n            send(address,uint256);\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 12.308290719985962,
+	"usage": {
+		"completion_tokens": 313,
+		"prompt_tokens": 360,
+		"total_tokens": 673
+	}
+}

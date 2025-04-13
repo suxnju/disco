@@ -1,0 +1,38 @@
+{
+	"address": "0x99f2bd643c5c96cfbddb69d4dfc5c0dec4551c33",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Decoding the bytecode to a readable Solidity contract is a complex task and usually requires reverse-engineering. The bytecode you provided is too short and does not seem to correspond to a complete contract.\n\nHowever, I can provide you with a simple example of how a contract in Solidity might look:\n\n```solidity\npragma solidity >=0.4.22 <0.7.0;\n\n/**\n * @title Storage\n * @dev Store & retrieve value in a variable\n */\ncontract Storage {\n\n    uint256 number;\n\n    /**\n     * @dev Store value in variable\n     * @param num value to store\n     */\n    function store(uint256 num) public {\n        number = num;\n    }\n\n    /**\n     * @dev Return value \n     * @return value of 'number'\n     */\n    function retrieve() public view returns (uint256){\n        return number;\n    }\n}\n```\n\nThis contract is a simple storage contract where you can store a number and retrieve it. It's important to note that the actual bytecode will be much longer and more complex than the given one. The conversion from bytecode back to Solidity is not a straight forward task and requires a deep understanding of the Ethereum Virtual Machine (EVM) and the Solidity language itself.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701468557,
+	"id": "chatcmpl-8R5zBn8WLbBFUO7DvwIuLi2b1b7RF",
+	"input_format": "Bytecode",
+	"ir": "0x363d3d373d3d3d363d73391a04311e0bfc913ef6fa784773307c826104f05af43d82803e903d91602b57fd5bf3",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the bytecode: 0x363d3d373d3d3d363d73391a04311e0bfc913ef6fa784773307c826104f05af43d82803e903d91602b57fd5bf3.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.The following is the bytecode: 0x363d3d373d3d3d363d73391a04311e0bfc913ef6fa784773307c826104f05af43d82803e903d91602b57fd5bf3.",
+	"status": "1",
+	"time_cost": 16.541890382766724,
+	"usage": {
+		"completion_tokens": 255,
+		"prompt_tokens": 98,
+		"total_tokens": 353
+	}
+}

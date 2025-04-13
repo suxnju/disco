@@ -1,0 +1,21 @@
+{
+	"address": "0x37f387fe48c9569500b514a1c7e1f6b04be8d421",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4222,
+	"prompt_tokens": 2937,
+	"completion_tokens": 1285,
+	"time_cost": 79.17656755447388,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t \"send\" and \"transfer\" are only available for objects of type \"address payable\", not \"address\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 19
+}

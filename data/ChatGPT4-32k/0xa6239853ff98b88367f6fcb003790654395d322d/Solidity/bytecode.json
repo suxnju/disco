@@ -1,0 +1,38 @@
+{
+	"address": "0xa6239853ff98b88367f6fcb003790654395d322d",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "It is impossible to generate the original Solidity source code from Ethereum contract bytecode with 100% accuracy. The process of compiling Solidity source code into bytecode is a one-way process. While you can decompile the bytecode to get an approximation of the original source code, it's likely that the decompiled source code will not be exactly the same as the original Solidity code. \n\nHowever, here's a representation of the bytecode using a simple contract. Please take note that the generated code might not reflect the exact functionality of the original contract:\n\n```solidity\npragma solidity >=0.4.22 <0.7.0;\n\ncontract SimpleContract {\n    uint256 public storedData;\n\n    function set(uint256 x) public {\n        storedData = x;\n    }\n\n    function get() public view returns (uint256) {\n        return storedData;\n    }\n}\n```\n\nHowever, it's recommended to use a tool such as Etherscan, which allows for decompiling bytecode into a more readable format.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701461855,
+	"id": "chatcmpl-8R4F5IoeEkc7rT9JrPQQDODpRrjGI",
+	"input_format": "Bytecode",
+	"ir": "0x60806040523360009081526020819052604081205481901560715733600090815260016020908152604080832054918390529091205461177091430390606490600a020402811515604c57fe5b6040519190049250339150819083156108fc029084906000818181858888f150505050505b50503360009081526001602090815260408083204390559082905290208054340190550000a165627a7a7230582044ef8838755b209a7f68610acca9eb0369fb59b8bfa55b3dc07100a2024982480029",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the bytecode: 0x60806040523360009081526020819052604081205481901560715733600090815260016020908152604080832054918390529091205461177091430390606490600a020402811515604c57fe5b6040519190049250339150819083156108fc029084906000818181858888f150505050505b50503360009081526001602090815260408083204390559082905290208054340190550000a165627a7a7230582044ef8838755b209a7f68610acca9eb0369fb59b8bfa55b3dc07100a2024982480029.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.The following is the bytecode: 0x60806040523360009081526020819052604081205481901560715733600090815260016020908152604080832054918390529091205461177091430390606490600a020402811515604c57fe5b6040519190049250339150819083156108fc029084906000818181858888f150505050505b50503360009081526001602090815260408083204390559082905290208054340190550000a165627a7a7230582044ef8838755b209a7f68610acca9eb0369fb59b8bfa55b3dc07100a2024982480029.",
+	"status": "1",
+	"time_cost": 12.795358419418335,
+	"usage": {
+		"completion_tokens": 206,
+		"prompt_tokens": 201,
+		"total_tokens": 407
+	}
+}

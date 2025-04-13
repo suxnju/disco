@@ -1,0 +1,38 @@
+{
+	"address": "0xa6d93468c1f16f2e1009ec321251f0b3147117b3",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here's Solidity code that corresponds to the given pseudo-code:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    address payable private _withdraw;\n\n    receive() external payable {\n        revert();\n    }\n\n    function withdraw() public {\n        require(msg.sender == _withdraw);\n        (bool success, ) = _withdraw.call{value: address(this).balance, gas: 2300 * (address(this).balance == 0 ? 1 : 0)}(\"\");\n        require(success);\n    }\n\n    function payIn() public payable {\n    }\n\n    fallback() external payable {\n        bytes4 functionSelector = msg.sig;\n        if(msg.data.length >= 4) {\n            if(functionSelector == 0x3ccfd60b) {\n                withdraw();\n            } else if(functionSelector == 0xfcddd056) {\n                payIn();\n            }\n        }\n        revert();\n    }\n}\n```\n\nThis contract has a `withdraw` function that can only be called by the `_withdraw` address. The function sends all the contract's balance to the `_withdraw` address. The `payIn` function is used to receive funds into the contract. It also includes a fallback function that reverts any incoming transactions that do not match the specified function selectors.\n\nPlease note that the actual function selectors (0x3ccfd60b and 0xfcddd056) in your production smart contract will be different. These are calculated as the first 4 bytes of the Keccak SHA-3 hash of the function signature, and will vary based on the function name and types of arguments.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701455526,
+	"id": "chatcmpl-8R2b0iJ2FU6KHRPrLV0aQNOJQte9Z",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.14 21:15 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _withdraw; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction withdraw() public nonPayable { \n    require(msg.sender == _withdraw);\n    v0 = _withdraw.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0); // checks call status, propagates error data on error\n}\n\nfunction payIn() public payable { \n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x3ccfd60b) {\n            withdraw();\n        } else if (0xfcddd056 == function_selector) {\n            payIn();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.14 21:15 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _withdraw; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction withdraw() public nonPayable { \n    require(msg.sender == _withdraw);\n    v0 = _withdraw.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0); // checks call status, propagates error data on error\n}\n\nfunction payIn() public payable { \n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x3ccfd60b) {\n            withdraw();\n        } else if (0xfcddd056 == function_selector) {\n            payIn();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.14 21:15 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _withdraw; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction withdraw() public nonPayable { \n    require(msg.sender == _withdraw);\n    v0 = _withdraw.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0); // checks call status, propagates error data on error\n}\n\nfunction payIn() public payable { \n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x3ccfd60b) {\n            withdraw();\n        } else if (0xfcddd056 == function_selector) {\n            payIn();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 18.812921285629272,
+	"usage": {
+		"completion_tokens": 328,
+		"prompt_tokens": 289,
+		"total_tokens": 617
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"address": "0x8ade9bcda847852de70bada69bbc9358c1c7b747",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "The decompiled code you have given seems to be incomplete and incorrect. It seems to be a pseudo-code or some sort of assembly language rather than a Solidity code. However, I'll provide a basic example of a Solidity smart contract that you may find helpful.\n\nThis contract is a simple \"Hello World\" contract:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract HelloWorld {\n    string public greet = \"Hello, World!\";\n\n    function setGreet(string memory _greet) public {\n        greet = _greet;\n    }\n\n    function getGreet() public view returns (string memory) {\n        return greet;\n    }\n}\n```\n\nIn this contract:\n\n- We have a state variable `greet` that is publicly accessible.\n- The function `setGreet` allows us to change the value of `greet`.\n- The function `getGreet` allows us to retrieve the current value of `greet`.\n\nThis is a very basic example of what a contract in Solidity might look like. Your actual contract might be much more complex, involving multiple contracts, libraries, and so on.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701461253,
+	"id": "chatcmpl-8R45N6wwPF58KuIqJaP4iX24StNKo",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.16 14:36 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    MEM[64] = 96;\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.16 14:36 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    MEM[64] = 96;\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.16 14:36 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    MEM[64] = 96;\n}\n.",
+	"status": "1",
+	"time_cost": 8.130087852478027,
+	"usage": {
+		"completion_tokens": 231,
+		"prompt_tokens": 122,
+		"total_tokens": 353
+	}
+}

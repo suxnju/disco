@@ -1,0 +1,21 @@
+{
+	"address": "0x235574910b3c91bb85ac6cab454545749b72e71a",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 748,
+	"prompt_tokens": 326,
+	"completion_tokens": 422,
+	"time_cost": 39.30625605583191,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " unary operator ! cannot be applied to type uint256\t unary operator ! cannot be applied to type uint256\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 4
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x2c50a2931e4dda0610aa95c18e26895ca8985bc3",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1726,
+	"prompt_tokens": 1054,
+	"completion_tokens": 672,
+	"time_cost": 22.87182331085205,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address payable is not implicitly convertible to expected type uint256.\t type address payable is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 11
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x758a6cf7d6468a0aef0adf915eb4adb4ddf5055c",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 32768 tokens. However, your messages resulted in 151162 tokens. Please reduce the length of the messages.\", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}",
+	"token_exceeded": 0,
+	"n_tokens": 0.0,
+	"prompt_tokens": 0.0,
+	"completion_tokens": 0.0,
+	"time_cost": 0.0,
+	"gen_code": 0.0,
+	"is_empty": 0,
+	"compilable": 0,
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 34
+}

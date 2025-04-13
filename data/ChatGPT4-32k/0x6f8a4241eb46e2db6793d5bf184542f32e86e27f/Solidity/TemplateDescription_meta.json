@@ -1,0 +1,21 @@
+{
+	"address": "0x6f8a4241eb46e2db6793d5bf184542f32e86e27f",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1392,
+	"prompt_tokens": 847,
+	"completion_tokens": 545,
+	"time_cost": 90.12148904800415,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier already declared.\t identifier already declared.\t explicit type conversion not allowed from \"bytes memory\" to \"uint256\".\t explicit type conversion not allowed from \"bytes memory\" to \"uint256\".\t explicit type conversion not allowed from \"bytes memory\" to \"uint256\".\t this type cannot be encoded.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 4
+}

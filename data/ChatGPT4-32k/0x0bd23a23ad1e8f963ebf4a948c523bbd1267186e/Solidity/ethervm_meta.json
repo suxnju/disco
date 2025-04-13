@@ -1,0 +1,21 @@
+{
+	"address": "0x0bd23a23ad1e8f963ebf4a948c523bbd1267186e",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5521,
+	"prompt_tokens": 4944,
+	"completion_tokens": 577,
+	"time_cost": 57.485899209976196,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " member \"iscontract\" not found or not visible after argument-dependent lookup in address\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 5
+}

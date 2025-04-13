@@ -1,0 +1,21 @@
+{
+	"address": "0x65770b5283117639760bea3f867b69b3697a91dd",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3657,
+	"prompt_tokens": 3197,
+	"completion_tokens": 460,
+	"time_cost": 29.36660099029541,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"@openzeppelin/contracts/token/erc721/erc721.sol\" not found: file outside of allowed directories.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 25
+}

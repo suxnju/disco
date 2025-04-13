@@ -1,0 +1,21 @@
+{
+	"address": "0x7dce85240d178ae61e91aa82ecdc2048d1ca052f",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6134,
+	"prompt_tokens": 5416,
+	"completion_tokens": 718,
+	"time_cost": 40.707876443862915,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"/home/suxing/go/src/ilf/data/llm-responses/gpt4-32k-all/description/eval_result_description_v1111_1/description_v1111_1/0x7dce85240d178ae61e91aa82ecdc2048d1ca052f/solidity/templatedescription/safemath.sol\" not found: file not found.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 11
+}

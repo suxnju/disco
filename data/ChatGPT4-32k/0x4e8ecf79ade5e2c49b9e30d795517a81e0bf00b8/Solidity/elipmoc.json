@@ -1,0 +1,38 @@
+{
+	"address": "0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Apologies, but it seems there is no decompiled code provided in your request. If you could provide the specific decompiled code, I would be able to help write the contract code better. \n\nHowever, here is a simple example of a Solidity smart contract:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract SimpleStorage {\n    uint256 private data;\n\n    function set(uint256 x) public {\n        data = x;\n    }\n\n    function get() public view returns (uint256) {\n        return data;\n    }\n}\n```\n\nIn this contract, we have a private variable `data`. The `set` function allows us to change the value of `data`, and the `get` function allows us to retrieve the current value of `data`.\n\nPlease provide the specific decompiled code and I will be able to help you further.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1698039437,
+	"id": "chatcmpl-8ChunDAuEWwRXWOecl7BcHSBqbCNY",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2022.08.15 10:13 UTC\n\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2022.08.15 10:13 UTC\n\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2022.08.15 10:13 UTC\n\n\n.",
+	"status": "1",
+	"time_cost": 12.006379127502441,
+	"usage": {
+		"completion_tokens": 182,
+		"prompt_tokens": 76,
+		"total_tokens": 258
+	}
+}

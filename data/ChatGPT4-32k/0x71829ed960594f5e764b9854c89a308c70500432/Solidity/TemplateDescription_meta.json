@@ -1,0 +1,21 @@
+{
+	"address": "0x71829ed960594f5e764b9854c89a308c70500432",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4654,
+	"prompt_tokens": 4057,
+	"completion_tokens": 597,
+	"time_cost": 39.49062895774841,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t wrong argument count for function call: 4 arguments given but expected 1. this function requires a single bytes argument. if all your arguments are value types, you can use abi.encode(...) to properly generate it.\t operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 52
+}

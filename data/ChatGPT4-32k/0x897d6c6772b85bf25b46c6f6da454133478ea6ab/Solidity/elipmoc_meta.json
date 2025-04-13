@@ -1,0 +1,21 @@
+{
+	"address": "0x897d6c6772b85bf25b46c6f6da454133478ea6ab",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5087,
+	"prompt_tokens": 4108,
+	"completion_tokens": 979,
+	"time_cost": 52.33078908920288,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " type address is not implicitly convertible to expected type uint256.\t operator * not compatible with types uint256[] storage ref and uint256\t type address is not implicitly convertible to expected type uint256.\t operator - not compatible with types uint256[] storage ref and uint256[] storage ref\t operator >> not compatible with types uint256[] storage ref and int_const 64\t return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t type address is not implicitly convertible to expected type uint256.\t return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t type address is not implicitly convertible to expected type uint256.\t return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t type address payable is not implicitly convertible to expected type uint256.\t return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t type address is not implicitly convertible to expected type uint256.\t return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 22
+}

@@ -1,0 +1,1 @@
+(self.webpackChunkdisco_frontend=self.webpackChunkdisco_frontend||[]).push([[1958],{52349:e=>{e.exports=function(e){return{name:"Julia REPL",contains:[{className:"meta",begin:/^julia>/,relevance:10,starts:{end:/^(?![ ]{6})/,subLanguage:"julia"},aliases:["jldoctest"]}]}}}}]);

@@ -1,0 +1,21 @@
+{
+	"address": "0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5200,
+	"prompt_tokens": 4178,
+	"completion_tokens": 1022,
+	"time_cost": 77.1486382484436,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator > not compatible with types bool and int_const 0\t operator > not compatible with types bool and int_const 0\t operator > not compatible with types bool and int_const 0\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 68
+}

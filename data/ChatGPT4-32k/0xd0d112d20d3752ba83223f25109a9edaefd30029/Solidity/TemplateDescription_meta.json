@@ -1,0 +1,21 @@
+{
+	"address": "0xd0d112d20d3752ba83223f25109a9edaefd30029",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2644,
+	"prompt_tokens": 1842,
+	"completion_tokens": 802,
+	"time_cost": 31.873469591140747,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0x98b284d61e45d83014b20432ea266155197452ec\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator + not compatible with types address payable and int_const 1157...(70 digits omitted)...0052. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator == not compatible with types address payable and int_const 0\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 12
+}

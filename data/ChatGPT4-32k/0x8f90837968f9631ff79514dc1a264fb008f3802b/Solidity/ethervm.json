@@ -1,0 +1,38 @@
+{
+	"address": "0x8f90837968f9631ff79514dc1a264fb008f3802b",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here's the Solidity version of your provided decompiled code:\n\n```Solidity\npragma solidity ^0.5.0;\n\ncontract Contract {\n    address constant target = 0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e;\n\n    function main() public payable {\n        bytes memory data = msg.data;\n        uint dataLength = msg.data.length;\n\n        (bool success, bytes memory returnData) = target.delegatecall.gas(gasleft())(data);\n\n        if (success) {\n            assembly {\n                return(add(returnData, 32), dataLength)\n            }\n        } else {\n            assembly {\n                revert(add(returnData, 32), dataLength)\n            }\n        }\n    }\n}\n```\nPlease note that I've made an assumption that the msg.data is being sent to the delegatecall. The decompiled code provided is a pseudocode which doesn't perfectly translate to Solidity and might have different behaviour than the original EVM bytecode. Also, it's important to note that using delegatecall can be very risky as it can change the state of the contract that's using it.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700631857,
+	"id": "chatcmpl-8NaK10NakLxN4MtLhBmbl0x0YD5NY",
+	"input_format": "DecompiledCode",
+	"ir": "contract Contract {\n    function main() {\n        var temp0 = msg.data.length;\n        memory[returndata.length:returndata.length + temp0] = msg.data[returndata.length:returndata.length + temp0];\n        var temp1 = returndata.length;\n        var temp2;\n        temp2, memory[returndata.length:returndata.length + returndata.length] = address(0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e).delegatecall.gas(msg.gas)(memory[returndata.length:returndata.length + msg.data.length]);\n        var temp3 = returndata.length;\n        memory[temp1:temp1 + temp3] = returndata[temp1:temp1 + temp3];\n        var var1 = temp1;\n        var var0 = returndata.length;\n    \n        if (temp2) { return memory[var1:var1 + var0]; }\n        else { revert(memory[var1:var1 + var0]); }\n    }\n}\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: contract Contract {\n    function main() {\n        var temp0 = msg.data.length;\n        memory[returndata.length:returndata.length + temp0] = msg.data[returndata.length:returndata.length + temp0];\n        var temp1 = returndata.length;\n        var temp2;\n        temp2, memory[returndata.length:returndata.length + returndata.length] = address(0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e).delegatecall.gas(msg.gas)(memory[returndata.length:returndata.length + msg.data.length]);\n        var temp3 = returndata.length;\n        memory[temp1:temp1 + temp3] = returndata[temp1:temp1 + temp3];\n        var var1 = temp1;\n        var var0 = returndata.length;\n    \n        if (temp2) { return memory[var1:var1 + var0]; }\n        else { revert(memory[var1:var1 + var0]); }\n    }\n}\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: contract Contract {\n    function main() {\n        var temp0 = msg.data.length;\n        memory[returndata.length:returndata.length + temp0] = msg.data[returndata.length:returndata.length + temp0];\n        var temp1 = returndata.length;\n        var temp2;\n        temp2, memory[returndata.length:returndata.length + returndata.length] = address(0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e).delegatecall.gas(msg.gas)(memory[returndata.length:returndata.length + msg.data.length]);\n        var temp3 = returndata.length;\n        memory[temp1:temp1 + temp3] = returndata[temp1:temp1 + temp3];\n        var var1 = temp1;\n        var var0 = returndata.length;\n    \n        if (temp2) { return memory[var1:var1 + var0]; }\n        else { revert(memory[var1:var1 + var0]); }\n    }\n}\n\n.",
+	"status": "1",
+	"time_cost": 12.527132034301758,
+	"usage": {
+		"completion_tokens": 241,
+		"prompt_tokens": 287,
+		"total_tokens": 528
+	}
+}

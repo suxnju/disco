@@ -1,0 +1,21 @@
+{
+	"address": "0x73f09b50960f87af26ff4817a93c0f5efd0aa9e2",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5850,
+	"prompt_tokens": 4993,
+	"completion_tokens": 857,
+	"time_cost": 41.41906690597534,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t operator != not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t type address payable is not implicitly convertible to expected type uint256.\t operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t operator == not compatible with types address payable and uint256\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 19
+}

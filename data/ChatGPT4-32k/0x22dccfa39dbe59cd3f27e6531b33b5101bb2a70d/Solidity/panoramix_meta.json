@@ -1,0 +1,21 @@
+{
+	"address": "0x22dccfa39dbe59cd3f27e6531b33b5101bb2a70d",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 32769,
+	"prompt_tokens": 32601,
+	"completion_tokens": 168,
+	"time_cost": 24.927748918533325,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " expected ',' but got end of source\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 23
+}

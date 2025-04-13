@@ -1,0 +1,38 @@
+{
+	"address": "0xcc1229e33a4d5f011ce9bf7ab605a8a6264bd01d",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Based on the decompiled code you've provided, here's the equivalent Solidity smart contract code:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    uint256 private _fallback;\n    uint256 private stor_2;\n    address private _ethero;\n\n    event MoneyAdd(uint256 amount);\n    event MoneyWithdraw(uint256 amount);\n\n    fallback() external payable {\n        _fallback += msg.value;\n        emit MoneyAdd(msg.value);\n    }\n\n    function ReturnEthToEthero() public {\n        require(msg.sender == _ethero, 'Only Hero call');\n        require(address(this).balance > stor_2, 'Not enough funds for transaction');\n        (bool success,) = _ethero.call{value: address(this).balance, gas: stor_2}(\"\");\n        if (!success) {\n            _fallback = 0;\n        } else {\n            emit MoneyWithdraw(address(this).balance);\n            _fallback = address(this).balance;\n        }\n    }\n\n    function investFund() public view returns (uint256) {\n        return _fallback;\n    }\n\n    function ethero() public view returns (address) {\n        return _ethero;\n    }\n}\n```\nPlease note that this code doesn't include the `__function_selector__` function since Solidity automatically generates a function selector during compilation. The contract also assumes that the `_ethero` address and `stor_2` value are set elsewhere in your contract or externally. Make sure to populate these variables before calling `ReturnEthToEthero()` function.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701468521,
+	"id": "chatcmpl-8R5ybYzQcHdsek2x1jCWzHuNliW27",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.15 21:39 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0x1]\nuint256 stor_2; // STORAGE[0x2]\naddress _ethero; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nMoneyAdd(uint256);\nMoneyWithdraw(uint256);\n\nfunction fallback() public payable { \n    _fallback += msg.value;\n    emit MoneyAdd(msg.value);\n}\n\nfunction ReturnEthToEthero() public nonPayable { \n    require(msg.sender == _ethero, 'Only Hero call');\n    require(this.balance > stor_2, 'Not enough funds for transaction');\n    v0 = _ethero.call().value(this.balance).gas(stor_2);\n    if (!v0) {\n        v1 = v2 = 0;\n    } else {\n        emit MoneyWithdraw(this.balance);\n        v1 = v3 = 1;\n        _fallback = this.balance;\n    }\n    return v1;\n}\n\nfunction investFund() public nonPayable { \n    return _fallback;\n}\n\nfunction ethero() public nonPayable { \n    return _ethero;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x21141de0) {\n            ReturnEthToEthero();\n        } else if (0x9abced4c == function_selector) {\n            investFund();\n        } else if (0xccfb3ce9 == function_selector) {\n            ethero();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 21:39 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0x1]\nuint256 stor_2; // STORAGE[0x2]\naddress _ethero; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nMoneyAdd(uint256);\nMoneyWithdraw(uint256);\n\nfunction fallback() public payable { \n    _fallback += msg.value;\n    emit MoneyAdd(msg.value);\n}\n\nfunction ReturnEthToEthero() public nonPayable { \n    require(msg.sender == _ethero, 'Only Hero call');\n    require(this.balance > stor_2, 'Not enough funds for transaction');\n    v0 = _ethero.call().value(this.balance).gas(stor_2);\n    if (!v0) {\n        v1 = v2 = 0;\n    } else {\n        emit MoneyWithdraw(this.balance);\n        v1 = v3 = 1;\n        _fallback = this.balance;\n    }\n    return v1;\n}\n\nfunction investFund() public nonPayable { \n    return _fallback;\n}\n\nfunction ethero() public nonPayable { \n    return _ethero;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x21141de0) {\n            ReturnEthToEthero();\n        } else if (0x9abced4c == function_selector) {\n            investFund();\n        } else if (0xccfb3ce9 == function_selector) {\n            ethero();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 21:39 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0x1]\nuint256 stor_2; // STORAGE[0x2]\naddress _ethero; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nMoneyAdd(uint256);\nMoneyWithdraw(uint256);\n\nfunction fallback() public payable { \n    _fallback += msg.value;\n    emit MoneyAdd(msg.value);\n}\n\nfunction ReturnEthToEthero() public nonPayable { \n    require(msg.sender == _ethero, 'Only Hero call');\n    require(this.balance > stor_2, 'Not enough funds for transaction');\n    v0 = _ethero.call().value(this.balance).gas(stor_2);\n    if (!v0) {\n        v1 = v2 = 0;\n    } else {\n        emit MoneyWithdraw(this.balance);\n        v1 = v3 = 1;\n        _fallback = this.balance;\n    }\n    return v1;\n}\n\nfunction investFund() public nonPayable { \n    return _fallback;\n}\n\nfunction ethero() public nonPayable { \n    return _ethero;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x21141de0) {\n            ReturnEthToEthero();\n        } else if (0x9abced4c == function_selector) {\n            investFund();\n        } else if (0xccfb3ce9 == function_selector) {\n            ethero();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 14.740018367767334,
+	"usage": {
+		"completion_tokens": 317,
+		"prompt_tokens": 448,
+		"total_tokens": 765
+	}
+}

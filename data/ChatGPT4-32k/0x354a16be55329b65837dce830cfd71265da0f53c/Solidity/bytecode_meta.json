@@ -1,0 +1,21 @@
+{
+	"address": "0x354a16be55329b65837dce830cfd71265da0f53c",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4531,
+	"prompt_tokens": 3958,
+	"completion_tokens": 573,
+	"time_cost": 28.52671766281128,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": false,
+	"compilable": " expected token semicolon got 'lparen'\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 17
+}

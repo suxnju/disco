@@ -1,0 +1,21 @@
+{
+	"address": "0x5cb888182fbffdb62c08fb4b5a343914f00fdfee",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2638,
+	"prompt_tokens": 2005,
+	"completion_tokens": 633,
+	"time_cost": 52.44791579246521,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type contract mycontract is not implicitly convertible to expected type address.\t type contract mycontract is not implicitly convertible to expected type address.\t type contract mycontract is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 17
+}

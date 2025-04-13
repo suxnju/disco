@@ -1,0 +1,38 @@
+{
+	"address": "0x6c221dea36d48512947bde8aeb58811db50dbf6f",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Below is a Solidity version of the decompiled EVM Bytecode:\n\n```solidity\npragma solidity ^0.6.12;\n\ncontract DecompiledContract {\n    function functionSelector() public payable { \n        if(msg.value == 0) {\n            // Calling external contracts with half of the current contract balance\n            bool success0;\n            bytes memory data0;\n            (success0, data0) = 0x6b6e4b338b4d5f7d847dab5492106751c57b7ff0.call{value: address(this).balance / 2, gas: 2300 * uint256(address(this).balance == 0)}(\"\");\n            require(success0); // checks call status, propagates error data on error\n\n            bool success1;\n            bytes memory data1;\n            (success1, data1) = 0xe09f3630663b6b86e82d750b00206f8f8c6f8ad4.call{value: address(this).balance / 2, gas: 2300 * uint256(address(this).balance == 0)}(\"\");\n            require(success1); // checks call status, propagates error data on error\n        }\n    }\n}\n```\nPlease note that this solidity code is using the call function to interact with external contracts. While this is perfectly legitimate in many cases, it is also a common attack vector. The reason is that it hands over control to the called contract and can potentially enable it to execute any computation, including state changes in the calling contract. Please ensure the called contracts can be trusted.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701467656,
+	"id": "chatcmpl-8R5keQyG9MINqxFQcglCM9x6eNv3b",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.23 06:17 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (!msg.value) {\n        v0 = 0x6b6e4b338b4d5f7d847dab5492106751c57b7ff0.call().value(this.balance >> 1).gas(!(this.balance >> 1) * 2300);\n        require(v0); // checks call status, propagates error data on error\n        v1 = 0xe09f3630663b6b86e82d750b00206f8f8c6f8ad4.call().value(this.balance >> 1).gas(2300 * !(this.balance >> 1));\n        require(v1); // checks call status, propagates error data on error\n    }\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.23 06:17 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (!msg.value) {\n        v0 = 0x6b6e4b338b4d5f7d847dab5492106751c57b7ff0.call().value(this.balance >> 1).gas(!(this.balance >> 1) * 2300);\n        require(v0); // checks call status, propagates error data on error\n        v1 = 0xe09f3630663b6b86e82d750b00206f8f8c6f8ad4.call().value(this.balance >> 1).gas(2300 * !(this.balance >> 1));\n        require(v1); // checks call status, propagates error data on error\n    }\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.23 06:17 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (!msg.value) {\n        v0 = 0x6b6e4b338b4d5f7d847dab5492106751c57b7ff0.call().value(this.balance >> 1).gas(!(this.balance >> 1) * 2300);\n        require(v0); // checks call status, propagates error data on error\n        v1 = 0xe09f3630663b6b86e82d750b00206f8f8c6f8ad4.call().value(this.balance >> 1).gas(2300 * !(this.balance >> 1));\n        require(v1); // checks call status, propagates error data on error\n    }\n}\n.",
+	"status": "1",
+	"time_cost": 12.58482050895691,
+	"usage": {
+		"completion_tokens": 334,
+		"prompt_tokens": 266,
+		"total_tokens": 600
+	}
+}

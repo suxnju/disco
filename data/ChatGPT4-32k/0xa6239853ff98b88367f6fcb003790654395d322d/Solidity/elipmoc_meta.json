@@ -1,0 +1,21 @@
+{
+	"address": "0xa6239853ff98b88367f6fcb003790654395d322d",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 547,
+	"prompt_tokens": 271,
+	"completion_tokens": 276,
+	"time_cost": 20.00925850868225,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected token semicolon got 'lbrace'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 3
+}

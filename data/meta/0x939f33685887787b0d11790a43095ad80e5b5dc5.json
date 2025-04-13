@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.5.10;\r\n\r\n/**\r\n * Will miners include a 0 gwei transaction if they are rewarded by funds held in a smart contract?\r\n * Let's find out.\r\n *\r\n * The first miner to process the 0 gwei rewardMiner() transaction sent from the contract creator's account gets 0.069 ETH.\r\n * This assumes a miner can know the current block's coinbase at execution.\r\n * This also assumes miners pay attention to this sort of stuff.\r\n *\r\n * If this works, it opens up the possibilies for a \"shadow\" fee market where certain transactions can be mined from accounts with 0 balance.\r\n */\r\n\r\ncontract FreeEthForMiners {\r\n\r\n\taddress public creator;\r\n\r\n\tconstructor() payable public {\r\n\t\tcreator = msg.sender;\r\n\t\trequire(msg.value == 0.069 ether);\r\n\t}\r\n\r\n\tfunction rewardMiner() external {\r\n\t\tif (tx.gasprice == 0 && msg.sender == creator) {\r\n\t\t\tblock.coinbase.transfer(address(this).balance);\r\n\t\t}\r\n\t}\r\n\r\n}",
+	"ContractName": "FreeEthForMiners",
+	"CompilerVersion": "v0.5.10+commit.5a6ea5b1"
+}

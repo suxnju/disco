@@ -1,0 +1,21 @@
+{
+	"address": "0xdc18b6bee2cc3b77924ac828f28bfdda542d90e8",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5648,
+	"prompt_tokens": 5107,
+	"completion_tokens": 541,
+	"time_cost": 33.878185749053955,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " expected a state variable declaration. if you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 30
+}

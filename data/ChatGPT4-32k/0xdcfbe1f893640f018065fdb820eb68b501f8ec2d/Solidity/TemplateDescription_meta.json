@@ -1,0 +1,21 @@
+{
+	"address": "0xdcfbe1f893640f018065fdb820eb68b501f8ec2d",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5659,
+	"prompt_tokens": 4982,
+	"completion_tokens": 677,
+	"time_cost": 35.71080827713013,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " cannot perform packed encoding for a literal. please convert it to an explicit type first.\t type int_const 1 is not implicitly convertible to expected type address.\t type int_const 1 is not implicitly convertible to expected type address.\t type int_const 1 is not implicitly convertible to expected type address.\t type int_const 1 is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 35
+}

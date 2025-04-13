@@ -1,0 +1,39 @@
+{
+	"address": "0x333f7d10c3d8f3b0a070c0f6673cf61bd4a86622",
+	"choices": {
+		"finish_reason": "stop",
+		"index": 0,
+		"logprobs": null,
+		"message": {
+			"content": "The Solidity code that corresponds to the decompiled code you provided might look like this:\n\n```solidity\npragma solidity ^0.5.0;\n\ncontract MyContract {\n    address private _fallback; // This is the address of the fallback function\n\n    fallback() external payable { \n        bool v0 = _fallback.delegatecall(msg.data);\n        require(v0); // checks call status, propagates error data on error\n    }\n\n    function proxyType() public pure returns(uint256) { \n        return 1;\n    }\n\n    function implementation() public view returns(address) { \n        return _fallback;\n    }\n\n    function __function_selector__(bytes4 function_selector) public payable { \n        // The original decompiled code seems to check function selector and call corresponding function\n        // However, in Solidity, this routing is done automatically by the EVM\n        // So this function is basically doing nothing here.\n    }\n}\n```\nPlease note that the code is written in Solidity 0.5.0. It's recommended to use the latest version of Solidity (0.8.x at the time of writing) to benefit from the latest features and security improvements.",
+			"function_call": null,
+			"role": "assistant",
+			"tool_calls": null
+		}
+	},
+	"created": 1711533382,
+	"id": "chatcmpl-97KJ4Gs0QpIX5q4cZGjgP0c3uwKKM",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled by library.dedaub.com\n// 2022.12.01 19:04 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7]\n\n\nfunction () public payable { \n    v0 = _fallback.delegatecall(MEM[0 len msg.data.length], MEM[0 len 0]).gas(msg.gas - 10000);\n    require(v0); // checks call status, propagates error data on error\n    return MEM[0 len (RETURNDATASIZE())];\n}\n\nfunction proxyType() public nonPayable { \n    return 1;\n}\n\nfunction implementation() public nonPayable { \n    return address(_fallback);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x4555d5c9 == function_selector >> 224) {\n            proxyType();\n        } else if (0x5c60da1b == function_selector >> 224) {\n            implementation();\n        }\n    }\n    ();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.12.01 19:04 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7]\n\n\nfunction () public payable { \n    v0 = _fallback.delegatecall(MEM[0 len msg.data.length], MEM[0 len 0]).gas(msg.gas - 10000);\n    require(v0); // checks call status, propagates error data on error\n    return MEM[0 len (RETURNDATASIZE())];\n}\n\nfunction proxyType() public nonPayable { \n    return 1;\n}\n\nfunction implementation() public nonPayable { \n    return address(_fallback);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x4555d5c9 == function_selector >> 224) {\n            proxyType();\n        } else if (0x5c60da1b == function_selector >> 224) {\n            implementation();\n        }\n    }\n    ();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.12.01 19:04 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7]\n\n\nfunction () public payable { \n    v0 = _fallback.delegatecall(MEM[0 len msg.data.length], MEM[0 len 0]).gas(msg.gas - 10000);\n    require(v0); // checks call status, propagates error data on error\n    return MEM[0 len (RETURNDATASIZE())];\n}\n\nfunction proxyType() public nonPayable { \n    return 1;\n}\n\nfunction implementation() public nonPayable { \n    return address(_fallback);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x4555d5c9 == function_selector >> 224) {\n            proxyType();\n        } else if (0x5c60da1b == function_selector >> 224) {\n            implementation();\n        }\n    }\n    ();\n}\n.",
+	"status": "1",
+	"time_cost": 30.42296290397644,
+	"usage": {
+		"completion_tokens": 242,
+		"prompt_tokens": 356,
+		"total_tokens": 598
+	}
+}

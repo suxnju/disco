@@ -1,0 +1,21 @@
+{
+	"address": "0xcbe98a2b1f756bebe53d41eb3b94e566a0777ede",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2167,
+	"prompt_tokens": 1349,
+	"completion_tokens": 818,
+	"time_cost": 29.942396640777588,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " different number of components on the left hand side (1) than on the right hand side (2).\t this looks like an address but has an invalid checksum. correct checksummed address: \"0x26db9ef39bbfe437f5b384c3913e807e5633e7ce\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t different number of components on the left hand side (1) than on the right hand side (2).\t different number of components on the left hand side (1) than on the right hand side (2).\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 13
+}

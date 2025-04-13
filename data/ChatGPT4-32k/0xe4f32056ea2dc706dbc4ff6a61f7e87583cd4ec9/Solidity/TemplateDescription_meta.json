@@ -1,0 +1,21 @@
+{
+	"address": "0xe4f32056ea2dc706dbc4ff6a61f7e87583cd4ec9",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3815,
+	"prompt_tokens": 3245,
+	"completion_tokens": 570,
+	"time_cost": 101.40157461166382,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " wrong argument count for function call: 3 arguments given but expected 1. this function requires a single bytes argument. if all your arguments are value types, you can use abi.encode(...) to properly generate it.\t wrong argument count for function call: 2 arguments given but expected 1. this function requires a single bytes argument. if all your arguments are value types, you can use abi.encode(...) to properly generate it.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 40
+}

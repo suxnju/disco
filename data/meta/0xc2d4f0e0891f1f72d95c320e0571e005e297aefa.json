@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.5.0;\r\n\r\ncontract FloatingInSolidity {\r\n    \r\n    address payable public Owner;\r\n    \r\n    constructor() public {\r\n        Owner = msg.sender;\r\n    }\r\n    \r\n    modifier hasEth() {\r\n        require(msg.value >= 0.1 ether);\r\n        _;\r\n    }\r\n\r\n    function letsBet() public payable hasEth {\r\n        uint one = 1;\r\n        if((one / 2) > 0) {\r\n            msg.sender.transfer(address(this).balance);\r\n        }\r\n    }\r\n    \r\n    function letsBetAgain(uint dividend, uint divisor) public payable hasEth {\r\n        require(dividend < divisor);\r\n        if((dividend / divisor) > 0) {\r\n            msg.sender.transfer(address(this).balance);\r\n        }\r\n    }\r\n    \r\n   function withdraw() payable public {\r\n        require(msg.sender == Owner);\r\n        Owner.transfer(address(this).balance);\r\n    }\r\n    \r\n    function amount() public view returns (uint) {\r\n        return address(this).balance;\r\n    }\r\n    \r\n    function() external payable {}\r\n\r\n}",
+	"ContractName": "FloatingInSolidity",
+	"CompilerVersion": "v0.5.1+commit.c8a2cb62"
+}

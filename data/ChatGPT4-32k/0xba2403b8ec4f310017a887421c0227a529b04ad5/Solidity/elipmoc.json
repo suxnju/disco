@@ -1,0 +1,38 @@
+{
+	"address": "0xba2403b8ec4f310017a887421c0227a529b04ad5",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Sure, here is the Solidity code that corresponds to the decompiled EVM Bytecode:\n\n```solidity\npragma solidity >=0.7.0 <0.9.0;\n\ncontract MyContract {\n    mapping(address => uint256) private _functionSelector;\n\n    event Hodl(address indexed hodler, uint256 value);\n\n    function party() public payable {\n        require(msg.value == 0, \"Party function does not accept Ether.\");\n        require(block.timestamp > 0x5f220d80 && _functionSelector[msg.sender] > 0, \"Requirements not met.\");\n\n        _functionSelector[msg.sender] = 0;\n\n        (bool success,) = msg.sender.call{value: _functionSelector[msg.sender], gas: _functionSelector[msg.sender] * 2300}(\"\");\n        require(success, \"Call failed.\");\n\n        emit Hodl(msg.sender, _functionSelector[msg.sender]);\n    }\n\n    function functionSelector(uint32 functionSelector) public payable {\n        if(msg.data.length > 0 && functionSelector == 0x354284f2) {\n            party();\n        }\n\n        _functionSelector[msg.sender] += msg.value;\n\n        emit Hodl(msg.sender, msg.value);\n    }\n}\n```\n\nPlease note that the function `functionSelector` accepts an argument `functionSelector` which is supposed to be the function selector of the `party` function, but this is not clear from the decompiled code. This is a best guess based on the decompiled code. Please make sure to review and test this code before using it.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701459810,
+	"id": "chatcmpl-8R3i6kC34GREiJ9FCZ0r4pGh4gsOR",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.25 04:33 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\n\n// Events\nHodl(address, uint256);\n\nfunction party() public payable { \n    assert(!msg.value);\n    v0 = v1 = block.timestamp > 0x5f220d80;\n    if (v1) {\n        v0 = ___function_selector__[msg.sender] > 0;\n    }\n    require(v0);\n    ___function_selector__[msg.sender] = 0;\n    v2 = msg.sender.call().value(___function_selector__[msg.sender]).gas(!___function_selector__[msg.sender] * 2300);\n    assert(v2);\n    emit 0xdc8f43545dbeec87c6f54e44dac2d8889f2a4b3bf0f62683cd7e1c6346128e7(msg.sender, ___function_selector__[msg.sender]);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    if (msg.data.length) {\n        if (0x354284f2 == function_selector) {\n            party();\n        }\n    }\n    ___function_selector__[msg.sender] = ___function_selector__[msg.sender] + msg.value;\n    emit Hodl(msg.sender, msg.value);\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.25 04:33 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\n\n// Events\nHodl(address, uint256);\n\nfunction party() public payable { \n    assert(!msg.value);\n    v0 = v1 = block.timestamp > 0x5f220d80;\n    if (v1) {\n        v0 = ___function_selector__[msg.sender] > 0;\n    }\n    require(v0);\n    ___function_selector__[msg.sender] = 0;\n    v2 = msg.sender.call().value(___function_selector__[msg.sender]).gas(!___function_selector__[msg.sender] * 2300);\n    assert(v2);\n    emit 0xdc8f43545dbeec87c6f54e44dac2d8889f2a4b3bf0f62683cd7e1c6346128e7(msg.sender, ___function_selector__[msg.sender]);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    if (msg.data.length) {\n        if (0x354284f2 == function_selector) {\n            party();\n        }\n    }\n    ___function_selector__[msg.sender] = ___function_selector__[msg.sender] + msg.value;\n    emit Hodl(msg.sender, msg.value);\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.25 04:33 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\n\n// Events\nHodl(address, uint256);\n\nfunction party() public payable { \n    assert(!msg.value);\n    v0 = v1 = block.timestamp > 0x5f220d80;\n    if (v1) {\n        v0 = ___function_selector__[msg.sender] > 0;\n    }\n    require(v0);\n    ___function_selector__[msg.sender] = 0;\n    v2 = msg.sender.call().value(___function_selector__[msg.sender]).gas(!___function_selector__[msg.sender] * 2300);\n    assert(v2);\n    emit 0xdc8f43545dbeec87c6f54e44dac2d8889f2a4b3bf0f62683cd7e1c6346128e7(msg.sender, ___function_selector__[msg.sender]);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    if (msg.data.length) {\n        if (0x354284f2 == function_selector) {\n            party();\n        }\n    }\n    ___function_selector__[msg.sender] = ___function_selector__[msg.sender] + msg.value;\n    emit Hodl(msg.sender, msg.value);\n}\n.",
+	"status": "1",
+	"time_cost": 10.89767336845398,
+	"usage": {
+		"completion_tokens": 316,
+		"prompt_tokens": 384,
+		"total_tokens": 700
+	}
+}

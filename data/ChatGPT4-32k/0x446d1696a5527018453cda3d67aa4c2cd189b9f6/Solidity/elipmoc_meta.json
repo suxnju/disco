@@ -1,0 +1,21 @@
+{
+	"address": "0x446d1696a5527018453cda3d67aa4c2cd189b9f6",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 10399,
+	"prompt_tokens": 9575,
+	"completion_tokens": 824,
+	"time_cost": 47.15354132652283,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"uint256\" to \"address\".\t different number of components on the left hand side (1) than on the right hand side (2).\t explicit type conversion not allowed from \"uint256\" to \"address\".\t type address is not implicitly convertible to expected type uint256.\t explicit type conversion not allowed from \"uint256\" to \"address\".\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t explicit type conversion not allowed from \"uint256\" to \"address\".\t explicit type conversion not allowed from \"uint256\" to \"address\".\t explicit type conversion not allowed from \"address\" to \"uint256\".\t this looks like an address but has an invalid checksum. correct checksummed address: \"0xffffffffffffffffffffffffffffffffffffffff\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t explicit type conversion not allowed from \"address\" to \"uint256\".\t explicit type conversion not allowed from \"uint256\" to \"address\".\t explicit type conversion not allowed from \"uint256\" to \"address\".\t explicit type conversion not allowed from \"uint256\" to \"address\".\t explicit type conversion not allowed from \"uint256\" to \"address\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 57
+}

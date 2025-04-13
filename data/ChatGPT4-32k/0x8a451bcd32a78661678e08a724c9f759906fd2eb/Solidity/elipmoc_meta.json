@@ -1,0 +1,21 @@
+{
+	"address": "0x8a451bcd32a78661678e08a724c9f759906fd2eb",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 9359,
+	"prompt_tokens": 8801,
+	"completion_tokens": 558,
+	"time_cost": 43.132155895233154,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " fallback function must be defined as \"external\".\t type address is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 80
+}

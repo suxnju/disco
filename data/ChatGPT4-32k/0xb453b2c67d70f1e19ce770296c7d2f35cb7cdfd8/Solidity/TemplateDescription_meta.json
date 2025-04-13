@@ -1,0 +1,21 @@
+{
+	"address": "0xb453b2c67d70f1e19ce770296c7d2f35cb7cdfd8",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "Request timed out: HTTPSConnectionPool(host='sotels-openai.openai.azure.com', port=443): Read timed out. (read timeout=600)",
+	"token_exceeded": 0,
+	"n_tokens": 0.0,
+	"prompt_tokens": 0.0,
+	"completion_tokens": 0.0,
+	"time_cost": 0.0,
+	"gen_code": 0.0,
+	"is_empty": 0,
+	"compilable": 0,
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 51
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x3bc06304959cb2cfec0c8073eb6f31b466ce3f17",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3155,
+	"prompt_tokens": 2565,
+	"completion_tokens": 590,
+	"time_cost": 29.53903603553772,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.\t function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.\t function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.\t function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 21
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x9419fbecfa0a9e38a96be2d818daa13dca72396e",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2273,
+	"prompt_tokens": 1445,
+	"completion_tokens": 828,
+	"time_cost": 43.01506757736206,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t type address payable is not implicitly convertible to expected type uint8.\t operator * not compatible with types int_const 79228162514264337593543950336 and address\t operator * not compatible with types int_const 79228162514264337593543950336 and address\t operator * not compatible with types address and int_const 79228162514264337593543950336. arithmetic operations on addresses are not supported. convert to integer first before using them.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator >= not compatible with types address and uint256\t operator -= not compatible with types uint8 and uint256\t type bool is not implicitly convertible to expected type uint8.\t operator * not compatible with types int_const 79228162514264337593543950336 and address\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t type address is not implicitly convertible to expected type uint8.\t different number of components on the left hand side (1) than on the right hand side (2).\t different number of components on the left hand side (1) than on the right hand side (2).\t type uint256 is not implicitly convertible to expected type uint8.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 22
+}

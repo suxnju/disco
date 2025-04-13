@@ -1,0 +1,38 @@
+{
+	"address": "0x755cdba6ae4f479f7164792b318b2a06c759833b",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here's a Solidity contract based on the decompiled code provided:\n\n```solidity\npragma solidity >=0.4.22 <0.9.0;\n\ncontract MyContract {\n    address payable mainDAO = 0x5c40ef6f527f4fba68368774e6130ce6515123f2;\n    address payable trustee = 0xda4a4626d3e16e094de3225a751aab7128e96526;\n    bool v0, v2, v4, v5, v6, v7;\n    uint256 v1, v3;\n\n    function getMainDAO() public view returns (address payable) {\n        return mainDAO;\n    }\n\n    function getTrustee() public view returns (address payable) {\n        return trustee;\n    }\n\n    function clawback() public payable {\n        require(msg.sender == trustee);\n        (v0,) = trustee.call.value(address(this).balance)(\"\");\n        require(v0);\n    }\n\n    function withdraw() public payable {\n        (v0, v1) = mainDAO.balance;\n        require(v0);\n        (v2, v3) = mainDAO.transferFrom(msg.sender, address(this), v1);\n        require(v2);\n        v4 = v5 = !v3;\n        if (v3) {\n            (v6,) = msg.sender.call.value(v1)(\"\");\n            v4 = v7 = !v6;\n        }\n        require(!v4);\n    }\n\n    function functionSelector(uint256 function_selector) public payable {\n        if (function_selector >> 224 == 0x2526d960) {\n            clawback();\n        } else if (0x3ccfd60b == function_selector >> 224) {\n            withdraw();\n        } else if (0xeedcf50a == function_selector >> 224) {\n            getMainDAO();\n        } else if (0xfdf97cb2 == function_selector >> 224) {\n            getTrustee();\n        } else {\n            revert();\n        }\n    }\n}\n```\nPlease note that the actual contract might behave differently because the provided pseudo code doesn't seem to be a complete or accurate representation of the original contract. For instance, it uses `call().value()` which is a low-level method and has been replaced with `transfer()` in more recent versions of Solidity. It's also not clear what the `balanceOf` and `transferFrom` methods are supposed to do as they are not standard methods in Solidity.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1698038527,
+	"id": "chatcmpl-8Chg7ounptnMH3HqqlMGN4701ZFac",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.22 18:19 UTC\n\n\n\nfunction mainDAO() public payable { \n    return 0x5c40ef6f527f4fba68368774e6130ce6515123f2;\n}\n\nfunction trustee() public payable { \n    return 0xda4a4626d3e16e094de3225a751aab7128e96526;\n}\n\nfunction clawback() public payable { \n    assert(0xda4a4626d3e16e094de3225a751aab7128e96526 == msg.sender);\n    v0 = 0xda4a4626d3e16e094de3225a751aab7128e96526.call().value((address(this)).balance);\n    assert(v0);\n}\n\nfunction withdraw() public payable { \n    v0, v1 = 0x5c40ef6f527f4fba68368774e6130ce6515123f2.balanceOf(msg.sender).gas(msg.gas - 25050);\n    assert(v0);\n    v2, v3 = 0x5c40ef6f527f4fba68368774e6130ce6515123f2.transferFrom(msg.sender, address(this), v1).gas(msg.gas - 25050);\n    assert(v2);\n    v4 = v5 = !v3;\n    if (v3) {\n        v6 = msg.sender.call().value(v1);\n        v4 = v7 = !v6;\n    }\n    assert(!v4);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 96;\n    if (function_selector >> 224 == 0x2526d960) {\n        clawback();\n    } else if (0x3ccfd60b == function_selector >> 224) {\n        withdraw();\n    } else if (0xeedcf50a == function_selector >> 224) {\n        mainDAO();\n    } else if (0xfdf97cb2 == function_selector >> 224) {\n        trustee();\n    } else {\n        exit;\n    }\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.22 18:19 UTC\n\n\n\nfunction mainDAO() public payable { \n    return 0x5c40ef6f527f4fba68368774e6130ce6515123f2;\n}\n\nfunction trustee() public payable { \n    return 0xda4a4626d3e16e094de3225a751aab7128e96526;\n}\n\nfunction clawback() public payable { \n    assert(0xda4a4626d3e16e094de3225a751aab7128e96526 == msg.sender);\n    v0 = 0xda4a4626d3e16e094de3225a751aab7128e96526.call().value((address(this)).balance);\n    assert(v0);\n}\n\nfunction withdraw() public payable { \n    v0, v1 = 0x5c40ef6f527f4fba68368774e6130ce6515123f2.balanceOf(msg.sender).gas(msg.gas - 25050);\n    assert(v0);\n    v2, v3 = 0x5c40ef6f527f4fba68368774e6130ce6515123f2.transferFrom(msg.sender, address(this), v1).gas(msg.gas - 25050);\n    assert(v2);\n    v4 = v5 = !v3;\n    if (v3) {\n        v6 = msg.sender.call().value(v1);\n        v4 = v7 = !v6;\n    }\n    assert(!v4);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 96;\n    if (function_selector >> 224 == 0x2526d960) {\n        clawback();\n    } else if (0x3ccfd60b == function_selector >> 224) {\n        withdraw();\n    } else if (0xeedcf50a == function_selector >> 224) {\n        mainDAO();\n    } else if (0xfdf97cb2 == function_selector >> 224) {\n        trustee();\n    } else {\n        exit;\n    }\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.22 18:19 UTC\n\n\n\nfunction mainDAO() public payable { \n    return 0x5c40ef6f527f4fba68368774e6130ce6515123f2;\n}\n\nfunction trustee() public payable { \n    return 0xda4a4626d3e16e094de3225a751aab7128e96526;\n}\n\nfunction clawback() public payable { \n    assert(0xda4a4626d3e16e094de3225a751aab7128e96526 == msg.sender);\n    v0 = 0xda4a4626d3e16e094de3225a751aab7128e96526.call().value((address(this)).balance);\n    assert(v0);\n}\n\nfunction withdraw() public payable { \n    v0, v1 = 0x5c40ef6f527f4fba68368774e6130ce6515123f2.balanceOf(msg.sender).gas(msg.gas - 25050);\n    assert(v0);\n    v2, v3 = 0x5c40ef6f527f4fba68368774e6130ce6515123f2.transferFrom(msg.sender, address(this), v1).gas(msg.gas - 25050);\n    assert(v2);\n    v4 = v5 = !v3;\n    if (v3) {\n        v6 = msg.sender.call().value(v1);\n        v4 = v7 = !v6;\n    }\n    assert(!v4);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 96;\n    if (function_selector >> 224 == 0x2526d960) {\n        clawback();\n    } else if (0x3ccfd60b == function_selector >> 224) {\n        withdraw();\n    } else if (0xeedcf50a == function_selector >> 224) {\n        mainDAO();\n    } else if (0xfdf97cb2 == function_selector >> 224) {\n        trustee();\n    } else {\n        exit;\n    }\n}\n.",
+	"status": "1",
+	"time_cost": 20.517339944839478,
+	"usage": {
+		"completion_tokens": 523,
+		"prompt_tokens": 547,
+		"total_tokens": 1070
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x75d899c82ad7bb186542f83e612fb7df6783937e",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 12101,
+	"prompt_tokens": 11472,
+	"completion_tokens": 629,
+	"time_cost": 34.805232763290405,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected pragma, import directive or contract/interface/library/struct/enum definition.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 27
+}

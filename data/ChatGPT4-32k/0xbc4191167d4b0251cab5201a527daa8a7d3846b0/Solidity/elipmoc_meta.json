@@ -1,0 +1,21 @@
+{
+	"address": "0xbc4191167d4b0251cab5201a527daa8a7d3846b0",
+	"model": "elipmoc_2",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 7083,
+	"prompt_tokens": 6551,
+	"completion_tokens": 532,
+	"time_cost": 41.4309298992157,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": "Yes",
+	"language": "Solidity",
+	"version": "0.8.0",
+	"n_sai": 1,
+	"time": 2,
+	"input_type": "elipmoc",
+	"source_sai": 41
+}

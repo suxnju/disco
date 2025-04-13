@@ -1,0 +1,38 @@
+{
+	"address": "0x899f9a0440face1397a1ee1e3f6bf3580a6633d1",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity code for the decompiled EVM Bytecode:\n\n```solidity\npragma solidity ^0.6.0; \n\ncontract RedeemToken {\n    address public funderAddress;\n    address public tokenAddress;\n    uint256 public exchangeRate;\n\n    constructor(address _funderAddress, address _tokenAddress, uint256 _exchangeRate) public {\n        funderAddress = _funderAddress;\n        tokenAddress = _tokenAddress;\n        exchangeRate = _exchangeRate;\n    }\n\n    fallback() external payable {\n        require(msg.sender == funderAddress, \"Only funder can make calls\");\n    }\n\n    function redeemTokens(uint256 purchase_id) external {\n        require(tokenAddress != address(0), \"Token address not valid\");\n        IERC20 token = IERC20(tokenAddress);\n        require(token.transferFrom(msg.sender, address(this), purchase_id), \"Token transfer failed\");\n        require(exchangeRate > 0, \"Invalid exchange rate\");\n        uint256 amount = purchase_id / exchangeRate;\n        (bool success,) = msg.sender.call{value: amount}(\"\");\n        require(success, \"Transfer failed\");\n        emit Redeem(msg.sender, purchase_id, amount);\n    }\n\n    event Redeem(address indexed caller, uint256 purchase_id, uint256 amount);\n}\n\ninterface IERC20 {\n    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);\n}\n```\n\nNote: This contract assumes that the ERC20 token you're working with has a standard `transferFrom` function. In addition, it assumes that the contract is initialized with the funder's address, the token's address, and the exchange rate. Also, it assumes the existence of a `Redeem` event that logs information about the redemption.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700471437,
+	"id": "chatcmpl-8Muabh2fpbqC0ZTxKNKC6YAtQPc3h",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\ndef storage:\n  funderAddress is address at storage 0\n  tokenAddress is address at storage 1\n  exchangeRate is uint256 at storage 2\n\ndef funder(): # not payable\n  return funderAddress\n\ndef exchangeRate(): # not payable\n  return exchangeRate\n\ndef token(): # not payable\n  return tokenAddress\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  require funderAddress == caller\n\ndef redeemTokens(uint256 purchase_id): # not payable\n  require ext_code.size(tokenAddress)\n  call tokenAddress.transferFrom(address ender, address ecipient, uint256 mount) with:\n       gas gas_remaining - 710 wei\n      args caller, address(this.address), purchase_id\n  require ext_call.success\n  require ext_call.return_data[0]\n  require exchangeRate\n  call caller with:\n     value purchase_id / exchangeRate wei\n       gas 2300 * is_zero(value) wei\n  require ext_call.success\n  log 0xeebddedd: caller, purchase_id, purchase_id / exchangeRate\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\ndef storage:\n  funderAddress is address at storage 0\n  tokenAddress is address at storage 1\n  exchangeRate is uint256 at storage 2\n\ndef funder(): # not payable\n  return funderAddress\n\ndef exchangeRate(): # not payable\n  return exchangeRate\n\ndef token(): # not payable\n  return tokenAddress\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  require funderAddress == caller\n\ndef redeemTokens(uint256 purchase_id): # not payable\n  require ext_code.size(tokenAddress)\n  call tokenAddress.transferFrom(address ender, address ecipient, uint256 mount) with:\n       gas gas_remaining - 710 wei\n      args caller, address(this.address), purchase_id\n  require ext_call.success\n  require ext_call.return_data[0]\n  require exchangeRate\n  call caller with:\n     value purchase_id / exchangeRate wei\n       gas 2300 * is_zero(value) wei\n  require ext_call.success\n  log 0xeebddedd: caller, purchase_id, purchase_id / exchangeRate\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\ndef storage:\n  funderAddress is address at storage 0\n  tokenAddress is address at storage 1\n  exchangeRate is uint256 at storage 2\n\ndef funder(): # not payable\n  return funderAddress\n\ndef exchangeRate(): # not payable\n  return exchangeRate\n\ndef token(): # not payable\n  return tokenAddress\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  require funderAddress == caller\n\ndef redeemTokens(uint256 purchase_id): # not payable\n  require ext_code.size(tokenAddress)\n  call tokenAddress.transferFrom(address ender, address ecipient, uint256 mount) with:\n       gas gas_remaining - 710 wei\n      args caller, address(this.address), purchase_id\n  require ext_call.success\n  require ext_call.return_data[0]\n  require exchangeRate\n  call caller with:\n     value purchase_id / exchangeRate wei\n       gas 2300 * is_zero(value) wei\n  require ext_call.success\n  log 0xeebddedd: caller, purchase_id, purchase_id / exchangeRate\n\n.",
+	"status": "1",
+	"time_cost": 17.160605907440186,
+	"usage": {
+		"completion_tokens": 363,
+		"prompt_tokens": 293,
+		"total_tokens": 656
+	}
+}

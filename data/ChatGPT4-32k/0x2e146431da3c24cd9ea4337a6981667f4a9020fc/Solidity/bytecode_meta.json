@@ -1,0 +1,21 @@
+{
+	"address": "0x2e146431da3c24cd9ea4337a6981667f4a9020fc",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4975,
+	"prompt_tokens": 4464,
+	"completion_tokens": 511,
+	"time_cost": 20.25323486328125,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": false,
+	"compilable": " source \"/home/suxing/go/src/ilf/data/llm-responses/gpt4-32k-all/bytecode/eval_result_bytecode_1/bytecode_1/0x2e146431da3c24cd9ea4337a6981667f4a9020fc/solidity/bytecode/erc20interface.sol\" not found: file not found.\t source \"/home/suxing/go/src/ilf/data/llm-responses/gpt4-32k-all/bytecode/eval_result_bytecode_1/bytecode_1/0x2e146431da3c24cd9ea4337a6981667f4a9020fc/solidity/bytecode/safemath.sol\" not found: file not found.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 17
+}

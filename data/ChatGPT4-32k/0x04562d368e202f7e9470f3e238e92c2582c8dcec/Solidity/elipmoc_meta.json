@@ -1,0 +1,21 @@
+{
+	"address": "0x04562d368e202f7e9470f3e238e92c2582c8dcec",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2304,
+	"prompt_tokens": 1724,
+	"completion_tokens": 580,
+	"time_cost": 25.474714994430542,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected token comma got 'identifier'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 16
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x3b39fbe86e4a8ee37a4928ee6877a46aaa47ce06",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 13383,
+	"prompt_tokens": 12220,
+	"completion_tokens": 1163,
+	"time_cost": 62.350767612457275,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " cannot perform packed encoding for a literal. please convert it to an explicit type first.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t operator + not compatible with types bytes32 and uint256\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t operator + not compatible with types bytes32 and uint256\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 29
+}

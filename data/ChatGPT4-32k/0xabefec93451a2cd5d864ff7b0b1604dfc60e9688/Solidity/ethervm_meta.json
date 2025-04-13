@@ -1,0 +1,21 @@
+{
+	"address": "0xabefec93451a2cd5d864ff7b0b1604dfc60e9688",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 19828,
+	"prompt_tokens": 18674,
+	"completion_tokens": 1154,
+	"time_cost": 100.74343347549438,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source file requires different compiler version (current compiler is 0.4.23+commit.124ca40d.linux.g++ - note that nightly builds are considered to be strictly less than the released version\t identifier already declared.\t undeclared identifier.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 39
+}

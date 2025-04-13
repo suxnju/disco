@@ -1,0 +1,21 @@
+{
+	"address": "0xbd2a43799b83d9d0ff56b85d4c140bce3d1d1c6c",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 7684,
+	"prompt_tokens": 7005,
+	"completion_tokens": 679,
+	"time_cost": 30.281312942504883,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t type bytes32 is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 29
+}

@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "contract SimplePonzi {\r\n    address public currentInvestor;\r\n    uint public currentInvestment = 0;\r\n    \r\n    function () payable public {\r\n        require(msg.value > currentInvestment);\r\n        \r\n        // payout previous investor\r\n        currentInvestor.send(currentInvestment);\r\n\r\n        // document new investment\r\n        currentInvestor = msg.sender;\r\n        currentInvestment = msg.value;\r\n\r\n    }\r\n}",
+	"ContractName": "SimplePonzi",
+	"CompilerVersion": "v0.4.18+commit.9cf6e910"
+}

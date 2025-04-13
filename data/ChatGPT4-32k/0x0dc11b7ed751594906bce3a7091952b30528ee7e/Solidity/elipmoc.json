@@ -1,0 +1,38 @@
+{
+	"address": "0x0dc11b7ed751594906bce3a7091952b30528ee7e",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "The following is the Solidity contract code corresponding to the decompiled code:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    uint256 stor_0;\n    address payable _mineIsBigger;\n\n    receive() external payable { }\n\n    function withdraw() public {\n        require(msg.sender == _mineIsBigger, \"Only the 'mineIsBigger' address is allowed to withdraw\");\n        require(block.timestamp > stor_0 + 0x3f480, \"Withdrawal is not yet allowed\");\n        (bool success,) = msg.sender.call{value: address(this).balance, gas: address(this).balance * 2300}(\"\");\n        require(success, \"Withdrawal failed\");\n    }\n\n    function kill() public {\n        require(msg.sender == _mineIsBigger, \"Only the 'mineIsBigger' address is allowed to kill the contract\");\n        if (address(this).balance != 0) {\n            return;\n        } else {\n            selfdestruct(_mineIsBigger);\n        }\n    }\n\n    function mineIsBigger() public payable {\n        if (msg.value > address(this).balance) {\n            _mineIsBigger = payable(msg.sender);\n            stor_0 = block.timestamp;\n        }\n    }\n\n    function __function_selector__(uint32 function_selector) public payable {\n        if (msg.data.length >= 4) {\n            if (0x3ccfd60b == function_selector) {\n                withdraw();\n            } else if (0x41c0e1b5 == function_selector) {\n                kill();\n            } else if (0xbf91cbb5 == function_selector) {\n                mineIsBigger();\n            }else{\n                revert(\"Function does not exist\");\n            }\n        }\n    }\n}\n```\n\nPlease note that the function `__function_selector__` is not commonly used in Solidity and may not work as expected. In Solidity, the function selector is automatically determined by the compiler. This function was likely present in the decompiled code due to some particularities of the original contract or the decompilation process.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701465838,
+	"id": "chatcmpl-8R5HKer8awLigj36H244j7WzfhCBx",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.24 07:21 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 stor_0; // STORAGE[0x0]\naddress _mineIsBigger; // STORAGE[0x1] bytes 0 to 19\n\n\nfunction fallback() public payable { \n}\n\nfunction withdraw() public nonPayable { \n    require(msg.sender == _mineIsBigger);\n    require(block.timestamp > stor_0 + 0x3f480);\n    v0 = msg.sender.call().value((address(this)).balance).gas(!(address(this)).balance * 2300);\n    require(v0);\n}\n\nfunction kill() public nonPayable { \n    require(msg.sender == _mineIsBigger);\n    if ((address(this)).balance != 0) {\n        goto 0x81;\n    } else {\n        selfdestruct(msg.sender);\n    }\n}\n\nfunction mineIsBigger() public payable { \n    if (msg.value > (address(this)).balance) {\n        _mineIsBigger = msg.sender;\n        stor_0 = block.timestamp;\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (0x3ccfd60b == function_selector) {\n            withdraw();\n        } else if (0x41c0e1b5 == function_selector) {\n            kill();\n        } else if (0xbf91cbb5 == function_selector) {\n            mineIsBigger();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 07:21 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 stor_0; // STORAGE[0x0]\naddress _mineIsBigger; // STORAGE[0x1] bytes 0 to 19\n\n\nfunction fallback() public payable { \n}\n\nfunction withdraw() public nonPayable { \n    require(msg.sender == _mineIsBigger);\n    require(block.timestamp > stor_0 + 0x3f480);\n    v0 = msg.sender.call().value((address(this)).balance).gas(!(address(this)).balance * 2300);\n    require(v0);\n}\n\nfunction kill() public nonPayable { \n    require(msg.sender == _mineIsBigger);\n    if ((address(this)).balance != 0) {\n        goto 0x81;\n    } else {\n        selfdestruct(msg.sender);\n    }\n}\n\nfunction mineIsBigger() public payable { \n    if (msg.value > (address(this)).balance) {\n        _mineIsBigger = msg.sender;\n        stor_0 = block.timestamp;\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (0x3ccfd60b == function_selector) {\n            withdraw();\n        } else if (0x41c0e1b5 == function_selector) {\n            kill();\n        } else if (0xbf91cbb5 == function_selector) {\n            mineIsBigger();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 07:21 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 stor_0; // STORAGE[0x0]\naddress _mineIsBigger; // STORAGE[0x1] bytes 0 to 19\n\n\nfunction fallback() public payable { \n}\n\nfunction withdraw() public nonPayable { \n    require(msg.sender == _mineIsBigger);\n    require(block.timestamp > stor_0 + 0x3f480);\n    v0 = msg.sender.call().value((address(this)).balance).gas(!(address(this)).balance * 2300);\n    require(v0);\n}\n\nfunction kill() public nonPayable { \n    require(msg.sender == _mineIsBigger);\n    if ((address(this)).balance != 0) {\n        goto 0x81;\n    } else {\n        selfdestruct(msg.sender);\n    }\n}\n\nfunction mineIsBigger() public payable { \n    if (msg.value > (address(this)).balance) {\n        _mineIsBigger = msg.sender;\n        stor_0 = block.timestamp;\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (0x3ccfd60b == function_selector) {\n            withdraw();\n        } else if (0x41c0e1b5 == function_selector) {\n            kill();\n        } else if (0xbf91cbb5 == function_selector) {\n            mineIsBigger();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 15.786453008651733,
+	"usage": {
+		"completion_tokens": 442,
+		"prompt_tokens": 426,
+		"total_tokens": 868
+	}
+}

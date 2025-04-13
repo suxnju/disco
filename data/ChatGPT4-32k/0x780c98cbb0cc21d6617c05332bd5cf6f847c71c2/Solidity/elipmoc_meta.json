@@ -1,0 +1,21 @@
+{
+	"address": "0x780c98cbb0cc21d6617c05332bd5cf6f847c71c2",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1100,
+	"prompt_tokens": 568,
+	"completion_tokens": 532,
+	"time_cost": 20.19986391067505,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " \"msg.gas\" has been deprecated in favor of \"gasleft()\"\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 3
+}

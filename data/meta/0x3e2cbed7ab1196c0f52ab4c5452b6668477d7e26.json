@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.0;\r\n\r\ncontract ChessBank{\r\n    \r\n    mapping (address => uint) private balances;\r\n    \r\n    address public owner;\r\n    \r\n    event depositDone(string message, address accountAddress, uint amount);\r\n    event withdrawalDone(string message, address accountAddress, uint amount);\r\n    \r\n    function BankContract() public {\r\n        owner = msg.sender;\r\n    }\r\n    \r\n    function deposit() public payable {\r\n        balances[msg.sender] += msg.value;\r\n        depositDone(\"A deposit was done\", msg.sender, msg.value);\r\n    }\r\n    \r\n    function withdraw(uint amount) public {\r\n        require(balances[msg.sender] >= amount);\r\n        balances[msg.sender] -= amount;\r\n        \r\n        if(!msg.sender.send(amount)){\r\n            balances[msg.sender] += amount;\r\n        }\r\n        else{\r\n            withdrawalDone(\"A withdrawal was done\", msg.sender, amount);\r\n        }\r\n        \r\n    }\r\n    \r\n    function getBalance() public constant returns (uint){\r\n        return balances[msg.sender];\r\n    }\r\n}",
+	"ContractName": "ChessBank",
+	"CompilerVersion": "v0.4.21+commit.dfe3193c"
+}

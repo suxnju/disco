@@ -1,0 +1,21 @@
+{
+	"address": "0xdc5c87ba250b65a83042333f1101940b74312a65",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 976,
+	"prompt_tokens": 483,
+	"completion_tokens": 493,
+	"time_cost": 26.103447914123535,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator & not compatible with types int_const -256 and uint256\t type int_const -256 is not implicitly convertible to expected type uint256. cannot implicitly convert signed literal to unsigned type.\t only local variables are supported. to access storage variables, use the \".slot\" and \".offset\" suffixes.\t only local variables are supported. to access storage variables, use the \".slot\" and \".offset\" suffixes.\t operator & not compatible with types int_const -256 and uint256\t type int_const -255 is not implicitly convertible to expected type uint256. cannot implicitly convert signed literal to unsigned type.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 5
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xb3775fb83f7d12a36e0475abdd1fca35c091efbe",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 24698,
+	"prompt_tokens": 23916,
+	"completion_tokens": 782,
+	"time_cost": 64.05982756614685,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 79228162514264337593543950336 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t type bytes32 is not implicitly convertible to expected type address.\t operator > not compatible with types bool and int_const 0\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 79228162514264337593543950336 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t type bytes32 is not implicitly convertible to expected type address.\t operator > not compatible with types bool and int_const 0\t type bytes32 is not implicitly convertible to expected type address.\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 79228162514264337593543950336 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t type bytes32 is not implicitly convertible to expected type address.\t operator > not compatible with types bool and int_const 0\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 79228162514264337593543950336 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t type bytes32 is not implicitly convertible to expected type address.\t operator > not compatible with types bool and int_const 0\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 79228162514264337593543950336 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t type bytes32 is not implicitly convertible to expected type address.\t operator > not compatible with types bool and int_const 0\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 36
+}

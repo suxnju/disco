@@ -1,0 +1,21 @@
+{
+	"address": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3270,
+	"prompt_tokens": 2792,
+	"completion_tokens": 478,
+	"time_cost": 23.56536626815796,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected token comma got 'identifier'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 59
+}

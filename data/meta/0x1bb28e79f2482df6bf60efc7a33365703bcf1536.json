@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.11;\r\ncontract hodlEthereum {\r\n    event Hodl(address indexed hodler, uint indexed amount);\r\n    event Party(address indexed hodler, uint indexed amount);\r\n    mapping (address => uint) public hodlers;\r\n    uint constant partyTime = 1596067200; // 30th July 2020\r\n    function() payable {\r\n        hodlers[msg.sender] += msg.value;\r\n        Hodl(msg.sender, msg.value);\r\n    }\r\n    function party() {\r\n        require (block.timestamp > partyTime && hodlers[msg.sender] > 0);\r\n        uint value = hodlers[msg.sender];\r\n        hodlers[msg.sender] = 0;\r\n        msg.sender.transfer(value);\r\n        Party(msg.sender, value);\r\n    }\r\n}",
+	"ContractName": "hodlEthereum",
+	"CompilerVersion": "v0.4.11+commit.68ef5810"
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x3c2156807013969f7d564b6f5f7caf214ec9c001",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 445,
+	"prompt_tokens": 126,
+	"completion_tokens": 319,
+	"time_cost": 14.837959289550781,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int_const 128 is not implicitly convertible to expected type bytes32.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 25
+}

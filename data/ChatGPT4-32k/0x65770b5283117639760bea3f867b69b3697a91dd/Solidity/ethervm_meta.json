@@ -1,0 +1,21 @@
+{
+	"address": "0x65770b5283117639760bea3f867b69b3697a91dd",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 13116,
+	"prompt_tokens": 12447,
+	"completion_tokens": 669,
+	"time_cost": 37.375815868377686,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected ']' but got ':'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 25
+}

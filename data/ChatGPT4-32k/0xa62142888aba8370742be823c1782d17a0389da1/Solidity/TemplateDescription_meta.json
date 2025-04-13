@@ -1,0 +1,21 @@
+{
+	"address": "0xa62142888aba8370742be823c1782d17a0389da1",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 9988,
+	"prompt_tokens": 9147,
+	"completion_tokens": 841,
+	"time_cost": 48.50342798233032,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0x18e90fc6f70344f53ebd4f6070bf6aa23e2d748c\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator > not compatible with types address and int_const 0\t operator == not compatible with types bool and int_const 0\t type int_const 1 is not implicitly convertible to expected type bool.\t operator == not compatible with types int_const 1 and bool\t type int_const 2595 is not implicitly convertible to expected type address.\t type int_const 2723 is not implicitly convertible to expected type address.\t type int_const 2852 is not implicitly convertible to expected type address.\t type bytes32 is not implicitly convertible to expected type uint256.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 76
+}

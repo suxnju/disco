@@ -1,0 +1,21 @@
+{
+	"address": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5491,
+	"prompt_tokens": 4412,
+	"completion_tokens": 1079,
+	"time_cost": 76.70623540878296,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"@openzeppelin/contracts/access/ownable.sol\" not found: file outside of allowed directories.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 11
+}

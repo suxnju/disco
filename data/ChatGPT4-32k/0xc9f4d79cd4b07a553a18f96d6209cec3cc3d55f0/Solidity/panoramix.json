@@ -1,0 +1,38 @@
+{
+	"address": "0xc9f4d79cd4b07a553a18f96d6209cec3cc3d55f0",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Apologies for the confusion, but it seems that the provided decompiled code is incomplete or incorrect. There are no specific instructions or functions provided in the question for creating Solidity contract code. \n\nTo give you an idea, here's an example of a simple Solidity contract:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract SimpleContract {\n    uint256 public data;\n    \n    function setData(uint256 _data) public {\n        data = _data;\n    }\n\n    function getData() public view returns (uint256) {\n        return data;\n    }\n}\n```\n\nThis contract has a simple storage variable `data` and two functions, one to set the value of `data` and another to get the current value of `data`.\n\nPlease provide more specific details or the complete decompiled code for more accurate conversion to Solidity contract code.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700475011,
+	"id": "chatcmpl-8MvWFPNvq3Nj3KdNfF1okROKQ21uf",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n.",
+	"status": "1",
+	"time_cost": 9.111863374710083,
+	"usage": {
+		"completion_tokens": 181,
+		"prompt_tokens": 87,
+		"total_tokens": 268
+	}
+}

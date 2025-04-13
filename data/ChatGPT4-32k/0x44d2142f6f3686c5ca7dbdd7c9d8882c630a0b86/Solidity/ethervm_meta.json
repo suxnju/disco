@@ -1,0 +1,21 @@
+{
+	"address": "0x44d2142f6f3686c5ca7dbdd7c9d8882c630a0b86",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 28298,
+	"prompt_tokens": 27772,
+	"completion_tokens": 526,
+	"time_cost": 46.941309213638306,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier. did you mean \"transfer\"?\t undeclared identifier. did you mean \"transfer\"?\t undeclared identifier.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 50
+}

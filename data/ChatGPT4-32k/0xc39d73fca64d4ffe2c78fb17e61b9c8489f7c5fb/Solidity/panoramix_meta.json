@@ -1,0 +1,21 @@
+{
+	"address": "0xc39d73fca64d4ffe2c78fb17e61b9c8489f7c5fb",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1587,
+	"prompt_tokens": 1076,
+	"completion_tokens": 511,
+	"time_cost": 63.9026153087616,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t explicit type conversion not allowed from \"uint8\" to \"bool\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 14
+}

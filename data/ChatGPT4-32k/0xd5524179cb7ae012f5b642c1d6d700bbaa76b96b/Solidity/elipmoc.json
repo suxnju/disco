@@ -1,0 +1,39 @@
+{
+	"address": "0xd5524179cb7ae012f5b642c1d6d700bbaa76b96b",
+	"choices": {
+		"finish_reason": "stop",
+		"index": 0,
+		"logprobs": null,
+		"message": {
+			"content": "From the decompiled code, below is the corresponding Solidity code:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    address private _getController;\n    uint256 private _controllerLookupName;\n    bool private _fallback;\n\n    constructor() {\n        _getController = msg.sender;\n        _controllerLookupName = 0;\n        _fallback = false;\n    }\n\n    function getController() public view returns (address) {\n        return _getController;\n    }\n\n    function setController(address newController) public {\n        require(_getController == msg.sender, \"Only current controller can update.\");\n        _getController = newController;\n    }\n\n    function controllerLookupName() public view returns (uint256) {\n        return _controllerLookupName;\n    }\n\n    fallback () external payable {\n        if (_fallback) {\n            require(_getController.code.length > 0, \"Controller has no code.\");\n\n            (bool success,) = _getController.delegatecall(msg.data);\n            require(success, \"Delegatecall failed.\");\n            \n            // Handling return data is omitted due to the complexity in Solidity\n        }\n        else {\n            revert(\"Fallback not allowed.\");\n        }\n    }\n\n    // The function selector isn't directly representable in Solidity. However, you could do something similar using an if-else ladder in the fallback function, using abi.decode to get the function selector from msg.data.\n}\n```\nPlease note that the function selector code isn't directly representable in Solidity. However, you could do something similar using an if-else ladder in the fallback function, using abi.decode to get the function selector from msg.data.",
+			"function_call": null,
+			"role": "assistant",
+			"tool_calls": null
+		}
+	},
+	"created": 1711531268,
+	"id": "chatcmpl-97JkyXJVYRYsnNIqrLlQRpKA7ITac",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled by library.dedaub.com\n// 2022.12.02 22:30 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _controllerLookupName; // STORAGE[0x1]\nuint256 _getController; // STORAGE[0x0] bytes 0 to 19\nuint256 _fallback; // STORAGE[0x1] bytes 0 to 0\n\n\nfunction getController() public nonPayable { \n    return _getController;\n}\n\nfunction setController(address varg0) public nonPayable { \n    require(_getController == msg.sender);\n    _getController = varg0;\n    return 1;\n}\n\nfunction controllerLookupName() public nonPayable { \n    return _controllerLookupName;\n}\n\nfunction () public payable { \n    if (_fallback) {\n        MEM[32 + MEM[64]] = 0;\n        require(_getController.code.size);\n        v0, v1 = _getController.lookup(_controllerLookupName).gas(msg.gas - 710);\n        require(v0);\n        v2, v3 = v1.delegatecall(MEM[(MEM[64]) len msg.data.length], MEM[0 len 0]).gas(msg.gas);\n        require(v2);\n        return MEM[v3 len (RETURNDATASIZE())];\n    } else {\n        exit;\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (uint32(function_selector >> 224) == 0x3018205f) {\n            getController();\n        } else if (0x92eefe9b == uint32(function_selector >> 224)) {\n            setController(address);\n        } else if (0xbef72fa2 == uint32(function_selector >> 224)) {\n            controllerLookupName();\n        }\n    }\n    ();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.12.02 22:30 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _controllerLookupName; // STORAGE[0x1]\nuint256 _getController; // STORAGE[0x0] bytes 0 to 19\nuint256 _fallback; // STORAGE[0x1] bytes 0 to 0\n\n\nfunction getController() public nonPayable { \n    return _getController;\n}\n\nfunction setController(address varg0) public nonPayable { \n    require(_getController == msg.sender);\n    _getController = varg0;\n    return 1;\n}\n\nfunction controllerLookupName() public nonPayable { \n    return _controllerLookupName;\n}\n\nfunction () public payable { \n    if (_fallback) {\n        MEM[32 + MEM[64]] = 0;\n        require(_getController.code.size);\n        v0, v1 = _getController.lookup(_controllerLookupName).gas(msg.gas - 710);\n        require(v0);\n        v2, v3 = v1.delegatecall(MEM[(MEM[64]) len msg.data.length], MEM[0 len 0]).gas(msg.gas);\n        require(v2);\n        return MEM[v3 len (RETURNDATASIZE())];\n    } else {\n        exit;\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (uint32(function_selector >> 224) == 0x3018205f) {\n            getController();\n        } else if (0x92eefe9b == uint32(function_selector >> 224)) {\n            setController(address);\n        } else if (0xbef72fa2 == uint32(function_selector >> 224)) {\n            controllerLookupName();\n        }\n    }\n    ();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.12.02 22:30 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _controllerLookupName; // STORAGE[0x1]\nuint256 _getController; // STORAGE[0x0] bytes 0 to 19\nuint256 _fallback; // STORAGE[0x1] bytes 0 to 0\n\n\nfunction getController() public nonPayable { \n    return _getController;\n}\n\nfunction setController(address varg0) public nonPayable { \n    require(_getController == msg.sender);\n    _getController = varg0;\n    return 1;\n}\n\nfunction controllerLookupName() public nonPayable { \n    return _controllerLookupName;\n}\n\nfunction () public payable { \n    if (_fallback) {\n        MEM[32 + MEM[64]] = 0;\n        require(_getController.code.size);\n        v0, v1 = _getController.lookup(_controllerLookupName).gas(msg.gas - 710);\n        require(v0);\n        v2, v3 = v1.delegatecall(MEM[(MEM[64]) len msg.data.length], MEM[0 len 0]).gas(msg.gas);\n        require(v2);\n        return MEM[v3 len (RETURNDATASIZE())];\n    } else {\n        exit;\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (uint32(function_selector >> 224) == 0x3018205f) {\n            getController();\n        } else if (0x92eefe9b == uint32(function_selector >> 224)) {\n            setController(address);\n        } else if (0xbef72fa2 == uint32(function_selector >> 224)) {\n            controllerLookupName();\n        }\n    }\n    ();\n}\n.",
+	"status": "1",
+	"time_cost": 40.15636897087097,
+	"usage": {
+		"completion_tokens": 345,
+		"prompt_tokens": 490,
+		"total_tokens": 835
+	}
+}

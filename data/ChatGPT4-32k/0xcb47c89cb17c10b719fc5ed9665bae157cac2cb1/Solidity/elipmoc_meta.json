@@ -1,0 +1,21 @@
+{
+	"address": "0xcb47c89cb17c10b719fc5ed9665bae157cac2cb1",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 22539,
+	"prompt_tokens": 21398,
+	"completion_tokens": 1141,
+	"time_cost": 105.55796575546265,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " member \"size\" not found or not visible after argument-dependent lookup in bytes memory.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 74
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2987,
+	"prompt_tokens": 1929,
+	"completion_tokens": 1058,
+	"time_cost": 42.50356149673462,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0x18e90fc6f70344f53ebd4f6070bf6aa23e2d748c\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t this looks like an address but has an invalid checksum. correct checksummed address: \"0xd60d353610d9a5ca478769d371b53cefaa7b6e4c\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 86
+}

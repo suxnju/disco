@@ -1,0 +1,21 @@
+{
+	"address": "0xc9ff899e3cc9a16a09907335297fcfbe774bd8b0",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6647,
+	"prompt_tokens": 5657,
+	"completion_tokens": 990,
+	"time_cost": 42.87033534049988,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type bytes4 is not implicitly convertible to expected type uint256.\t indexed expression has to be a type, mapping or array (is bool)\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 19
+}

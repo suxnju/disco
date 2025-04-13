@@ -1,0 +1,38 @@
+{
+	"address": "0xdefb06c11e6fd5108124de0bafd0574a6041c1cd",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity code equivalent to the decompiled EVM bytecode:\n\n```solidity\npragma solidity >=0.6.0 <0.9.0;\n\ncontract MyContract {\n    uint256 private _functionSelector;\n\n    // fallback function\n    fallback() external payable {\n        if (msg.sig != bytes4(0xa619486e)) {\n            (bool success, bytes memory data) = address(_functionSelector).delegatecall(msg.data);\n            require(success);\n            assembly {\n                return(add(0, data), returndatasize())\n            }\n        } else {\n            bytes memory result = abi.encodePacked(_functionSelector);\n            assembly {\n                return(add(0, result), returndatasize())\n            }\n        }\n    }\n\n    receive() external payable {}\n}\n```\n\nPlease note that the function selector (0xa619486e) and the `_functionSelector` value are placeholders. You should replace them with the actual values based on your contract's design. This contract uses a fallback function to handle incoming calls that don't match any of the available functions. It delegates the call to another contract if the function selector is not 0xa619486e. Also, note that the use of delegatecall can be a security risk if not handled properly, as it executes the code of the called contract in the context of the calling contract.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701486076,
+	"id": "chatcmpl-8RAXk7z1eCn1TomQnk93WETX4UQdr",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled by library.dedaub.com\n// 2022.11.19 08:21 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 ___function_selector__; // STORAGE[0x0] bytes 0 to 19\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    if (function_selector != 0xa619486e00000000000000000000000000000000000000000000000000000000) {\n        v0 = ___function_selector__.delegatecall(MEM[0 len msg.data.length], MEM[0 len 0]).gas(msg.gas);\n        require(v0 != 0); // checks call status, propagates error data on error\n        return MEM[0 len (RETURNDATASIZE())];\n    } else {\n        return ___function_selector__;\n    }\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.11.19 08:21 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 ___function_selector__; // STORAGE[0x0] bytes 0 to 19\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    if (function_selector != 0xa619486e00000000000000000000000000000000000000000000000000000000) {\n        v0 = ___function_selector__.delegatecall(MEM[0 len msg.data.length], MEM[0 len 0]).gas(msg.gas);\n        require(v0 != 0); // checks call status, propagates error data on error\n        return MEM[0 len (RETURNDATASIZE())];\n    } else {\n        return ___function_selector__;\n    }\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.11.19 08:21 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 ___function_selector__; // STORAGE[0x0] bytes 0 to 19\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    if (function_selector != 0xa619486e00000000000000000000000000000000000000000000000000000000) {\n        v0 = ___function_selector__.delegatecall(MEM[0 len msg.data.length], MEM[0 len 0]).gas(msg.gas);\n        require(v0 != 0); // checks call status, propagates error data on error\n        return MEM[0 len (RETURNDATASIZE())];\n    } else {\n        return ___function_selector__;\n    }\n}\n.",
+	"status": "1",
+	"time_cost": 13.34360384941101,
+	"usage": {
+		"completion_tokens": 279,
+		"prompt_tokens": 263,
+		"total_tokens": 542
+	}
+}

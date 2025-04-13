@@ -1,0 +1,38 @@
+{
+	"address": "0xff4f65dd73154a6bbb713fc27bdedc966878023a",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "I apologize as there is no decompiled code provided in your request. However, I can exemplify a simple Solidity contract based on a common use case. Let's consider a simple storage contract:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract SimpleStorage {\n    uint public data;\n\n    function set(uint x) public {\n        data = x;\n    }\n\n    function get() public view returns (uint) {\n        return data;\n    }\n}\n```\n\nThis contract has a variable `data` that can be set and retrieved by the `set` and `get` functions respectively. This is a very basic demonstration of how a contract in Solidity can be written.\n\nIf you can provide the decompiled code, I'll be glad to help you convert it into a Solidity contract.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700474842,
+	"id": "chatcmpl-8MvTWfsxf7qWJco1lhFDJ7RBtFfWL",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n.",
+	"status": "1",
+	"time_cost": 18.95545530319214,
+	"usage": {
+		"completion_tokens": 164,
+		"prompt_tokens": 87,
+		"total_tokens": 251
+	}
+}

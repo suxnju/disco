@@ -1,0 +1,21 @@
+{
+	"address": "0xe6517b766e6ee07f91b517435ed855926bcb1aae",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "Request timed out: HTTPSConnectionPool(host='sotels-openai.openai.azure.com', port=443): Read timed out. (read timeout=600)",
+	"token_exceeded": 0,
+	"n_tokens": 0.0,
+	"prompt_tokens": 0.0,
+	"completion_tokens": 0.0,
+	"time_cost": 0.0,
+	"gen_code": 0.0,
+	"is_empty": 0,
+	"compilable": 0,
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 62
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x0e8eb5459194def55d88b0f992cc2e13794181dd",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 723,
+	"prompt_tokens": 281,
+	"completion_tokens": 442,
+	"time_cost": 16.98243737220764,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0x059ffafdc6ef594230de44f824e2bd0a51ca5ded\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 1
+}

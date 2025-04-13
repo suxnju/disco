@@ -1,0 +1,21 @@
+{
+	"address": "0xc5f5d88c6d39828cdb5e1150a13125e98b26b65e",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2749,
+	"prompt_tokens": 1970,
+	"completion_tokens": 779,
+	"time_cost": 38.05540871620178,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier not found or not unique.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 22
+}

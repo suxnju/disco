@@ -1,0 +1,21 @@
+{
+	"address": "0x5a6303a5753f91d07d191607983562a313ba14b7",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3508,
+	"prompt_tokens": 2430,
+	"completion_tokens": 1078,
+	"time_cost": 41.453015089035034,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " member \"transfer\" not found or not visible after argument-dependent lookup in address.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 22
+}

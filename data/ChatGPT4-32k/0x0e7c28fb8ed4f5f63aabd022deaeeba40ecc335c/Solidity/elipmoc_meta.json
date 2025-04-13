@@ -1,0 +1,21 @@
+{
+	"address": "0x0e7c28fb8ed4f5f63aabd022deaeeba40ecc335c",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4479,
+	"prompt_tokens": 4082,
+	"completion_tokens": 397,
+	"time_cost": 21.428135633468628,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 18
+}

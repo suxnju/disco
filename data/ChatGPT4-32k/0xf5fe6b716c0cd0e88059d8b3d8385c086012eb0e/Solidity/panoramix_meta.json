@@ -1,0 +1,21 @@
+{
+	"address": "0xf5fe6b716c0cd0e88059d8b3d8385c086012eb0e",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "This model's maximum context length is 32768 tokens. However, your messages resulted in 147573 tokens. Please reduce the length of the messages.",
+	"token_exceeded": 0,
+	"n_tokens": 0.0,
+	"prompt_tokens": 0.0,
+	"completion_tokens": 0.0,
+	"time_cost": 0.0,
+	"gen_code": 0.0,
+	"is_empty": 0,
+	"compilable": 0,
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 85
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xa49f113d068334fa0e0a6186f6c0e4d7e4cfa85e",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2424,
+	"prompt_tokens": 2190,
+	"completion_tokens": 234,
+	"time_cost": 11.181327819824219,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": true,
+	"compilable": " expected token lbrace got 'view'\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 15
+}

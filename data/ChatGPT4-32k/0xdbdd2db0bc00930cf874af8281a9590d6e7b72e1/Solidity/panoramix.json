@@ -1,0 +1,38 @@
+{
+	"address": "0xdbdd2db0bc00930cf874af8281a9590d6e7b72e1",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Sure, based on your description, here's a Solidity smart contract that would act similarly:\n\n```Solidity\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    // This is the fallback function. It gets executed if no other function matches the called function.\n    fallback() external {\n        revert(\"Function does not exist\");\n    }\n}\n```\n\nIn this contract, any ether sent directly to the contract address will be rejected as the fallback function is not payable. Additionally, any function calls that do not match existing functions will also revert.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700632345,
+	"id": "chatcmpl-8NaRtR5k4mozVyHXWg0wx3vVRAVlk",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\ndef _fallback(?): # not payable, default function\n  revert\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\ndef _fallback(?): # not payable, default function\n  revert\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\ndef _fallback(?): # not payable, default function\n  revert\n\n.",
+	"status": "1",
+	"time_cost": 5.611420392990112,
+	"usage": {
+		"completion_tokens": 112,
+		"prompt_tokens": 78,
+		"total_tokens": 190
+	}
+}

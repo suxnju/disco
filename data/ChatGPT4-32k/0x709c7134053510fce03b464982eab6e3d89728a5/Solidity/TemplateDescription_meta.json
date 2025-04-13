@@ -1,0 +1,21 @@
+{
+	"address": "0x709c7134053510fce03b464982eab6e3d89728a5",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5145,
+	"prompt_tokens": 4334,
+	"completion_tokens": 811,
+	"time_cost": 59.571011543273926,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"bool\" to \"uint256\".\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t explicit type conversion not allowed from \"bool\" to \"uint256\".\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 47
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xe5f1c08e024388fa5925c5f64e9d2dc97f1d9855",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4139,
+	"prompt_tokens": 3699,
+	"completion_tokens": 440,
+	"time_cost": 17.0540452003479,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected identifier but got 'pragma'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 24
+}

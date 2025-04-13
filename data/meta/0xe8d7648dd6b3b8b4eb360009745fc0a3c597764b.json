@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.5.2;\r\n\r\ncontract Counter {\r\n  event Incremented(uint256 value);\r\n\r\n  uint256 public value;\r\n\r\n  constructor() public payable\r\n  {\r\n    value = 0;\r\n  }\r\n\r\n  function increment() public payable {\r\n    value += 1;\r\n    emit Incremented(value);\r\n  }\r\n}",
+	"ContractName": "Counter",
+	"CompilerVersion": "v0.5.2+commit.1df8f40c"
+}

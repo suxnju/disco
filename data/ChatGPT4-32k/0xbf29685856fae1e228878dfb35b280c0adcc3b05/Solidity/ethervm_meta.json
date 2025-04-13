@@ -1,0 +1,21 @@
+{
+	"address": "0xbf29685856fae1e228878dfb35b280c0adcc3b05",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 20902,
+	"prompt_tokens": 20354,
+	"completion_tokens": 548,
+	"time_cost": 54.25243258476257,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " invalid type for argument in function call. invalid implicit conversion from int_const 0 to address requested.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 30
+}

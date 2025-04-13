@@ -1,0 +1,21 @@
+{
+	"address": "0x680ec9492d8372662dd439294bff2bd373e96309",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3985,
+	"prompt_tokens": 3120,
+	"completion_tokens": 865,
+	"time_cost": 48.80797481536865,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator + not compatible with types address and int_const 1157...(70 digits omitted)...9935. arithmetic operations on addresses are not supported. convert to integer first before using them.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 19
+}

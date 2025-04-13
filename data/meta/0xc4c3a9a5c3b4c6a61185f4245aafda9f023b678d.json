@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.5.9;\r\n\r\ncontract Ownable {\r\n  address public owner;\r\n\r\n  constructor() public {\r\n    owner = msg.sender;\r\n  }\r\n\r\n  modifier onlyOwner() {\r\n    assert(msg.sender == owner);\r\n    _;\r\n  }\r\n\r\n  function transferOwnership(address newOwner) public onlyOwner {\r\n    assert(newOwner != address(0));\r\n    owner = newOwner;\r\n  }\r\n}\r\n\r\ncontract HubrisOne is Ownable {\r\n  uint256 public fees;\r\n\r\n  function setHubrisOneFees(uint256 _fees) public onlyOwner {\r\n    fees = _fees;\r\n  }\r\n\r\n  function () external payable {}\r\n\r\n  function transfer(address payable to) public payable {\r\n      assert(msg.value > fees);\r\n      to.transfer(msg.value - fees);\r\n  }\r\n\r\n  function collect() public onlyOwner {\r\n      msg.sender.transfer(address(this).balance);\r\n  }\r\n}",
+	"ContractName": "HubrisOne",
+	"CompilerVersion": "v0.5.9+commit.e560f70d"
+}

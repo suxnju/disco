@@ -1,0 +1,38 @@
+{
+	"address": "0xe5f1c08e024388fa5925c5f64e9d2dc97f1d9855",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is a Solidity contract based on the description provided:\n\n```solidity\npragma solidity 0.6.12;\n\ncontract TokenURI {\n    // State variables\n    uint256 private totalSupply;\n    mapping(uint => string) private amounts;\n\n    // Function to update Token URI\n    function updateTokenURI(string memory _uri) public {\n        require(bytes(_uri).length <= 64, \"URI length must be less than or equal to 64\");\n        require(totalSupply != 0, \"Total supply must not be zero\");\n        require(0 <= (4 + bytes(_uri).length), \"Invalid URI length\");\n        require(32 <= (4 + bytes(_uri).length), \"Invalid URI length\");\n        amounts[(4 + bytes(_uri).length) ** 0x13d1 * 96] = _uri;\n    }\n}\n```\nPlease note that the code above is a simple implementation based on the provided description and it may need further adjustments based on the detailed requirements of your application. Specifically, the usage of `CALLDATACOPY` in Solidity is not straightforward as it's a low-level EVM operation and its direct usage in Solidity is not recommended. Instead, I've used the length of the input string which is the typical use case in high-level Solidity.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700058852,
+	"id": "chatcmpl-8LBG0nlMcUXjfMjJw4QzvoqprY4Co",
+	"input_format": "TemplateDescription",
+	"ir": "For the function updateTokenURI, it has one argument and its type is string.\n  When the length of the first argument is not greater than 64, and for totalSupply, and 0 is not greater than ((4+the length of the first argument) CALLDATACOPY@0x13d1 96+32), and 32 is not greater than ((4+the length of the first argument) CALLDATACOPY@0x13d1 96+32):\n  - the value (4+the length of the first argument) CALLDATACOPY@0x13d1 96 will be put to the element in the amounts.\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following contract descriptions. Some state variables and programming specifications are provided to help you develop. ",
+			"role": "system"
+		},
+		{
+			"content": "The following is the description of the contract logic: For the function updateTokenURI, it has one argument and its type is string.\n  When the length of the first argument is not greater than 64, and for totalSupply, and 0 is not greater than ((4+the length of the first argument) CALLDATACOPY@0x13d1 96+32), and 32 is not greater than ((4+the length of the first argument) CALLDATACOPY@0x13d1 96+32):\n  - the value (4+the length of the first argument) CALLDATACOPY@0x13d1 96 will be put to the element in the amounts.\n\n.\n Here are some state variables with their corresponding types: private state variable `amounts` is typed array,private state variable `totalSupply` is typed uint256.\n Here are some programming specifications: - You must declare a variable before you can use it, but the same variable cannot be declared twice\n- You must lock the pragma and use a stable version (e.g., pragma solidity `0.6.12`).\n- For exteranal calls, you must use `.call()` instead of `.transfer()` and `.send()`.\n- The target address who receives ether must be `payable address` type.\n- You must make the function `payable` if `msg.value` is used in the public functions.\n- You must use the following methods in new versions rather than old methods\n  - For some built-in functions, \n    - `abi.encodePacked(...) returns (bytes memory)` performs packed encoding of arguments to bytes.\n    - `keccak256(bytes memory) returns (bytes32)` computes the Keccak-256 hash of the input.\n    - `sha256(bytes memory) returns (bytes32)` computes the SHA-256 hash of the input.\n    - `ecrecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) returns (address)` recovers the address associated with the public key from elliptic curve signature or return zero on error. \n  - For some properties,\n    - `block.number (uint)` returns the current block number.\n    - `block.timestamp (uint)` returns the current block timestamp as seconds since unix epoch.\n    - `blockhash(uint blockNumber) returns (bytes32)` returns the hash of the given block.\n- `0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff` means `-1`, so `+0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff` indeed means `-1`.\n",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following contract descriptions. Some state variables and programming specifications are provided to help you develop. The following is the description of the contract logic: For the function updateTokenURI, it has one argument and its type is string.\n  When the length of the first argument is not greater than 64, and for totalSupply, and 0 is not greater than ((4+the length of the first argument) CALLDATACOPY@0x13d1 96+32), and 32 is not greater than ((4+the length of the first argument) CALLDATACOPY@0x13d1 96+32):\n  - the value (4+the length of the first argument) CALLDATACOPY@0x13d1 96 will be put to the element in the amounts.\n\n.\n Here are some state variables with their corresponding types: private state variable `amounts` is typed array,private state variable `totalSupply` is typed uint256.\n Here are some programming specifications: - You must declare a variable before you can use it, but the same variable cannot be declared twice\n- You must lock the pragma and use a stable version (e.g., pragma solidity `0.6.12`).\n- For exteranal calls, you must use `.call()` instead of `.transfer()` and `.send()`.\n- The target address who receives ether must be `payable address` type.\n- You must make the function `payable` if `msg.value` is used in the public functions.\n- You must use the following methods in new versions rather than old methods\n  - For some built-in functions, \n    - `abi.encodePacked(...) returns (bytes memory)` performs packed encoding of arguments to bytes.\n    - `keccak256(bytes memory) returns (bytes32)` computes the Keccak-256 hash of the input.\n    - `sha256(bytes memory) returns (bytes32)` computes the SHA-256 hash of the input.\n    - `ecrecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) returns (address)` recovers the address associated with the public key from elliptic curve signature or return zero on error. \n  - For some properties,\n    - `block.number (uint)` returns the current block number.\n    - `block.timestamp (uint)` returns the current block timestamp as seconds since unix epoch.\n    - `blockhash(uint blockNumber) returns (bytes32)` returns the hash of the given block.\n- `0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff` means `-1`, so `+0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff` indeed means `-1`.\n",
+	"status": "1",
+	"time_cost": 15.358179092407227,
+	"usage": {
+		"completion_tokens": 269,
+		"prompt_tokens": 578,
+		"total_tokens": 847
+	}
+}

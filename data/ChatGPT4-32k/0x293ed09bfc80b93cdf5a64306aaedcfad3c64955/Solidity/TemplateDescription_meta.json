@@ -1,0 +1,21 @@
+{
+	"address": "0x293ed09bfc80b93cdf5a64306aaedcfad3c64955",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 7392,
+	"prompt_tokens": 6818,
+	"completion_tokens": 574,
+	"time_cost": 38.72000479698181,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " different number of arguments in return statement than in returns declaration.\t different number of arguments in return statement than in returns declaration.\t different number of components on the left hand side (1) than on the right hand side (2).\t type bool is not implicitly convertible to expected type uint256.\t different number of arguments in return statement than in returns declaration.\t different number of arguments in return statement than in returns declaration.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 22
+}

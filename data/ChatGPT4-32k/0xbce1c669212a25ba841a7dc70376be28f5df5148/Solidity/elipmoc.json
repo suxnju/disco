@@ -1,0 +1,38 @@
+{
+	"address": "0xbce1c669212a25ba841a7dc70376be28f5df5148",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "The Solidity code corresponding to the decompiled code provided could look something like this:\n\n```Solidity\n// SPDX-License-Identifier: MIT\npragma solidity >=0.7.0 <0.9.0;\n\ncontract MyContract {\n    address private _send;\n\n    event Transfer(address indexed _to, uint256 _value);\n    event Deposit(uint256 _value);\n\n    fallback() external payable {\n        revert();\n    }\n\n    function getBalance() public view returns (uint256) {\n        return address(this).balance;\n    }\n\n    function send(address _to, uint256 _value) public {\n        require(msg.sender == _send, \"Sender not authorized.\");\n        (bool success, ) = _to.call{value: _value}(\"\");\n        require(success, \"Failed to send Ether\");\n        emit Transfer(_to, _value);\n    }\n\n    function deposit() public payable {\n        emit Deposit(msg.value);\n    }\n\n    // Function selector is typically handled by the EVM and not explicitly in the contract code\n    // The functionality is not provided here\n}\n```\n\nPlease note that this contract is a simple example and does not include any security measures like checks-effects-interactions pattern or reentrancy guards. Always make sure to audit your smart contracts before deploying them to the mainnet.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701466804,
+	"id": "chatcmpl-8R5WuZutolopKkW6LeyXJnP2cniqg",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.16 15:33 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _send; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nTransfer(address, uint256);\nDeposit(uint256);\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction getBalance() public nonPayable { \n    return (address(this)).balance;\n}\n\nfunction send(address varg0, uint256 varg1) public nonPayable { \n    require(msg.data.length - 4 >= 64);\n    require(msg.sender == _send);\n    v0 = varg0.call().value(varg1).gas(!varg1 * 2300);\n    require(v0); // checks call status, propagates error data on error\n    emit Transfer(varg0, varg1);\n}\n\nfunction deposit() public payable { \n    emit Deposit(msg.value);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x12065fe0 == function_selector) {\n            getBalance();\n        } else if (0xd0679d34 == function_selector) {\n            send(address,uint256);\n        } else if (0xd0e30db0 == function_selector) {\n            deposit();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.16 15:33 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _send; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nTransfer(address, uint256);\nDeposit(uint256);\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction getBalance() public nonPayable { \n    return (address(this)).balance;\n}\n\nfunction send(address varg0, uint256 varg1) public nonPayable { \n    require(msg.data.length - 4 >= 64);\n    require(msg.sender == _send);\n    v0 = varg0.call().value(varg1).gas(!varg1 * 2300);\n    require(v0); // checks call status, propagates error data on error\n    emit Transfer(varg0, varg1);\n}\n\nfunction deposit() public payable { \n    emit Deposit(msg.value);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x12065fe0 == function_selector) {\n            getBalance();\n        } else if (0xd0679d34 == function_selector) {\n            send(address,uint256);\n        } else if (0xd0e30db0 == function_selector) {\n            deposit();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.16 15:33 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _send; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nTransfer(address, uint256);\nDeposit(uint256);\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction getBalance() public nonPayable { \n    return (address(this)).balance;\n}\n\nfunction send(address varg0, uint256 varg1) public nonPayable { \n    require(msg.data.length - 4 >= 64);\n    require(msg.sender == _send);\n    v0 = varg0.call().value(varg1).gas(!varg1 * 2300);\n    require(v0); // checks call status, propagates error data on error\n    emit Transfer(varg0, varg1);\n}\n\nfunction deposit() public payable { \n    emit Deposit(msg.value);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x12065fe0 == function_selector) {\n            getBalance();\n        } else if (0xd0679d34 == function_selector) {\n            send(address,uint256);\n        } else if (0xd0e30db0 == function_selector) {\n            deposit();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 11.812267541885376,
+	"usage": {
+		"completion_tokens": 262,
+		"prompt_tokens": 385,
+		"total_tokens": 647
+	}
+}

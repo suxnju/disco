@@ -1,0 +1,38 @@
+{
+	"address": "0xa2562cd0d8620dc2bec07872ecaadd4b6fbdc02f",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Based on the decompiled code, here is the equivalent Solidity contract:\n\n```Solidity\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    \n    fallback() external payable {\n        revert();\n    }\n    \n    function destroy() public { \n        selfdestruct(payable(msg.sender));\n    }\n\n    function __function_selector__(uint32 function_selector) public payable { \n        if (msg.data.length >= 4) {\n            if (0x83197ef0 == function_selector) {\n                destroy();\n            }\n        }\n        revert();\n    }\n}\n```\n\nPlease note that:\n1. The `fallback` function is a function that is executed if the function signature does not match any of the available functions in a contract. It has been made `external` and `payable` to allow it to receive ethers that are sent directly to the contract address.\n\n2. The `selfdestruct` function is used to destroy the contract and send its funds to the address provided as an argument to this function. It's important to note that the `selfdestruct` function is irrevocable and should be used with caution. \n\n3. The `__function_selector__` function appears to be a custom function designed to select a function based on a provided function selector. If the provided selector matches a hardcoded value, the `destroy` function is called.\n\n4. The `msg.data.length >= 4` condition is used to check that the incoming data is at least 4 bytes long, which is the size of a function selector in Solidity.\n\n5. The `payable` keyword is used in `selfdestruct(payable(msg.sender))` to make the address convertible to the address payable type. \n\n6. The Solidity version `^0.8.0` is used because the `selfdestruct` function only accepts an argument of `address payable` type from this version onwards.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701466781,
+	"id": "chatcmpl-8R5WXTyPNdVxr6T9FDHVLeXwBpLTQ",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.09.21 06:01 UTC\n\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction destroy() public nonPayable { \n    selfdestruct(msg.sender);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x83197ef0 == function_selector) {\n            destroy();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.09.21 06:01 UTC\n\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction destroy() public nonPayable { \n    selfdestruct(msg.sender);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x83197ef0 == function_selector) {\n            destroy();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.09.21 06:01 UTC\n\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction destroy() public nonPayable { \n    selfdestruct(msg.sender);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x83197ef0 == function_selector) {\n            destroy();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 13.429831504821777,
+	"usage": {
+		"completion_tokens": 388,
+		"prompt_tokens": 189,
+		"total_tokens": 577
+	}
+}

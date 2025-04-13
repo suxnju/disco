@@ -1,0 +1,21 @@
+{
+	"address": "0xbeeb655808e3bdb83b6998f09dfe1e0f2c66a9be",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3370,
+	"prompt_tokens": 2767,
+	"completion_tokens": 603,
+	"time_cost": 72.87886810302734,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator * not compatible with types uint256 and address\t operator * not compatible with types uint256 and address\t operator * not compatible with types uint256 and address\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 27
+}

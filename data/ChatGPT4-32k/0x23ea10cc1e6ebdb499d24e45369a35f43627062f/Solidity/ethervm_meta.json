@@ -1,0 +1,21 @@
+{
+	"address": "0x23ea10cc1e6ebdb499d24e45369a35f43627062f",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5236,
+	"prompt_tokens": 4737,
+	"completion_tokens": 499,
+	"time_cost": 37.116342306137085,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " unary operator ! cannot be applied to type uint256\t no matching declaration found after argument-dependent lookup.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 6
+}

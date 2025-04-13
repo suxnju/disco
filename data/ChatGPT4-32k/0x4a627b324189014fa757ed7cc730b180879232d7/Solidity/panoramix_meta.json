@@ -1,0 +1,21 @@
+{
+	"address": "0x4a627b324189014fa757ed7cc730b180879232d7",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6188,
+	"prompt_tokens": 5371,
+	"completion_tokens": 817,
+	"time_cost": 48.37595772743225,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address payable is not implicitly convertible to expected type uint8.\t type address is not implicitly convertible to expected type uint8.\t type address is not implicitly convertible to expected type uint8.\t type address payable is not implicitly convertible to expected type uint8.\t type address is not implicitly convertible to expected type uint8.\t type address is not implicitly convertible to expected type uint8.\t type address is not implicitly convertible to expected type uint8.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 25
+}

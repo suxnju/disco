@@ -1,0 +1,21 @@
+{
+	"address": "0x9fdad63a8ac0053f14ff1623759ff66b5929482b",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 384,
+	"prompt_tokens": 126,
+	"completion_tokens": 258,
+	"time_cost": 13.448312997817993,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected token rparen got 'period'\t expected primary expression.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 27
+}

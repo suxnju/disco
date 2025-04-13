@@ -1,0 +1,21 @@
+{
+	"address": "0xe01e2a3ceafa8233021fc759e5a69863558326b6",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 17096,
+	"prompt_tokens": 16665,
+	"completion_tokens": 431,
+	"time_cost": 52.91792058944702,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected identifier but got 'storage'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 43
+}

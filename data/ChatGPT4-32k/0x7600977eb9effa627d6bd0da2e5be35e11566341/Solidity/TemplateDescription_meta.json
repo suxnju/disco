@@ -1,0 +1,21 @@
+{
+	"address": "0x7600977eb9effa627d6bd0da2e5be35e11566341",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5182,
+	"prompt_tokens": 4334,
+	"completion_tokens": 848,
+	"time_cost": 39.459157943725586,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator * not compatible with types uint256 and address payable\t this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator * not compatible with types uint256 and address payable\t this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator * not compatible with types uint16 and address payable\t this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator * not compatible with types uint16 and address payable\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 35
+}

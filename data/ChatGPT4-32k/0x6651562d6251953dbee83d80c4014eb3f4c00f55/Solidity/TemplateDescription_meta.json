@@ -1,0 +1,21 @@
+{
+	"address": "0x6651562d6251953dbee83d80c4014eb3f4c00f55",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6482,
+	"prompt_tokens": 5943,
+	"completion_tokens": 539,
+	"time_cost": 33.6785364151001,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"@openzeppelin/contracts/math/safemath.sol\" not found: file outside of allowed directories.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 34
+}

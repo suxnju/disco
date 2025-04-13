@@ -1,0 +1,38 @@
+{
+	"address": "0xf0542ed44d268c85875b3b84b0e7ce0773e9aeef",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "I'm sorry, but you haven't provided the decompiled code. However, I can show you an example of a Solidity smart contract for a simple token based on the ERC-20 standard. \n\n```solidity\npragma solidity ^0.5.0;\n\ncontract Token {\n    mapping (address => uint256) public balanceOf;\n\n    string public name = \"SimpleToken\";\n    string public symbol = \"SIM\";\n    uint8 public decimals = 18;\n    uint256 public totalSupply = 1000000 * (uint256(10) ** decimals);\n\n    event Transfer(address indexed from, address indexed to, uint256 value);\n\n    constructor() public {\n        balanceOf[msg.sender] = totalSupply;\n        emit Transfer(address(0), msg.sender, totalSupply);\n    }\n\n    function transfer(address to, uint256 value) public returns (bool success) {\n        require(balanceOf[msg.sender] >= value);\n\n        balanceOf[msg.sender] -= value; \n        balanceOf[to] += value;\n\n        emit Transfer(msg.sender, to, value);\n        return true;\n    }\n}\n```\nThis contract creates a simple token with a supply of 1 million units, all of which are initially assigned to the contract creator. The `transfer` function allows the contract creator to send tokens to other addresses. \n\nIf you want to provide the decompiled code that you mentioned, I can help you to create a Solidity contract based on it.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1698040020,
+	"id": "chatcmpl-8Ci4C6vhPkuqGQcQVhDlLxmUlczhk",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2022.08.20 00:14 UTC\n\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2022.08.20 00:14 UTC\n\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2022.08.20 00:14 UTC\n\n\n.",
+	"status": "1",
+	"time_cost": 13.21936297416687,
+	"usage": {
+		"completion_tokens": 295,
+		"prompt_tokens": 76,
+		"total_tokens": 371
+	}
+}

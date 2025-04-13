@@ -1,0 +1,21 @@
+{
+	"address": "0x4c3ab8c818ba23dc8ec35fb579984ba95ff009d7",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6683,
+	"prompt_tokens": 6039,
+	"completion_tokens": 644,
+	"time_cost": 43.6357364654541,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"@openzeppelin/contracts/token/erc20/erc20.sol\" not found: file not found. searched the following locations: \"\".\t source \"@openzeppelin/contracts/access/ownable.sol\" not found: file not found. searched the following locations: \"\".\t source \"@openzeppelin/contracts/math/safemath.sol\" not found: file not found. searched the following locations: \"\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 25
+}

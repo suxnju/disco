@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.15;\r\ncontract theRiver{\r\n\tfunction() external payable { }\r\n}",
+	"ContractName": "theRiver",
+	"CompilerVersion": "v0.4.15+commit.bbb8e64f"
+}

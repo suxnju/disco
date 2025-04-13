@@ -1,0 +1,21 @@
+{
+	"address": "0x7c0f10bc53c0958e0edccef87a088f52c55843db",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3188,
+	"prompt_tokens": 2589,
+	"completion_tokens": 599,
+	"time_cost": 34.06563472747803,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int_const 2808...(42 digits omitted)...8976 is not implicitly convertible to expected type address.\t type int_const 2808...(42 digits omitted)...8976 is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 23
+}

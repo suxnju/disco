@@ -1,0 +1,38 @@
+{
+	"address": "0xf377960dbde17e28a817e4479133d67d576bf476",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Unfortunately, the decompiled code you provided is not in a format that can be directly translated to Solidity. It seems to be a mix of pseudo-code and assembly instructions. However, I can provide you an equivalent Solidity smart contract based on what I understand from the code. It seems like the code is for a proxy contract which delegates calls to another contract.\n\nHere is the Solidity smart contract equivalent:\n\n```Solidity\npragma solidity ^0.8.0;\n\ncontract Proxy {\n    address public implementation;\n\n    constructor(address _implementation) {\n        implementation = _implementation;\n    }\n\n    fallback() external payable {\n        address _impl = implementation;\n        require(_impl != address(0));\n\n        assembly {\n            let ptr := mload(0x40)\n            calldatacopy(ptr, 0, calldatasize())\n            let result := delegatecall(gas(), _impl, ptr, calldatasize(), 0, 0)\n            let size := returndatasize()\n            returndatacopy(ptr, 0, size)\n\n            switch result\n            case 0 { revert(ptr, size) }\n            default { return(ptr, size) }\n        }\n    }\n}\n```\n\nThis contract works as a proxy, forwarding all calls to an implementation contract using the `delegatecall` function. The implementation contract address is set at the contract deployment time. The `fallback` function is triggered when the call does not match any other function in the contract. It then executes the corresponding function in the implementation contract and returns the result. If the called function throws an error, it propagates the error back to the caller.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701485949,
+	"id": "chatcmpl-8RAVhtJRD2SufOvJ1LONORbr4db1W",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled by library.dedaub.com\n// 2022.11.21 03:43 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    CALLDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), msg.data.length);\n    v0 = 0x5397d0869aba0d55e96d5716d383f6e1d8695ed7.delegatecall(MEM[(RETURNDATASIZE()) len msg.data.length], MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())]).gas(msg.gas);\n    RETURNDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), RETURNDATASIZE());\n    require(v0RETURNDATASIZE(), RETURNDATASIZE());\n    return MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())];\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.11.21 03:43 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    CALLDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), msg.data.length);\n    v0 = 0x5397d0869aba0d55e96d5716d383f6e1d8695ed7.delegatecall(MEM[(RETURNDATASIZE()) len msg.data.length], MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())]).gas(msg.gas);\n    RETURNDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), RETURNDATASIZE());\n    require(v0RETURNDATASIZE(), RETURNDATASIZE());\n    return MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())];\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.11.21 03:43 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    CALLDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), msg.data.length);\n    v0 = 0x5397d0869aba0d55e96d5716d383f6e1d8695ed7.delegatecall(MEM[(RETURNDATASIZE()) len msg.data.length], MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())]).gas(msg.gas);\n    RETURNDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), RETURNDATASIZE());\n    require(v0RETURNDATASIZE(), RETURNDATASIZE());\n    return MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())];\n}\n.",
+	"status": "1",
+	"time_cost": 11.511919736862183,
+	"usage": {
+		"completion_tokens": 333,
+		"prompt_tokens": 279,
+		"total_tokens": 612
+	}
+}

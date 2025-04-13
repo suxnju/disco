@@ -1,0 +1,21 @@
+{
+	"address": "0xb5bcb4386ae3565bb5ba0c16dac1670ff53f0960",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 395,
+	"prompt_tokens": 177,
+	"completion_tokens": 218,
+	"time_cost": 16.62912940979004,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0xee2c03ced8b6755e8d76ab144677f5f350203cab\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 1
+}

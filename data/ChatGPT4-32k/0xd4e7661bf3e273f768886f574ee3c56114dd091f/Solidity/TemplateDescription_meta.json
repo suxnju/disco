@@ -1,0 +1,21 @@
+{
+	"address": "0xd4e7661bf3e273f768886f574ee3c56114dd091f",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2363,
+	"prompt_tokens": 1597,
+	"completion_tokens": 766,
+	"time_cost": 35.11534857749939,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator < not compatible with types bool and int_const 2\t operator != not compatible with types uint256 and bool\t type bool is not implicitly convertible to expected type uint256.\t operator < not compatible with types bool and int_const 2\t operator != not compatible with types uint256 and bool\t type address is not implicitly convertible to expected type uint256.\t type bool is not implicitly convertible to expected type uint256.\t operator < not compatible with types bool and int_const 2\t type bool is not implicitly convertible to expected type uint256.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 15
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x899f9a0440face1397a1ee1e3f6bf3580a6633d1",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 656,
+	"prompt_tokens": 293,
+	"completion_tokens": 363,
+	"time_cost": 17.160605907440186,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected ';' but got '{'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 2
+}

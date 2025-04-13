@@ -1,0 +1,21 @@
+{
+	"address": "0x3d76634e77fb9bbac457a0df209306f2fac67dbc",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 9772,
+	"prompt_tokens": 9114,
+	"completion_tokens": 658,
+	"time_cost": 45.61030101776123,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 24
+}

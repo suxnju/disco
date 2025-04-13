@@ -1,0 +1,21 @@
+{
+	"address": "0xa0a4a2af46af4cf37eacc495eedcae269ef2720e",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3840,
+	"prompt_tokens": 3589,
+	"completion_tokens": 251,
+	"time_cost": 14.32672381401062,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": true,
+	"compilable": " expected identifier, got 'payable'\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 22
+}

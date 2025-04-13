@@ -1,0 +1,21 @@
+{
+	"address": "0x3da71558a40f63b960196cc0679847ff50fad22b",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4224,
+	"prompt_tokens": 3763,
+	"completion_tokens": 461,
+	"time_cost": 31.823802709579468,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 16
+}

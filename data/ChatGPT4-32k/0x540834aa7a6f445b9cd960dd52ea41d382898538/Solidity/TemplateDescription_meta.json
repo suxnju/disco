@@ -1,0 +1,21 @@
+{
+	"address": "0x540834aa7a6f445b9cd960dd52ea41d382898538",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2548,
+	"prompt_tokens": 1521,
+	"completion_tokens": 1027,
+	"time_cost": 45.06192588806152,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator / not compatible with types bytes32 and int_const 1\t operator + not compatible with types bytes32 and uint256\t operator % not compatible with types bytes32 and int_const 10\t operator + not compatible with types bytes32 and int_const 10\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 45
+}

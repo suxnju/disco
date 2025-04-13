@@ -1,0 +1,21 @@
+{
+	"address": "0x84443f61efc60d10da9f9a2398980cd5748394bb",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 528,
+	"prompt_tokens": 315,
+	"completion_tokens": 213,
+	"time_cost": 20.732943058013916,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": true,
+	"compilable": " expected pragma, import directive or contract/interface/library definition.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 1
+}

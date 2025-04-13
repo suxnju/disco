@@ -1,0 +1,21 @@
+{
+	"address": "0x7824134a725e63a5f0bb2bb47b57239adafc147b",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1853,
+	"prompt_tokens": 1230,
+	"completion_tokens": 623,
+	"time_cost": 126.80720567703247,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " \"msg.value\" and \"callvalue()\" can only be used in payable public functions. make the function \"payable\" or use an internal function to avoid this error.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 12
+}

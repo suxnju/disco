@@ -1,0 +1,21 @@
+{
+	"address": "0xcafe1a77e84698c83ca8931f54a755176ef75f2c",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6076,
+	"prompt_tokens": 5400,
+	"completion_tokens": 676,
+	"time_cost": 71.14797496795654,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier already declared.\t type is not callable\t type tuple() is not implicitly convertible to expected type bool.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 25
+}

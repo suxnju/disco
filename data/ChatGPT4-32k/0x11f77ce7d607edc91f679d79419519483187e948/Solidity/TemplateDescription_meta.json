@@ -1,0 +1,21 @@
+{
+	"address": "0x11f77ce7d607edc91f679d79419519483187e948",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4204,
+	"prompt_tokens": 2870,
+	"completion_tokens": 1334,
+	"time_cost": 102.9206337928772,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier. did you mean \"balanceof2\", \"balanceof3\", \"balanceof4\", \"balanceof5\" or \"balanceof6\"?\t undeclared identifier. \"_isapprovedorowner\" is not (or not yet) visible at this point.\t undeclared identifier. \"_isapprovedorowner\" is not (or not yet) visible at this point.\t undeclared identifier. \"_isapprovedorowner\" is not (or not yet) visible at this point.\t undeclared identifier. \"_isapprovedorowner\" is not (or not yet) visible at this point.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 29
+}

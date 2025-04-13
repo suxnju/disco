@@ -1,0 +1,21 @@
+{
+	"address": "0xb92d13833f9044eb0c14893a4bb4cb009c209beb",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1403,
+	"prompt_tokens": 929,
+	"completion_tokens": 474,
+	"time_cost": 24.437649250030518,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"bytes1\" to \"uint256\".\t explicit type conversion not allowed from \"bytes1\" to \"uint256\".\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 3
+}

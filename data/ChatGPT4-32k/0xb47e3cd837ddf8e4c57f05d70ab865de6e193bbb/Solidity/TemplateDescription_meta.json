@@ -1,0 +1,21 @@
+{
+	"address": "0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4329,
+	"prompt_tokens": 3642,
+	"completion_tokens": 687,
+	"time_cost": 32.11162281036377,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 65
+}

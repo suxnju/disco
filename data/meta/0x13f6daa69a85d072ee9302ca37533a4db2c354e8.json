@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity^0.6.2;\r\n\r\ninterface ERC20Interface {\r\n    function balanceOf(address whom) external view returns (uint256);\r\n}\r\n\r\ncontract GratitudeDispenser {\r\n    address private gratitudeTokenAddress;\r\n    \r\n    // sets up the gratitude token addressthat can be checked on later\r\n    constructor(address _gratitudeTokenAddress) public {\r\n        gratitudeTokenAddress = _gratitudeTokenAddress;\r\n    }\r\n\r\n    function claim() external {\r\n        uint256 callerGratitudeTokenBalance = ERC20Interface(gratitudeTokenAddress).balanceOf(msg.sender);\r\n        if (callerGratitudeTokenBalance >= 1e18) {\r\n            msg.sender.transfer(address(this).balance);\r\n        }\r\n    }\r\n    \r\n    fallback () external payable {\r\n    }\r\n}",
+	"ContractName": "GratitudeDispenser",
+	"CompilerVersion": "v0.6.2+commit.bacdbe57"
+}

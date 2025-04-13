@@ -1,0 +1,38 @@
+{
+	"address": "0xac83edfd549ca5eaf55b21fe936dd9529403152a",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity code that matches your decompiled code:\n\n```solidity\npragma solidity ^0.8.1;\n\ncontract MyContract {\n    address private _owner;\n    \n    event ReceiveEther(address indexed sender, uint256 value);\n    \n    constructor() {\n        _owner = msg.sender;\n    }\n    \n    function withdraw(uint256 amount, address to) private returns (bool success) {\n        require(_owner == msg.sender);\n        if (address(this).balance < amount) {\n            return false;\n        } else {\n            if (amount == 0) {\n                amount = address(this).balance;\n            }\n            (success, ) = to.call{value: amount, gas: 2300 * (amount == 0 ? 1 : 0)}(\"\");\n            require(success);\n            return true;\n        }\n    }\n    \n    fallback() external payable { \n        emit ReceiveEther(msg.sender, msg.value);\n    }\n    \n    function withdrawAllFunds() public {\n        require(_owner == msg.sender);\n        withdraw(0, msg.sender);\n    }\n    \n    function owner() public view returns (address) { \n        return _owner;\n    }\n    \n    function withdrawFunds(address to, uint256 amount) public { \n        withdraw(amount, to);\n    }\n}\n```\n\nThis contract contains an `owner` function that returns the contract's owner and `withdrawFunds` function to withdraw a specific amount to a specific address. There is also a `withdrawAllFunds` function to withdraw all funds to the owner. The `fallback` function is used to receive Ether and emit an event when Ether is received.\n\nPlease note that the `__function_selector__` function does not have a direct equivalent in Solidity as it is part of the EVM's lower-level functionality. It has been omitted in the provided Solidity code.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701456476,
+	"id": "chatcmpl-8R2qKJSCgJGA3cyCHnnrnWRrDdN4e",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.15 23:27 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nReceiveEther(address, uint256);\n\nfunction 0x148(uint256 varg0, uint256 varg1) private { \n    require(_owner == msg.sender);\n    if ((address(this)).balance < varg0) {\n        v0 = v1 = 0;\n    } else {\n        if (!varg0) {\n            varg0 = v2 = (address(this)).balance;\n        }\n        v3 = address(varg1).call().value(varg0).gas(2300 * !varg0);\n        require(v3);\n        v0 = v4 = 1;\n    }\n    return v0;\n}\n\nfunction fallback() public payable { \n    emit ReceiveEther(msg.sender, msg.value);\n}\n\nfunction withdrawAllFunds() public nonPayable { \n    require(_owner == msg.sender);\n    v0 = 0x148(0, msg.sender);\n    return v0;\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction withdrawFunds(address varg0, uint256 varg1) public nonPayable { \n    v0 = 0x148(varg1, varg0);\n    return v0;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x49649fbf) {\n            withdrawAllFunds();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0xc1075329 == function_selector) {\n            withdrawFunds(address,uint256);\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 23:27 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nReceiveEther(address, uint256);\n\nfunction 0x148(uint256 varg0, uint256 varg1) private { \n    require(_owner == msg.sender);\n    if ((address(this)).balance < varg0) {\n        v0 = v1 = 0;\n    } else {\n        if (!varg0) {\n            varg0 = v2 = (address(this)).balance;\n        }\n        v3 = address(varg1).call().value(varg0).gas(2300 * !varg0);\n        require(v3);\n        v0 = v4 = 1;\n    }\n    return v0;\n}\n\nfunction fallback() public payable { \n    emit ReceiveEther(msg.sender, msg.value);\n}\n\nfunction withdrawAllFunds() public nonPayable { \n    require(_owner == msg.sender);\n    v0 = 0x148(0, msg.sender);\n    return v0;\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction withdrawFunds(address varg0, uint256 varg1) public nonPayable { \n    v0 = 0x148(varg1, varg0);\n    return v0;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x49649fbf) {\n            withdrawAllFunds();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0xc1075329 == function_selector) {\n            withdrawFunds(address,uint256);\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 23:27 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nReceiveEther(address, uint256);\n\nfunction 0x148(uint256 varg0, uint256 varg1) private { \n    require(_owner == msg.sender);\n    if ((address(this)).balance < varg0) {\n        v0 = v1 = 0;\n    } else {\n        if (!varg0) {\n            varg0 = v2 = (address(this)).balance;\n        }\n        v3 = address(varg1).call().value(varg0).gas(2300 * !varg0);\n        require(v3);\n        v0 = v4 = 1;\n    }\n    return v0;\n}\n\nfunction fallback() public payable { \n    emit ReceiveEther(msg.sender, msg.value);\n}\n\nfunction withdrawAllFunds() public nonPayable { \n    require(_owner == msg.sender);\n    v0 = 0x148(0, msg.sender);\n    return v0;\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction withdrawFunds(address varg0, uint256 varg1) public nonPayable { \n    v0 = 0x148(varg1, varg0);\n    return v0;\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x49649fbf) {\n            withdrawAllFunds();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0xc1075329 == function_selector) {\n            withdrawFunds(address,uint256);\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 19.38046908378601,
+	"usage": {
+		"completion_tokens": 379,
+		"prompt_tokens": 495,
+		"total_tokens": 874
+	}
+}

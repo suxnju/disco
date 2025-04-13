@@ -1,0 +1,21 @@
+{
+	"address": "0x286a090b31462890cd9bf9f167b610ed8aa8bd1a",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2361,
+	"prompt_tokens": 1852,
+	"completion_tokens": 509,
+	"time_cost": 17.61151432991028,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " different number of components on the left hand side (1) than on the right hand side (2).\t different number of components on the left hand side (1) than on the right hand side (2).\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 6
+}

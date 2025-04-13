@@ -1,0 +1,21 @@
+{
+	"address": "0xc582a48c09aa74fe1fd483066eeb230d54dfde6e",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1348,
+	"prompt_tokens": 809,
+	"completion_tokens": 539,
+	"time_cost": 27.725375413894653,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " member \"code\" not found or not visible after argument-dependent lookup in address.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 3
+}

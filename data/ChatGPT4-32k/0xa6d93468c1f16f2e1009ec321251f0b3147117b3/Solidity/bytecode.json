@@ -1,0 +1,38 @@
+{
+	"address": "0xa6d93468c1f16f2e1009ec321251f0b3147117b3",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "It's not possible to get the exact Solidity source code from bytecode due to the loss of variable names, comments, formatting etc during the compilation process. However, you can decompile it and get a rough equivalent. The original Solidity contract may look something like this:\n\n```solidity\npragma solidity ^0.4.24;\n\ncontract Contract {\n    mapping(address => uint) public balances;\n\n    function deposit() public payable {\n        balances[msg.sender] += msg.value;\n    }\n\n    function withdraw(uint _amount) public {\n        require(balances[msg.sender] >= _amount);\n        balances[msg.sender] -= _amount;\n        msg.sender.transfer(_amount);\n    }\n\n    function getBalance() public view returns (uint) {\n        return balances[msg.sender];\n    }\n}\n```\nPlease note that the actual Solidity code can be different. This code is just a rough equivalent of the bytecode which you posted. To get a more accurate decompiled code, you might need to use a decompiler. However, even a decompiler will not be able to recover everything perfectly due to the reasons mentioned above.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701455369,
+	"id": "chatcmpl-8R2YTcECVePTwgj9UYk1l4jEzn8L9",
+	"input_format": "Bytecode",
+	"ir": "0x6080604052600436106042577c010000000000000000000000000000000000000000000000000000000060003504633ccfd60b81146047578063fcddd05614605b575b600080fd5b348015605257600080fd5b5060596061565b005b605960ce565b60005473ffffffffffffffffffffffffffffffffffffffff163314608457600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560cb573d6000803e3d6000fd5b50565b56fea165627a7a72305820a29bf8614c7e39ae46197ec8b1e0f611d4d2531b6464b745ec70b76406abe2ac0029",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the bytecode: 0x6080604052600436106042577c010000000000000000000000000000000000000000000000000000000060003504633ccfd60b81146047578063fcddd05614605b575b600080fd5b348015605257600080fd5b5060596061565b005b605960ce565b60005473ffffffffffffffffffffffffffffffffffffffff163314608457600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560cb573d6000803e3d6000fd5b50565b56fea165627a7a72305820a29bf8614c7e39ae46197ec8b1e0f611d4d2531b6464b745ec70b76406abe2ac0029.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.The following is the bytecode: 0x6080604052600436106042577c010000000000000000000000000000000000000000000000000000000060003504633ccfd60b81146047578063fcddd05614605b575b600080fd5b348015605257600080fd5b5060596061565b005b605960ce565b60005473ffffffffffffffffffffffffffffffffffffffff163314608457600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560cb573d6000803e3d6000fd5b50565b56fea165627a7a72305820a29bf8614c7e39ae46197ec8b1e0f611d4d2531b6464b745ec70b76406abe2ac0029.",
+	"status": "1",
+	"time_cost": 15.488509893417358,
+	"usage": {
+		"completion_tokens": 225,
+		"prompt_tokens": 244,
+		"total_tokens": 469
+	}
+}

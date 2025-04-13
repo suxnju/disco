@@ -1,0 +1,38 @@
+{
+	"address": "0xabe13c70ea6b82348dc1c2f71db014cbd7befc0b",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is your Solidity contract code:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract YourContract {\n    mapping (address => uint256) private _fallback;\n    address private _owner;\n\n    constructor() {\n        _owner = msg.sender; // Initialize the contract with the deployer as the owner\n    }\n\n    function removeFromBL(address addr) public {\n        require(msg.sender == _owner, \"Only the owner can remove addresses from the blacklist\");\n        _fallback[addr] = _fallback[addr] & ~0xff;\n    }\n\n    fallback() external payable {\n        require(msg.value >= 1 ether, \"A minimum of 1 ether is required\");\n        _fallback[msg.sender] = 0x1 | (_fallback[msg.sender] & ~0xff);\n    }\n\n    function withdraw() public {\n        require(msg.sender == _owner, \"Only the owner can withdraw\");\n        payable(_owner).transfer(address(this).balance);\n    }\n\n    function owner() public view returns (address) {\n        return _owner;\n    }\n\n    function addrNotInBL(address addr) public view returns (bool) { \n        return (_fallback[addr] & 0xff) == 0;\n    }\n}\n```\nPlease note that the function `__function_selector__` and its related logic aren't present in the Solidity code because in Solidity, the function selector is generated automatically by the language and isn't typically included manually in the contract code. This is a more advanced concept that works at the Ethereum Virtual Machine (EVM) level. \n\nAlso, I assumed that the 'BL' in `removeFromBL` and `addrNotInBL` stands for \"blacklist\". If that's not the case, you can modify these function names to better suit your needs.\n",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701464145,
+	"id": "chatcmpl-8R4q1T2JuqXCVwdePnWf7aQ7nZkUK",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.24 14:49 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _fallback; // STORAGE[0x1]\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction _removeFromBL(address varg0) public nonPayable { \n    require(msg.sender == _owner);\n    _fallback[varg0] = ~0xff & _fallback[varg0];\n}\n\nfunction fallback() public payable { \n    require(msg.value >= 1);\n    _fallback[msg.sender] = 0x1 | ~0xff & _fallback[msg.sender];\n}\n\nfunction withdraw() public nonPayable { \n    v0 = _owner.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0);\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction addrNotInBL(address varg0) public nonPayable { \n    return !(0xff & _fallback[varg0]);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x3ccfd60b) {\n            withdraw();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0x9d3deb9d == function_selector) {\n            addrNotInBL(address);\n        } else if (0xfb837ecc == function_selector) {\n            _removeFromBL(address);\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 14:49 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _fallback; // STORAGE[0x1]\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction _removeFromBL(address varg0) public nonPayable { \n    require(msg.sender == _owner);\n    _fallback[varg0] = ~0xff & _fallback[varg0];\n}\n\nfunction fallback() public payable { \n    require(msg.value >= 1);\n    _fallback[msg.sender] = 0x1 | ~0xff & _fallback[msg.sender];\n}\n\nfunction withdraw() public nonPayable { \n    v0 = _owner.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0);\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction addrNotInBL(address varg0) public nonPayable { \n    return !(0xff & _fallback[varg0]);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x3ccfd60b) {\n            withdraw();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0x9d3deb9d == function_selector) {\n            addrNotInBL(address);\n        } else if (0xfb837ecc == function_selector) {\n            _removeFromBL(address);\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 14:49 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _fallback; // STORAGE[0x1]\naddress _owner; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction _removeFromBL(address varg0) public nonPayable { \n    require(msg.sender == _owner);\n    _fallback[varg0] = ~0xff & _fallback[varg0];\n}\n\nfunction fallback() public payable { \n    require(msg.value >= 1);\n    _fallback[msg.sender] = 0x1 | ~0xff & _fallback[msg.sender];\n}\n\nfunction withdraw() public nonPayable { \n    v0 = _owner.call().value(this.balance).gas(2300 * !this.balance);\n    require(v0);\n}\n\nfunction owner() public nonPayable { \n    return _owner;\n}\n\nfunction addrNotInBL(address varg0) public nonPayable { \n    return !(0xff & _fallback[varg0]);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (function_selector == 0x3ccfd60b) {\n            withdraw();\n        } else if (0x8da5cb5b == function_selector) {\n            owner();\n        } else if (0x9d3deb9d == function_selector) {\n            addrNotInBL(address);\n        } else if (0xfb837ecc == function_selector) {\n            _removeFromBL(address);\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 24.65180778503418,
+	"usage": {
+		"completion_tokens": 369,
+		"prompt_tokens": 441,
+		"total_tokens": 810
+	}
+}

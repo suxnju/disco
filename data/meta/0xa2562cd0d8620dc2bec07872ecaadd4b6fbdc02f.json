@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.25;\r\ncontract etherSinkhole{\r\n    constructor() public{}\r\n    function destroy() public{\r\n        selfdestruct(msg.sender);\r\n    }\r\n}",
+	"ContractName": "etherSinkhole",
+	"CompilerVersion": "v0.4.25+commit.59dbf8f1"
+}

@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.5.1;\r\n\r\ncontract CommunityChest {\r\n    \r\n    address owner;\r\n    \r\n    event Deposit(uint256 value);\r\n    event Transfer(address to, uint256 value);\r\n    \r\n    constructor () public {\r\n        owner = msg.sender;\r\n    }\r\n    \r\n    function send(address payable to, uint256 value) public onlyOwner {\r\n        to.transfer(value);\r\n        emit Transfer(to, value);\r\n    }\r\n\r\n    function deposit() payable public {\r\n        emit Deposit(msg.value);\r\n    }\r\n\r\n    function getBalance() public view returns (uint256) {\r\n        return address(this).balance;\r\n    }\r\n    \r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner);\r\n        _;\r\n    }\r\n}",
+	"ContractName": "CommunityChest",
+	"CompilerVersion": "v0.5.1+commit.c8a2cb62"
+}

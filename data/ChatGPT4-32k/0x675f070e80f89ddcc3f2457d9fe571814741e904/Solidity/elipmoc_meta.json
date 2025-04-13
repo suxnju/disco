@@ -1,0 +1,21 @@
+{
+	"address": "0x675f070e80f89ddcc3f2457d9fe571814741e904",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3669,
+	"prompt_tokens": 2843,
+	"completion_tokens": 826,
+	"time_cost": 38.824360847473145,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier. did you mean \"_eggs_to_hatch_1shrimp\"?\t undeclared identifier.\t undeclared identifier.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 17
+}

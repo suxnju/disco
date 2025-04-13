@@ -1,0 +1,21 @@
+{
+	"address": "0x9dcd9a815bfe85593eb65901e1dbdde4073738b0",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 8924,
+	"prompt_tokens": 8122,
+	"completion_tokens": 802,
+	"time_cost": 47.78096842765808,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from string storage ref to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t operator / not compatible with types bytes32 and int_const 2\t operator + not compatible with types int_const 31 and bytes32\t operator + not compatible with types bytes32 and rational_const 31 / 32\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from string storage ref to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t operator / not compatible with types bytes32 and int_const 2\t operator + not compatible with types int_const 31 and bytes32\t operator + not compatible with types bytes32 and rational_const 31 / 32\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from string storage ref to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t operator / not compatible with types bytes32 and int_const 2\t operator + not compatible with types int_const 31 and bytes32\t operator + not compatible with types bytes32 and rational_const 31 / 32\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 12
+}

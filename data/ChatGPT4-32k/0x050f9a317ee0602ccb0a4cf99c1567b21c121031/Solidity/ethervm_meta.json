@@ -1,0 +1,21 @@
+{
+	"address": "0x050f9a317ee0602ccb0a4cf99c1567b21c121031",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 644,
+	"prompt_tokens": 283,
+	"completion_tokens": 361,
+	"time_cost": 22.9353928565979,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier already declared.\t type bool is not implicitly convertible to expected type tuple(bool,).\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 1
+}

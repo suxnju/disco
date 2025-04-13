@@ -1,0 +1,21 @@
+{
+	"address": "0xd0d50ae97443aa9615d87129feb9681417e92f41",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1775,
+	"prompt_tokens": 1081,
+	"completion_tokens": 694,
+	"time_cost": 38.467180490493774,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int_const 1228...(43 digits omitted)...7904 is not implicitly convertible to expected type bytes31.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 12
+}

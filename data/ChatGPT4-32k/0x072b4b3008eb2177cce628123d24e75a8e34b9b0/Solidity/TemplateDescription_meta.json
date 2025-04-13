@@ -1,0 +1,21 @@
+{
+	"address": "0x072b4b3008eb2177cce628123d24e75a8e34b9b0",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2590,
+	"prompt_tokens": 1815,
+	"completion_tokens": 775,
+	"time_cost": 44.73371744155884,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " member \"push\" not found or not visible after argument-dependent lookup in uint256[] storage ref.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 27
+}

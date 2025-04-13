@@ -1,0 +1,38 @@
+{
+	"address": "0x1bb28e79f2482df6bf60efc7a33365703bcf1536",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity contract code according to the given decompiled code:\n\n```solidity\npragma solidity ^0.6.10;\n\ncontract Palkeoramix {\n    event Hodl(\n        address indexed hodler,\n        uint256 amount\n    );\n\n    event Party(\n        address indexed hodler,\n        uint256 amount\n    );\n\n    mapping(address => uint256) private hodlers;\n\n    function hodlerBalance(address _hodler) public view returns (uint256) {\n        return hodlers[_hodler];\n    }\n\n    receive() external payable {\n        hodlers[msg.sender] += msg.value;\n        emit Hodl(msg.sender, msg.value);\n    }\n\n    function party() public {\n        require(block.timestamp > 443352 * 24 * 3600, \"Party time not reached\");\n        require(hodlers[msg.sender] > 0, \"No balance to withdraw\");\n        uint256 amount = hodlers[msg.sender];\n        hodlers[msg.sender] = 0;\n\n        (bool success,) = msg.sender.call{value: amount}(\"\");\n        require(success, \"Transfer failed\");\n\n        emit Party(msg.sender, amount);\n    }\n}\n```\n\nPlease note:\n1. Solidity has no direct equivalent to `caller` in Vyper, it is replaced with `msg.sender` in Solidity.\n2. Solidity has no direct equivalent to `_fallback` in Vyper, it is replaced with a Solidity `receive` function which is the new fallback in Solidity >=0.6.0.\n3. The `require` statement in Solidity can take a second parameter which is a string that describes the error. This can be useful for debugging.\n4. The `call` function in Solidity returns a boolean indicating success, and a bytes type data. Since the data is not used, it is ignored.\n5. The `is_zero(value)` in Vyper is not directly translated to Solidity as it is not required. The gas stipend for calls is automatically set to 2300 gas in Solidity when sending Ether.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700473941,
+	"id": "chatcmpl-8MvEzjz1z454SOTrVM9DVRikUTkII",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\ndef storage:\n  hodlers is mapping of uint256 at storage 0\n\ndef hodlers(address _param1): # not payable\n  return hodlers[_param1]\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  hodlers[caller] += call.value\n  log Hodl(\n        address hodler=caller,\n        uint256 amount=call.value)\n\ndef party(): # not payable\n  require block.timestamp > 443352 * 24 * 3600\n  require hodlers[caller] > 0\n  hodlers[caller] = 0\n  call caller with:\n     value hodlers[caller] wei\n       gas 2300 * is_zero(value) wei\n  require ext_call.success\n  log Party(\n        address hodler=caller,\n        uint256 amount=hodlers[caller])\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\ndef storage:\n  hodlers is mapping of uint256 at storage 0\n\ndef hodlers(address _param1): # not payable\n  return hodlers[_param1]\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  hodlers[caller] += call.value\n  log Hodl(\n        address hodler=caller,\n        uint256 amount=call.value)\n\ndef party(): # not payable\n  require block.timestamp > 443352 * 24 * 3600\n  require hodlers[caller] > 0\n  hodlers[caller] = 0\n  call caller with:\n     value hodlers[caller] wei\n       gas 2300 * is_zero(value) wei\n  require ext_call.success\n  log Party(\n        address hodler=caller,\n        uint256 amount=hodlers[caller])\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\ndef storage:\n  hodlers is mapping of uint256 at storage 0\n\ndef hodlers(address _param1): # not payable\n  return hodlers[_param1]\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  hodlers[caller] += call.value\n  log Hodl(\n        address hodler=caller,\n        uint256 amount=call.value)\n\ndef party(): # not payable\n  require block.timestamp > 443352 * 24 * 3600\n  require hodlers[caller] > 0\n  hodlers[caller] = 0\n  call caller with:\n     value hodlers[caller] wei\n       gas 2300 * is_zero(value) wei\n  require ext_call.success\n  log Party(\n        address hodler=caller,\n        uint256 amount=hodlers[caller])\n\n.",
+	"status": "1",
+	"time_cost": 37.4270396232605,
+	"usage": {
+		"completion_tokens": 422,
+		"prompt_tokens": 243,
+		"total_tokens": 665
+	}
+}

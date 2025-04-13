@@ -1,0 +1,39 @@
+{
+	"address": "0xf527314a3ea16acf9f9e26613426cf5f8e7a3e43",
+	"choices": {
+		"finish_reason": "stop",
+		"index": 0,
+		"logprobs": null,
+		"message": {
+			"content": "Here is the Solidity version of the decompiled code:\n\n```solidity\npragma solidity ^0.8.4;\n\ncontract MyContract {\n    address private _fallback;\n\n    function sweep(address varg0, uint256 varg1) external {\n        require(_fallback == address(0), \"Fallback address not set\");\n        (bool success, bytes memory data) = _fallback.delegatecall(abi.encodeWithSignature(\"sweeperOf(address)\", varg0));\n        require(success, \"Delegate call failed\");\n    }\n\n    function tokenFallback(address varg0, uint256 varg1, bytes calldata varg2) external {\n        bytes memory v0 = new bytes[](varg2.length);\n        assembly {\n            calldatacopy(add(v0, 32), add(varg2, 36), mul(varg2.length, 32))\n        }\n    }\n\n    fallback() external payable {\n        require(_fallback == address(0), \"Fallback address not set\");\n        (bool success,) = _fallback.delegatecall(abi.encodeWithSignature(\"logEthDeposit(address,address,uint256)\", msg.sender, address(this), msg.value));\n        require(success, \"Delegate call failed\");\n    }\n\n    receive() external payable {\n        uint32 function_selector;\n        assembly {\n            function_selector := calldataload(0)\n        }\n        if (msg.data.length >= 4) {\n            if (function_selector == 0x6ea056a9) {\n                this.sweep(address,uint256);\n            } else if (function_selector == 0xc0ee0b8a) {\n                this.tokenFallback(address,uint256,bytes);\n            }\n        }\n    }\n}\n```\n\nPlease note, the decompiled code does not provide full context, there could be some missing or misinterpreted parts. This code assumes that `_fallback` is an address of a contract that provides `sweeperOf(address)` and `logEthDeposit(address,address,uint256)` methods. These methods are not standard, so you may need to adjust this code according to the actual contract that is supposed to be set as `_fallback`.",
+			"function_call": null,
+			"role": "assistant",
+			"tool_calls": null
+		}
+	},
+	"created": 1711535599,
+	"id": "chatcmpl-97KspxdzAqg0sKkGfSXeDJssrtf3l",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled by library.dedaub.com\n// 2022.12.02 22:12 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction sweep(address varg0, uint256 varg1) public nonPayable { \n    require(_fallback.code.size);\n    v0, v1 = _fallback.sweeperOf(varg0).gas(msg.gas);\n    require(v0); // checks call status, propagates error data on error\n    require(RETURNDATASIZE() >= 32);\n    v2 = address(v1).delegatecall(MEM[(MEM[64]) len (MEM[64] + msg.data.length - MEM[64])], MEM[(MEM[64]) len 0]).gas(msg.gas);\n    return v2;\n}\n\nfunction tokenFallback(address varg0, uint256 varg1, bytes varg2) public nonPayable { \n    v0 = new bytes[](varg2.length);\n    CALLDATACOPY(v0.data, 36 + varg2, varg2.length);\n}\n\nfunction () public payable { \n    require(_fallback.code.size);\n    v0 = _fallback.logEthDeposit(msg.sender, address(this), msg.value).gas(msg.gas);\n    require(v0); // checks call status, propagates error data on error\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x6ea056a9 == uint32(function_selector >> 224)) {\n            sweep(address,uint256);\n        } else if (0xc0ee0b8a == uint32(function_selector >> 224)) {\n            tokenFallback(address,uint256,bytes);\n        }\n    }\n    ();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.12.02 22:12 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction sweep(address varg0, uint256 varg1) public nonPayable { \n    require(_fallback.code.size);\n    v0, v1 = _fallback.sweeperOf(varg0).gas(msg.gas);\n    require(v0); // checks call status, propagates error data on error\n    require(RETURNDATASIZE() >= 32);\n    v2 = address(v1).delegatecall(MEM[(MEM[64]) len (MEM[64] + msg.data.length - MEM[64])], MEM[(MEM[64]) len 0]).gas(msg.gas);\n    return v2;\n}\n\nfunction tokenFallback(address varg0, uint256 varg1, bytes varg2) public nonPayable { \n    v0 = new bytes[](varg2.length);\n    CALLDATACOPY(v0.data, 36 + varg2, varg2.length);\n}\n\nfunction () public payable { \n    require(_fallback.code.size);\n    v0 = _fallback.logEthDeposit(msg.sender, address(this), msg.value).gas(msg.gas);\n    require(v0); // checks call status, propagates error data on error\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x6ea056a9 == uint32(function_selector >> 224)) {\n            sweep(address,uint256);\n        } else if (0xc0ee0b8a == uint32(function_selector >> 224)) {\n            tokenFallback(address,uint256,bytes);\n        }\n    }\n    ();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.12.02 22:12 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nuint256 _fallback; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction sweep(address varg0, uint256 varg1) public nonPayable { \n    require(_fallback.code.size);\n    v0, v1 = _fallback.sweeperOf(varg0).gas(msg.gas);\n    require(v0); // checks call status, propagates error data on error\n    require(RETURNDATASIZE() >= 32);\n    v2 = address(v1).delegatecall(MEM[(MEM[64]) len (MEM[64] + msg.data.length - MEM[64])], MEM[(MEM[64]) len 0]).gas(msg.gas);\n    return v2;\n}\n\nfunction tokenFallback(address varg0, uint256 varg1, bytes varg2) public nonPayable { \n    v0 = new bytes[](varg2.length);\n    CALLDATACOPY(v0.data, 36 + varg2, varg2.length);\n}\n\nfunction () public payable { \n    require(_fallback.code.size);\n    v0 = _fallback.logEthDeposit(msg.sender, address(this), msg.value).gas(msg.gas);\n    require(v0); // checks call status, propagates error data on error\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(bytes4 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x6ea056a9 == uint32(function_selector >> 224)) {\n            sweep(address,uint256);\n        } else if (0xc0ee0b8a == uint32(function_selector >> 224)) {\n            tokenFallback(address,uint256,bytes);\n        }\n    }\n    ();\n}\n.",
+	"status": "1",
+	"time_cost": 44.95736908912659,
+	"usage": {
+		"completion_tokens": 432,
+		"prompt_tokens": 481,
+		"total_tokens": 913
+	}
+}

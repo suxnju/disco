@@ -1,0 +1,21 @@
+{
+	"address": "0x69e13cf732101abb92b876db6d5f44012b05967c",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2392,
+	"prompt_tokens": 1735,
+	"completion_tokens": 657,
+	"time_cost": 22.799832582473755,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " fallback function must be defined as \"external\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 14
+}

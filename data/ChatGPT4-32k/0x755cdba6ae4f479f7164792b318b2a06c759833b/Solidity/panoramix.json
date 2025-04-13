@@ -1,0 +1,38 @@
+{
+	"address": "0x755cdba6ae4f479f7164792b318b2a06c759833b",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is a Solidity smart contract that matches the decompiled code:\n\n```solidity\npragma solidity ^0.8.0;\n\ninterface IERC20 {\n    function balanceOf(address account) external view returns (uint256);\n    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);\n}\n\ncontract MyContract {\n    address private constant mainDAO = 0x5c40ef6f527f4fba68368774e6130ce6515123f2;\n    address private constant trustee = 0xda4a4626d3e16e094de3225a751aab7128e96526;\n\n    fallback() external payable {}\n\n    function clawback() external payable {\n        require(msg.sender == trustee, \"Caller is not the trustee\");\n        (bool success, ) = trustee.call{value: address(this).balance}(\"\");\n        require(success, \"Transfer failed\");\n    }\n\n    function withdraw() external payable {\n        uint256 balance = IERC20(mainDAO).balanceOf(msg.sender);\n        bool success = IERC20(mainDAO).transferFrom(msg.sender, address(this), balance);\n        require(success, \"Transfer failed\");\n        (success, ) = msg.sender.call{value: balance}(\"\");\n        require(success, \"Transfer failed\");\n    }\n}\n```\nIn this contract, we have two functions `clawback` and `withdraw`. The `clawback` function allows the trustee to retrieve any Ether that has been sent to the contract. The `withdraw` function allows a user to withdraw their tokens from the `mainDAO` contract.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700470562,
+	"id": "chatcmpl-8MuMUHbQSdvgO9sjnhnHhfIldXfwt",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\nconst mainDAO = 0x5c40ef6f527f4fba68368774e6130ce6515123f2\nconst trustee = 0xda4a4626d3e16e094de3225a751aab7128e96526\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  stop\n\ndef clawback() payable: \n  require 0xda4a4626d3e16e094de3225a751aab7128e96526 == caller\n  call 0xda4a4626d3e16e094de3225a751aab7128e96526 with:\n     value eth.balance(this.address) wei\n       gas 0 wei\n  require ext_call.success\n\ndef withdraw() payable: \n  call 0x5c40ef6f527f4fba68368774e6130ce6515123f2.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args caller\n  require ext_call.success\n  call 0x5c40ef6f527f4fba68368774e6130ce6515123f2.transferFrom(address from, address to, uint256 tokens) with:\n       gas gas_remaining - 25050 wei\n      args caller, addr(this.address), ext_call.return_data[0]\n  require ext_call.return_data[0]\n  call caller with:\n     value ext_call.return_data[0] wei\n       gas 0 wei\n  require ext_call.success\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\nconst mainDAO = 0x5c40ef6f527f4fba68368774e6130ce6515123f2\nconst trustee = 0xda4a4626d3e16e094de3225a751aab7128e96526\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  stop\n\ndef clawback() payable: \n  require 0xda4a4626d3e16e094de3225a751aab7128e96526 == caller\n  call 0xda4a4626d3e16e094de3225a751aab7128e96526 with:\n     value eth.balance(this.address) wei\n       gas 0 wei\n  require ext_call.success\n\ndef withdraw() payable: \n  call 0x5c40ef6f527f4fba68368774e6130ce6515123f2.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args caller\n  require ext_call.success\n  call 0x5c40ef6f527f4fba68368774e6130ce6515123f2.transferFrom(address from, address to, uint256 tokens) with:\n       gas gas_remaining - 25050 wei\n      args caller, addr(this.address), ext_call.return_data[0]\n  require ext_call.return_data[0]\n  call caller with:\n     value ext_call.return_data[0] wei\n       gas 0 wei\n  require ext_call.success\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\nconst mainDAO = 0x5c40ef6f527f4fba68368774e6130ce6515123f2\nconst trustee = 0xda4a4626d3e16e094de3225a751aab7128e96526\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  stop\n\ndef clawback() payable: \n  require 0xda4a4626d3e16e094de3225a751aab7128e96526 == caller\n  call 0xda4a4626d3e16e094de3225a751aab7128e96526 with:\n     value eth.balance(this.address) wei\n       gas 0 wei\n  require ext_call.success\n\ndef withdraw() payable: \n  call 0x5c40ef6f527f4fba68368774e6130ce6515123f2.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args caller\n  require ext_call.success\n  call 0x5c40ef6f527f4fba68368774e6130ce6515123f2.transferFrom(address from, address to, uint256 tokens) with:\n       gas gas_remaining - 25050 wei\n      args caller, addr(this.address), ext_call.return_data[0]\n  require ext_call.return_data[0]\n  call caller with:\n     value ext_call.return_data[0] wei\n       gas 0 wei\n  require ext_call.success\n\n.",
+	"status": "1",
+	"time_cost": 28.749439001083374,
+	"usage": {
+		"completion_tokens": 329,
+		"prompt_tokens": 393,
+		"total_tokens": 722
+	}
+}

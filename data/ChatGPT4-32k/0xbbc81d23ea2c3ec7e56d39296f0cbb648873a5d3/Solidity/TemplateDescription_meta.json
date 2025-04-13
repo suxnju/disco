@@ -1,0 +1,21 @@
+{
+	"address": "0xbbc81d23ea2c3ec7e56d39296f0cbb648873a5d3",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6399,
+	"prompt_tokens": 5744,
+	"completion_tokens": 655,
+	"time_cost": 41.97418212890625,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier already declared.\t identifier already declared.\t undeclared identifier. did you mean \"v2\" or \"v0\"?\t undeclared identifier. did you mean \"v2\"?\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 46
+}

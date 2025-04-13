@@ -1,0 +1,21 @@
+{
+	"address": "0x12d5b7c26dd8dc6e2f71f5bf240d5e76452b2fe5",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 13490,
+	"prompt_tokens": 12761,
+	"completion_tokens": 729,
+	"time_cost": 60.903834104537964,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " member \"code\" not found or not visible after argument-dependent lookup in address\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 24
+}

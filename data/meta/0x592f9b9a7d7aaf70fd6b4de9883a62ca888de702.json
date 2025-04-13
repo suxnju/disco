@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.24;\r\n\r\ncontract WishingWell {\r\n\r\n    event wishMade(address indexed wisher, string wish, uint256 amount);\r\n    \r\n    address owner;\r\n    \r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier onlyOwner {\r\n        require(\r\n            msg.sender == owner,\r\n            \"Only owner can call this function.\"\r\n        );\r\n        _;\r\n    }\r\n\r\n    function changeOwner(address new_owner) public onlyOwner {\r\n        owner = new_owner;\r\n    }\r\n    \r\n    function makeWish(string wish) public payable {\r\n        emit wishMade(msg.sender, wish, msg.value);\r\n    }\r\n    \r\n    function withdrawAll() public onlyOwner {\r\n        address(owner).transfer(address(this).balance);\r\n    }\r\n    \r\n}",
+	"ContractName": "WishingWell",
+	"CompilerVersion": "v0.4.24+commit.e67f0147"
+}

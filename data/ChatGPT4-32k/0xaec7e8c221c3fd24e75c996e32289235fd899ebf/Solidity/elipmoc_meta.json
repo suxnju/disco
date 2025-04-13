@@ -1,0 +1,21 @@
+{
+	"address": "0xaec7e8c221c3fd24e75c996e32289235fd899ebf",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1372,
+	"prompt_tokens": 773,
+	"completion_tokens": 599,
+	"time_cost": 33.33163523674011,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " wrong argument count for function call: 3 arguments given but expected 4.\t type address is not implicitly convertible to expected type tuple(uint256,uint256).\t wrong argument count for function call: 3 arguments given but expected 4.\t type address is not implicitly convertible to expected type tuple(uint256,uint256).\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 2
+}

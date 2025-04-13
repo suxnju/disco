@@ -1,0 +1,21 @@
+{
+	"address": "0x6b0611c65b53e72429d799ed512d0da123ac0fb9",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 8867,
+	"prompt_tokens": 8177,
+	"completion_tokens": 690,
+	"time_cost": 73.44862198829651,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 6 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 6 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 3 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 3 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 5 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t \"sha3\" has been deprecated in favour of \"keccak256\".\t \"sha3\" has been deprecated in favour of \"keccak256\".\t invalid type for argument in function call. invalid implicit conversion from int_const 5 to bytes memory requested. this function requires a single bytes argument. use abi.encodepacked(...) to obtain the pre-0.5.0 behaviour or abi.encode(...) to use abi encoding.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 12
+}

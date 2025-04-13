@@ -1,0 +1,21 @@
+{
+	"address": "0x7b1eadc263871fbc8c4ed152e844a79fa08ccf81",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 535,
+	"prompt_tokens": 284,
+	"completion_tokens": 251,
+	"time_cost": 12.78996229171753,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected token comma got 'identifier'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 1
+}

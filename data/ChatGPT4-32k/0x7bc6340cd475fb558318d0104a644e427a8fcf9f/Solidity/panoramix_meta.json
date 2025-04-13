@@ -1,0 +1,21 @@
+{
+	"address": "0x7bc6340cd475fb558318d0104a644e427a8fcf9f",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 323,
+	"prompt_tokens": 90,
+	"completion_tokens": 233,
+	"time_cost": 13.487685918807983,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " expected identifier, got 'lparen'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 24
+}

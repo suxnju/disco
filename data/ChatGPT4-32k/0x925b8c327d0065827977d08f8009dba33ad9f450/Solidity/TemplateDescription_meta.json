@@ -1,0 +1,21 @@
+{
+	"address": "0x925b8c327d0065827977d08f8009dba33ad9f450",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3251,
+	"prompt_tokens": 1941,
+	"completion_tokens": 1310,
+	"time_cost": 57.000653982162476,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier already declared.\t type int_const 0 is not implicitly convertible to expected type bool.\t type int_const 0 is not implicitly convertible to expected type bool.\t type address is not implicitly convertible to expected type address payable.\t member \"add\" not found or not visible after argument-dependent lookup in int_const 100.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 19
+}

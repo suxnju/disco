@@ -1,0 +1,38 @@
+{
+	"address": "0x47094713a4b08b38e25787c34453b4c48824b0f8",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is a Solidity contract that represents your bytecode:\n\n```solidity\npragma solidity ^0.4.24;\n\ncontract SimpleContract {\n    mapping (bytes4 => uint256) public myMapping;\n    address public myAddress;\n\n    event MyEvent(address indexed from, bytes4 indexed id, uint256 value);\n\n    function setMyMapping(bytes4 _id, uint256 _value) public {\n        myMapping[_id] = _value;\n        emit MyEvent(msg.sender, _id, _value);\n    }\n\n    function setMyAddress(address _address) public {\n        myAddress = _address;\n    }\n}\n```\n\nPlease note: The provided bytecode is compiled from some specific contract, the generated Solidity code is a mere representation of what the original contract might look like. It might not be exactly the same as the original Solidity code due to compiler optimization and other factors.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701460547,
+	"id": "chatcmpl-8R3tznH8djpLSRaTOdd8q30aY6kXj",
+	"input_format": "Bytecode",
+	"ir": "0x608060405260043610610046576000357c01000000000000000000000000000000000000000000000000000000009004806312065fe01461007f578063d0679d34146100aa575b7f4d6ce1e535dbade1c23defba91e23b8f791ce5edc0cc320257a2b364e4e38426346040518082815260200191505060405180910390a1005b34801561008b57600080fd5b50610094610105565b6040518082815260200191505060405180910390f35b3480156100b657600080fd5b50610103600480360360408110156100cd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610124565b005b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561017f57600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f193505050501580156101c5573d6000803e3d6000fd5b507f69ca02dd4edd7bf0a4abb9ed3b7af3f14778db5d61921c7dc7cd545266326de28282604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505056fea165627a7a7230582058bafb66f0ccb0032f51d914ff0ba42f528113a03f5664140fa611ab45ffec0a0029",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the bytecode: 0x608060405260043610610046576000357c01000000000000000000000000000000000000000000000000000000009004806312065fe01461007f578063d0679d34146100aa575b7f4d6ce1e535dbade1c23defba91e23b8f791ce5edc0cc320257a2b364e4e38426346040518082815260200191505060405180910390a1005b34801561008b57600080fd5b50610094610105565b6040518082815260200191505060405180910390f35b3480156100b657600080fd5b50610103600480360360408110156100cd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610124565b005b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561017f57600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f193505050501580156101c5573d6000803e3d6000fd5b507f69ca02dd4edd7bf0a4abb9ed3b7af3f14778db5d61921c7dc7cd545266326de28282604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505056fea165627a7a7230582058bafb66f0ccb0032f51d914ff0ba42f528113a03f5664140fa611ab45ffec0a0029.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following smart contract bytecode.The following is the bytecode: 0x608060405260043610610046576000357c01000000000000000000000000000000000000000000000000000000009004806312065fe01461007f578063d0679d34146100aa575b7f4d6ce1e535dbade1c23defba91e23b8f791ce5edc0cc320257a2b364e4e38426346040518082815260200191505060405180910390a1005b34801561008b57600080fd5b50610094610105565b6040518082815260200191505060405180910390f35b3480156100b657600080fd5b50610103600480360360408110156100cd57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610124565b005b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561017f57600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f193505050501580156101c5573d6000803e3d6000fd5b507f69ca02dd4edd7bf0a4abb9ed3b7af3f14778db5d61921c7dc7cd545266326de28282604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505056fea165627a7a7230582058bafb66f0ccb0032f51d914ff0ba42f528113a03f5664140fa611ab45ffec0a0029.",
+	"status": "1",
+	"time_cost": 9.556520938873291,
+	"usage": {
+		"completion_tokens": 181,
+		"prompt_tokens": 478,
+		"total_tokens": 659
+	}
+}

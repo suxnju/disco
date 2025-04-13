@@ -1,0 +1,38 @@
+{
+	"address": "0x23ba165482e05f7d49563242c7a48d08f5d7d802",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Based on the provided decompiled code, the corresponding Solidity contract would look like this:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    mapping (address => uint256) public owner_1;\n\n    function __function_selector__() public payable {\n        if (msg.value > 0) {\n            uint256 v0 = (3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900);\n            (bool success, ) = msg.sender.call{value: v0, gas: 2300 * !(v0 > 0)}(\"\");\n            require(success, \"Transfer failed.\");\n        }\n        owner_1[msg.sender] = block.number;\n        owner_1[msg.sender] += msg.value;\n    }\n}\n```\n\nNotes:\n\n- The original decompiled code has two different mappings named `___function_selector__` and `owner_1`. However, the `___function_selector__` mapping does not make much sense in this context as it is a mapping to an array (which is not supported in Solidity) and the value of this mapping is not used in the code. Therefore, I have omitted it in the Solidity version.\n- The `v0` variable is calculated and used as the value for a `call` function. In the `call` function, the value and gas are set based on this variable. If the `v0` value is not greater than zero, then the gas will be set to `2300`.\n- The `owner_1` mapping is updated with the `block.number` and the `msg.value` is added to the `owner_1` value of the `msg.sender`.\n- The contract does not have any restriction on who can call the `__function_selector__` function, and any ethers sent to this function will be added to the `owner_1` value of the sender.\n- The contract does not have any mechanism to withdraw the ethers stored in it. Therefore, any ethers sent to it will be locked forever.\n- The `call` function is used to send ethers to the `msg.sender`. If the call fails, the contract will revert the transaction.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701466758,
+	"id": "chatcmpl-8R5WAl3GSqMWg6XATEnHEWNkgizSF",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.09.12 20:18 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\nmapping (uint256 => [uint256]) owner_1; // STORAGE[0x1]\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (___function_selector__[msg.sender]) {\n        v0 = msg.sender.call().value(3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900).gas(2300 * !(3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900));\n    }\n    owner_1[msg.sender] = block.number;\n    owner_1[msg.sender] += msg.value;\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.09.12 20:18 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\nmapping (uint256 => [uint256]) owner_1; // STORAGE[0x1]\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (___function_selector__[msg.sender]) {\n        v0 = msg.sender.call().value(3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900).gas(2300 * !(3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900));\n    }\n    owner_1[msg.sender] = block.number;\n    owner_1[msg.sender] += msg.value;\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.09.12 20:18 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) ___function_selector__; // STORAGE[0x0]\nmapping (uint256 => [uint256]) owner_1; // STORAGE[0x1]\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (___function_selector__[msg.sender]) {\n        v0 = msg.sender.call().value(3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900).gas(2300 * !(3 * owner_1[msg.sender] / 100 * (block.number - owner_1[msg.sender]) / 5900));\n    }\n    owner_1[msg.sender] = block.number;\n    owner_1[msg.sender] += msg.value;\n}\n.",
+	"status": "1",
+	"time_cost": 24.12972092628479,
+	"usage": {
+		"completion_tokens": 454,
+		"prompt_tokens": 271,
+		"total_tokens": 725
+	}
+}

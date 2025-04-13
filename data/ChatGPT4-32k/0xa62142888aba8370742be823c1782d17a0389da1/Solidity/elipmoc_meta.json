@@ -1,0 +1,21 @@
+{
+	"address": "0xa62142888aba8370742be823c1782d17a0389da1",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 23789,
+	"prompt_tokens": 22226,
+	"completion_tokens": 1563,
+	"time_cost": 140.06286811828613,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t identifier already declared.\t fallback function must be defined as \"external\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 76
+}

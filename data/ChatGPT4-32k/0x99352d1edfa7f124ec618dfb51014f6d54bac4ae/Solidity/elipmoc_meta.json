@@ -1,0 +1,21 @@
+{
+	"address": "0x99352d1edfa7f124ec618dfb51014f6d54bac4ae",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1641,
+	"prompt_tokens": 1070,
+	"completion_tokens": 571,
+	"time_cost": 27.417453050613403,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0x31cf8b6e8bb6cb16f23889f902be86775bb1d0b3\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t member \"code\" not found or not visible after argument-dependent lookup in address.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 7
+}

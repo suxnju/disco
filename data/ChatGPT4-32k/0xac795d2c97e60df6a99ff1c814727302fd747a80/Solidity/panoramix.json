@@ -1,0 +1,38 @@
+{
+	"address": "0xac795d2c97e60df6a99ff1c814727302fd747a80",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "I'm sorry, but the provided decompiled code seems incomplete. There is no actual decompiled Solidity code provided. \n\nHowever, to give you an idea of how a Solidity smart contract looks, here is a simple example:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract SimpleStorage {\n    uint storedData;\n\n    function set(uint x) public {\n        storedData = x;\n    }\n\n    function get() public view returns (uint) {\n        return storedData;\n    }\n}\n```\nThis contract has two functions, `set` and `get`. The `set` function stores a `uint` value, and the `get` function retrieves this value. \n\nIf you have a specific decompiled code you want to translate to Solidity, please provide it.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700474639,
+	"id": "chatcmpl-8MvQFTdsKiXLbh7GKCDMUXNZYNITP",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback()\n#  All the rest is below.\n#\n\n.",
+	"status": "1",
+	"time_cost": 12.393280982971191,
+	"usage": {
+		"completion_tokens": 162,
+		"prompt_tokens": 87,
+		"total_tokens": 249
+	}
+}

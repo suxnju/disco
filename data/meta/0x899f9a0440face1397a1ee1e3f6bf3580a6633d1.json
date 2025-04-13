@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.9;\r\n\r\ncontract Token {\r\n  function transferFrom(address from, address to, uint256 value) returns (bool success);\r\n}\r\n\r\ncontract RedemptionContract {\r\n  address public funder;        // the account able to fund with ETH\r\n  address public token;         // the token address\r\n  uint public exchangeRate;     // number of tokens per ETH\r\n\r\n  event Redemption(address redeemer, uint tokensDeposited, uint redemptionAmount);\r\n\r\n  function RedemptionContract(address _token, uint _exchangeRate) {\r\n    funder = msg.sender;\r\n    token = _token;\r\n    exchangeRate = _exchangeRate;\r\n  }\r\n\r\n  function () payable {\r\n    require(msg.sender == funder);\r\n  }\r\n\r\n  function redeemTokens(uint amount) {\r\n    // NOTE: redeemTokens will only work once the sender has approved \r\n    // the RedemptionContract address for the deposit amount \r\n    require(Token(token).transferFrom(msg.sender, this, amount));\r\n    \r\n    uint redemptionValue = amount / exchangeRate; \r\n    \r\n    msg.sender.transfer(redemptionValue);\r\n    \r\n    Redemption(msg.sender, amount, redemptionValue);\r\n  }\r\n\r\n}",
+	"ContractName": "RedemptionContract",
+	"CompilerVersion": "v0.4.11+commit.68ef5810"
+}

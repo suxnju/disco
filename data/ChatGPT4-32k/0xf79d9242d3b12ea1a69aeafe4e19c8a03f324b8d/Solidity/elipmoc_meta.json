@@ -1,0 +1,21 @@
+{
+	"address": "0xf79d9242d3b12ea1a69aeafe4e19c8a03f324b8d",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 20390,
+	"prompt_tokens": 19487,
+	"completion_tokens": 903,
+	"time_cost": 53.03412127494812,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " operator < not compatible with types int128 and uint256\t type int128 is not implicitly convertible to expected type uint256.\t operator < not compatible with types int128 and uint256\t type int128 is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 115
+}

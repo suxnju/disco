@@ -1,0 +1,21 @@
+{
+	"address": "0x1544f3bcbe71a79c660936b843402eeb44d3a06a",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3378,
+	"prompt_tokens": 2711,
+	"completion_tokens": 667,
+	"time_cost": 28.541772603988647,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " data location must be \"memory\" for return parameter in function, but none was given.\t data location must be \"memory\" for return parameter in function, but none was given.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 6
+}

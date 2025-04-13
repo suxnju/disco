@@ -1,0 +1,21 @@
+{
+	"address": "0x686e5ac50d9236a9b7406791256e47feddb26aba",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1149,
+	"prompt_tokens": 689,
+	"completion_tokens": 460,
+	"time_cost": 28.93323040008545,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 18
+}

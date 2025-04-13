@@ -1,0 +1,21 @@
+{
+	"address": "0x3935eaf11b29396f3067e45d7c68c400662be8b2",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2110,
+	"prompt_tokens": 1314,
+	"completion_tokens": 796,
+	"time_cost": 45.31731367111206,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " function, variable, struct or modifier declaration expected.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 66
+}

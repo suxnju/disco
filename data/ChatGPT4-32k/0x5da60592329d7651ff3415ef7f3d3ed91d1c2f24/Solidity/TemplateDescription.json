@@ -1,0 +1,39 @@
+{
+	"address": "0x5da60592329d7651ff3415ef7f3d3ed91d1c2f24",
+	"choices": {
+		"finish_reason": "stop",
+		"index": 0,
+		"logprobs": null,
+		"message": {
+			"content": "Sure, here's a Solidity contract that follows your requirements:\n\n```solidity\npragma solidity 0.6.12;\n\ncontract OwnershipContract {\n    address public owner;\n\n    constructor() public payable {\n        require(msg.value > 0);\n        owner = msg.sender;\n    }\n\n    function transferOwnership(address newOwner) public {\n        require(newOwner != address(0));\n        require(msg.sender == owner);\n        owner = newOwner;\n    }\n\n    function withdraw(address payable recipient, uint256 amount) public {\n        require(recipient != address(0));\n        require(amount > 0);\n        require(address(this).balance >= amount);\n        require(msg.sender == owner);\n        (bool success, ) = recipient.call{value: amount}(\"\");\n        require(success, \"Transfer failed.\");\n    }\n}\n```\n\nThis contract has a `payable` constructor that only allows it to be deployed if Ether is sent with it. The `owner` is set to the address that deploys the contract.\n\nThe `transferOwnership` function allows the current `owner` to transfer ownership to another address. It requires that the `newOwner` is not the zero address and that the function caller is the current `owner`.\n\nThe `withdraw` function allows the `owner` to withdraw Ether from the contract. It requires that the `recipient` is not the zero address, that the `amount` is greater than 0, that the contract has enough balance to cover the `amount`, and that the function caller is the `owner`. It uses `call` instead of `transfer` or `send` to send the Ether, as per your specifications. If the `call` fails, it reverts the transaction.",
+			"function_call": null,
+			"role": "assistant",
+			"tool_calls": null
+		}
+	},
+	"created": 1713818102,
+	"id": "chatcmpl-9GufOaxipDtGSorEOQbndzsIa4s5m",
+	"input_format": "TemplateDescription",
+	"ir": "For the payable constructor function.\n- the state variable owner will be updated to caller.\n\nFor the transferOwnership function, it has one argument and its type is address.\n- When the first argument != 0, and caller == owner:\n  - the state variable owner will be updated to the first argument.\n\nFor the withdraw function, it has 2 arguments and the type of each argument is as follows: address, uint256.\n- When the first argument != 0, and the balance of the address of this contract >= the second argument, and caller == owner, and the second argument > 0:\n  - it transfers ether valued the second argument to the first argument.\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following contract descriptions. Some state variables and programming specifications are provided to help you develop. ",
+			"role": "system"
+		},
+		{
+			"content": "The following is the description of the contract logic:\n For the payable constructor function.\n- the state variable owner will be updated to caller.\n\nFor the transferOwnership function, it has one argument and its type is address.\n- When the first argument != 0, and caller == owner:\n  - the state variable owner will be updated to the first argument.\n\nFor the withdraw function, it has 2 arguments and the type of each argument is as follows: address, uint256.\n- When the first argument != 0, and the balance of the address of this contract >= the second argument, and caller == owner, and the second argument > 0:\n  - it transfers ether valued the second argument to the first argument.\n\n.\nHere are some state variables with their corresponding types:\n public state variable `owner` is typed address.\nHere are some programming specifications:\n - Do type conversion for state variable updates before converting constant to byte-type (e.g, `bytes32(uint(c))`) \n- Make address to `payable address` when the target address receives ether\n- Lock the pragma and use a stable version (e.g., pragma solidity `0.6.12`)\n- Check overflow or underflow issues before an arithmetic operation\n- Check address is empty before transferring ether to it\n- Use `.call()` instead of `.transfer()` and `.send()` for external calls\n- Declare a variable before you can use it, but the same variable cannot be declared twice\n- `abi.encodePacked(...) returns (bytes memory)` performs packed encoding of arguments to bytes\n- `keccak256(bytes memory) returns (bytes32)` computes the Keccak-256 hash of the input\n- `sha256(bytes memory) returns (bytes32)` computes the SHA-256 hash of the input\n- `ecrecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) returns (address)` recovers the address associated with the public key from elliptic curve signature or return zero on error\n- `block.number (uint)` returns the current block number\n- `block.timestamp (uint)` returns the current block timestamp as seconds since unix epoch\n- `blockhash(uint blockNumber) returns (bytes32)` returns the hash of the given block.\n",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following contract descriptions. Some state variables and programming specifications are provided to help you develop. The following is the description of the contract logic:\n For the payable constructor function.\n- the state variable owner will be updated to caller.\n\nFor the transferOwnership function, it has one argument and its type is address.\n- When the first argument != 0, and caller == owner:\n  - the state variable owner will be updated to the first argument.\n\nFor the withdraw function, it has 2 arguments and the type of each argument is as follows: address, uint256.\n- When the first argument != 0, and the balance of the address of this contract >= the second argument, and caller == owner, and the second argument > 0:\n  - it transfers ether valued the second argument to the first argument.\n\n.\nHere are some state variables with their corresponding types:\n public state variable `owner` is typed address.\nHere are some programming specifications:\n - Do type conversion for state variable updates before converting constant to byte-type (e.g, `bytes32(uint(c))`) \n- Make address to `payable address` when the target address receives ether\n- Lock the pragma and use a stable version (e.g., pragma solidity `0.6.12`)\n- Check overflow or underflow issues before an arithmetic operation\n- Check address is empty before transferring ether to it\n- Use `.call()` instead of `.transfer()` and `.send()` for external calls\n- Declare a variable before you can use it, but the same variable cannot be declared twice\n- `abi.encodePacked(...) returns (bytes memory)` performs packed encoding of arguments to bytes\n- `keccak256(bytes memory) returns (bytes32)` computes the Keccak-256 hash of the input\n- `sha256(bytes memory) returns (bytes32)` computes the SHA-256 hash of the input\n- `ecrecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) returns (address)` recovers the address associated with the public key from elliptic curve signature or return zero on error\n- `block.number (uint)` returns the current block number\n- `block.timestamp (uint)` returns the current block timestamp as seconds since unix epoch\n- `blockhash(uint blockNumber) returns (bytes32)` returns the hash of the given block.\n",
+	"status": "1",
+	"time_cost": 39.890867471694946,
+	"usage": {
+		"completion_tokens": 345,
+		"prompt_tokens": 511,
+		"total_tokens": 856
+	}
+}

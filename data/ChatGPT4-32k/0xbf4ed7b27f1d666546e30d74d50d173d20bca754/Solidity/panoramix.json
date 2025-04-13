@@ -1,0 +1,38 @@
+{
+	"address": "0xbf4ed7b27f1d666546e30d74d50d173d20bca754",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity smart contract code based on your provided decompiled code:\n\n```solidity\npragma solidity ^0.8.0;\n\ninterface IERC20 {\n    function totalSupply() external view returns (uint256);\n    function balanceOf(address tokenOwner) external view returns (uint256);\n    function transferFrom(address from, address to, uint256 tokens) external returns (bool success);\n}\n\ncontract MainContract {\n    address payable public trusteeAddress;\n    IERC20 public mainDAO;\n\n    constructor(address payable _trusteeAddress) public {\n        trusteeAddress = _trusteeAddress;\n        mainDAO = IERC20(0xbb9bc244d798123fde783fcc1c72d3bb8c189413);\n    }\n\n    function trustee() payable public returns (address) {\n        return trusteeAddress;\n    }\n\n    function trusteeWithdraw() payable public {\n        require(mainDAO.totalSupply() > 0, \"Total supply is zero\");\n        require(mainDAO.balanceOf(address(this)) > 0, \"Contract balance is zero\");\n        trusteeAddress.transfer(address(this).balance);\n    }\n\n    function withdraw() payable public {\n        require(mainDAO.balanceOf(msg.sender) > 0, \"Caller has zero balance\");\n        require(mainDAO.transferFrom(msg.sender, address(this), mainDAO.balanceOf(msg.sender)), \"Transfer failed\");\n        payable(msg.sender).transfer(mainDAO.balanceOf(address(this)));\n    }\n\n    fallback() external payable { }  // This is a default function that is called if the function signature does not match any of the available functions in a contract. \n}\n```\n\nNOTE: This contract is assuming that mainDAO is an ERC20 compliant token. Also, the actual implementation can vary depending on the specific logic of your application. Always ensure to test your contract thoroughly before deploying it in production.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700470547,
+	"id": "chatcmpl-8MuMFmw38DpFuzzmzmktdVrbSAzNI",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\nconst mainDAO = 0xbb9bc244d798123fde783fcc1c72d3bb8c189413\n\ndef storage:\n  trusteeAddress is addr at storage 0\n\ndef trustee() payable: \n  return trusteeAddress\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  stop\n\ndef trusteeWithdraw() payable: \n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.totalSupply() with:\n       gas gas_remaining - 25050 wei\n  require ext_call.success\n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args this.address\n  call trusteeAddress with:\n     value eth.balance(this.address) wei\n       gas 0 wei\n\ndef withdraw() payable: \n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args caller\n  require ext_call.success\n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.transferFrom(address from, address to, uint256 tokens) with:\n       gas gas_remaining - 25050 wei\n      args caller, addr(this.address), ext_call.return_data[0]\n  require ext_call.return_data[0]\n  call caller with:\n     value ext_call.return_data[0] wei\n       gas 0 wei\n  require ext_call.success\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\nconst mainDAO = 0xbb9bc244d798123fde783fcc1c72d3bb8c189413\n\ndef storage:\n  trusteeAddress is addr at storage 0\n\ndef trustee() payable: \n  return trusteeAddress\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  stop\n\ndef trusteeWithdraw() payable: \n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.totalSupply() with:\n       gas gas_remaining - 25050 wei\n  require ext_call.success\n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args this.address\n  call trusteeAddress with:\n     value eth.balance(this.address) wei\n       gas 0 wei\n\ndef withdraw() payable: \n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args caller\n  require ext_call.success\n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.transferFrom(address from, address to, uint256 tokens) with:\n       gas gas_remaining - 25050 wei\n      args caller, addr(this.address), ext_call.return_data[0]\n  require ext_call.return_data[0]\n  call caller with:\n     value ext_call.return_data[0] wei\n       gas 0 wei\n  require ext_call.success\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\nconst mainDAO = 0xbb9bc244d798123fde783fcc1c72d3bb8c189413\n\ndef storage:\n  trusteeAddress is addr at storage 0\n\ndef trustee() payable: \n  return trusteeAddress\n\n#\n#  Regular functions\n#\n\ndef _fallback() payable: # default function\n  stop\n\ndef trusteeWithdraw() payable: \n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.totalSupply() with:\n       gas gas_remaining - 25050 wei\n  require ext_call.success\n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args this.address\n  call trusteeAddress with:\n     value eth.balance(this.address) wei\n       gas 0 wei\n\ndef withdraw() payable: \n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.balanceOf(address tokenOwner) with:\n       gas gas_remaining - 25050 wei\n      args caller\n  require ext_call.success\n  call 0xbb9bc244d798123fde783fcc1c72d3bb8c189413.transferFrom(address from, address to, uint256 tokens) with:\n       gas gas_remaining - 25050 wei\n      args caller, addr(this.address), ext_call.return_data[0]\n  require ext_call.return_data[0]\n  call caller with:\n     value ext_call.return_data[0] wei\n       gas 0 wei\n  require ext_call.success\n\n.",
+	"status": "1",
+	"time_cost": 21.351723670959473,
+	"usage": {
+		"completion_tokens": 373,
+		"prompt_tokens": 417,
+		"total_tokens": 790
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x2f758a59a8c88a54fe659fc9446b355315254769",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1863,
+	"prompt_tokens": 1201,
+	"completion_tokens": 662,
+	"time_cost": 35.51787829399109,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address is not implicitly convertible to expected type address payable.\t operator * not compatible with types uint256 and rational_const 1 / 2\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 6
+}

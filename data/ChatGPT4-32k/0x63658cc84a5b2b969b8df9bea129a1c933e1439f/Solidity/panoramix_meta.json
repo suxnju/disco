@@ -1,0 +1,21 @@
+{
+	"address": "0x63658cc84a5b2b969b8df9bea129a1c933e1439f",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5703,
+	"prompt_tokens": 5403,
+	"completion_tokens": 300,
+	"time_cost": 29.444544315338135,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " expected '{' but got reserved keyword 'override'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 28
+}

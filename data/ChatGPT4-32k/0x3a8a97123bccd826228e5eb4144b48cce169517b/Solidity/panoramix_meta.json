@@ -1,0 +1,21 @@
+{
+	"address": "0x3a8a97123bccd826228e5eb4144b48cce169517b",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5114,
+	"prompt_tokens": 4655,
+	"completion_tokens": 459,
+	"time_cost": 22.343726873397827,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " source \"@openzeppelin/contracts/token/erc20/erc20.sol\" not found: file outside of allowed directories.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 31
+}

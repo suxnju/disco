@@ -1,0 +1,21 @@
+{
+	"address": "0x93519cc1a51ac56cf2daa8aaafcd4073f49a19d8",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1116,
+	"prompt_tokens": 644,
+	"completion_tokens": 472,
+	"time_cost": 20.890262126922607,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address is not implicitly convertible to expected type address payable.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 10
+}

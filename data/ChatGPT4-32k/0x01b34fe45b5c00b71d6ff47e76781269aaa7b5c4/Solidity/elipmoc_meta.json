@@ -1,0 +1,21 @@
+{
+	"address": "0x01b34fe45b5c00b71d6ff47e76781269aaa7b5c4",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1414,
+	"prompt_tokens": 847,
+	"completion_tokens": 567,
+	"time_cost": 31.25059676170349,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator & not compatible with types int_const -256 and uint256\t type int_const -255 is not implicitly convertible to expected type uint256. cannot implicitly convert signed literal to unsigned type.\t this looks like an address but has an invalid checksum. correct checksummed address: \"0xcdad2d448583c1d9084f54c0d207b3ebe0398490\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t this looks like an address but has an invalid checksum. correct checksummed address: \"0xd204c49c66011787ef62d9dfd820fd32e07af7f6\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t this looks like an address but has an invalid checksum. correct checksummed address: \"0xb3b8d45a26d16adb41278aa8685538b937487b15\". if this is not used as an address, please prepend '00'. for more information please see https://docs.soliditylang.org/en/develop/types.html#address-literals\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 4
+}

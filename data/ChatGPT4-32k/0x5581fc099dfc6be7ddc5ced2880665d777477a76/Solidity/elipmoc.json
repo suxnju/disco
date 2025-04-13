@@ -1,0 +1,38 @@
+{
+	"address": "0x5581fc099dfc6be7ddc5ced2880665d777477a76",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Sure, I will provide a Solidity version of the provided pseudo code. Please note that the provided code seems to be incomplete or an error function (it simply reverts any transactions), and function selectors are typically used in more complex contracts. Here's a simple contract example:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    function functionSelector() public payable {\n        revert(\"Transaction reverted\");\n    }\n}\n```\n\nIn the above contract:\n\n- `MyContract` is the contract name\n- `functionSelector` is a function, that is marked as `public` meaning it can be invoked from anywhere and `payable` meaning it can send/receive Ether.\n- The `revert` statement causes all changes to the Ethereum state to be rolled back. It is typically used to signal errors or to stop execution when a condition isn't met. The string argument provides an explanation about why the execution was stopped, which in this case is \"Transaction reverted\". \n\nPlease provide more details if you want a more complex or specific contract.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701458512,
+	"id": "chatcmpl-8R3NAG07iUNImnqNiVdzEjry1KX4o",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.15 04:33 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    MEM[64] = 128;\n    revert();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 04:33 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    MEM[64] = 128;\n    revert();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.15 04:33 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    MEM[64] = 128;\n    revert();\n}\n.",
+	"status": "1",
+	"time_cost": 8.452933311462402,
+	"usage": {
+		"completion_tokens": 223,
+		"prompt_tokens": 125,
+		"total_tokens": 348
+	}
+}

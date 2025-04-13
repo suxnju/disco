@@ -1,0 +1,21 @@
+{
+	"address": "0xe35a91f2acceccf1ce6bae792274da6100b639af",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3058,
+	"prompt_tokens": 2626,
+	"completion_tokens": 432,
+	"time_cost": 33.965364933013916,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator != not compatible with types bool and uint8\t type uint8 is not implicitly convertible to expected type bool.\t operator == not compatible with types bool and int_const 0\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 28
+}

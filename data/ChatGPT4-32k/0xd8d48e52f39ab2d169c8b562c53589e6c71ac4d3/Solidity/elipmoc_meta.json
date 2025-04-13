@@ -1,0 +1,21 @@
+{
+	"address": "0xd8d48e52f39ab2d169c8b562c53589e6c71ac4d3",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 6678,
+	"prompt_tokens": 5181,
+	"completion_tokens": 1497,
+	"time_cost": 79.70455527305603,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " stack too deep when compiling inline assembly: variable headstart is 1 slot(s) too deep inside the stack.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 26
+}

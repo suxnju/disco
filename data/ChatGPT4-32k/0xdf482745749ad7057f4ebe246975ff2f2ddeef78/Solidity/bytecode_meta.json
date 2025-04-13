@@ -1,0 +1,21 @@
+{
+	"address": "0xdf482745749ad7057f4ebe246975ff2f2ddeef78",
+	"model": "bytecode_1",
+	"input_format": "Bytecode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2941,
+	"prompt_tokens": 2697,
+	"completion_tokens": 244,
+	"time_cost": 8.90674090385437,
+	"gen_code": 1,
+	"language": "Solidity",
+	"is_empty": true,
+	"compilable": " source \"@openzeppelin/contracts/token/erc20/erc20.sol\" not found: file outside of allowed directories.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "bytecode",
+	"source_sai": 17
+}

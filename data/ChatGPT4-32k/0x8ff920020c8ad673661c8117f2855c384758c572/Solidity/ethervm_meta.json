@@ -1,0 +1,21 @@
+{
+	"address": "0x8ff920020c8ad673661c8117f2855c384758c572",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 15074,
+	"prompt_tokens": 14678,
+	"completion_tokens": 396,
+	"time_cost": 39.064579248428345,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " expected token lbrace got 'view'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 23
+}

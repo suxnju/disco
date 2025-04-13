@@ -1,0 +1,21 @@
+{
+	"address": "0xa6cd930fc92f1634d8183af2fb86bd1766f2f82a",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 15564,
+	"prompt_tokens": 15087,
+	"completion_tokens": 477,
+	"time_cost": 28.733157634735107,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " expected identifier but got 'memory'\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 17
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0xce00901a0638d758d6f89d59dfa32120d2259b0c",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3556,
+	"prompt_tokens": 2413,
+	"completion_tokens": 1143,
+	"time_cost": 48.19784116744995,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator > not compatible with types bool and int_const 0\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator > not compatible with types bool and int_const 0\t type int_const 0 is not implicitly convertible to expected type bool.\t operator > not compatible with types bool and int_const 0\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator > not compatible with types bool and int_const 0\t operator && not compatible with types bool and address\t type uint256 is not implicitly convertible to expected type address.\t type bytes32 is not implicitly convertible to expected type address.\t type bytes32 is not implicitly convertible to expected type address.\t type bytes32 is not implicitly convertible to expected type address.\t operator == not compatible with types bool and int_const 0\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t operator * not compatible with types address and int_const 79228162514264337593543950336. arithmetic operations on addresses are not supported. convert to integer first before using them.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t operator * not compatible with types int_const 79228162514264337593543950336 and address payable\t operator * not compatible with types address and int_const 79228162514264337593543950336. arithmetic operations on addresses are not supported. convert to integer first before using them.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t cannot perform packed encoding for a literal. please convert it to an explicit type first.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 57
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x1ce7ae555139c5ef5a57cc8d814a867ee6ee33d8",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 10595,
+	"prompt_tokens": 9658,
+	"completion_tokens": 937,
+	"time_cost": 51.08328032493591,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type bytes32 is not implicitly convertible to expected type address.\t operator == not compatible with types address payable and uint160\t operator == not compatible with types address payable and uint160\t operator -= not compatible with types uint160 and uint256\t operator == not compatible with types address payable and uint160\t operator > not compatible with types address and int_const 0\t invalid type for argument in function call. invalid implicit conversion from address payable to bytes memory requested. this function requires a single bytes argument. if all your arguments are value types, you can use abi.encode(...) to properly generate it.\t operator == not compatible with types bool and int_const 0\t wrong argument count for function call: 4 arguments given but expected 1. this function requires a single bytes argument. if all your arguments are value types, you can use abi.encode(...) to properly generate it.\t different number of components on the left hand side (1) than on the right hand side (2).\t operator == not compatible with types bool and int_const 0\t operator == not compatible with types address payable and uint160\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 42
+}

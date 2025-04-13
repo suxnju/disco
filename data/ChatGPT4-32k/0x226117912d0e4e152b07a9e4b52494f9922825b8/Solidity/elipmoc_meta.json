@@ -1,0 +1,21 @@
+{
+	"address": "0x226117912d0e4e152b07a9e4b52494f9922825b8",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3043,
+	"prompt_tokens": 2333,
+	"completion_tokens": 710,
+	"time_cost": 33.339192152023315,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " \"send\" and \"transfer\" are only available for objects of type \"address payable\", not \"address\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 13
+}

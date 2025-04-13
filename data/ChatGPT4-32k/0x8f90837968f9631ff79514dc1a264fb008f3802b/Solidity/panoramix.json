@@ -1,0 +1,38 @@
+{
+	"address": "0x8f90837968f9631ff79514dc1a264fb008f3802b",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity version of the decompiled code:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    address payable target = payable(0x9bC90f1ed1A21E8ddCA57C0fa0E3cF23F302DB6E);\n    \n    fallback() external payable {\n        (bool success, bytes memory data) = target.delegatecall(msg.data);\n        if (!success) {\n            assembly {\n                revert(add(data, 0x20), mload(data))\n            }\n        }\n        \n        assembly {\n            return(add(data, 0x20), mload(data))\n        }\n    }\n}\n```\n\nThis contract has a fallback function that uses `delegatecall` to forward any incoming calls to the `target` address. If the call fails, it reverts the transaction and returns the error message. If the call is successful, it returns the data from the delegate call.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700631730,
+	"id": "chatcmpl-8NaHyu9BuhsOBIwlvdEIRIEv8h0VA",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n\ndef _fallback() payable: # default function\n  delegate 0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e with:\n     funct call.data[return_data.size len 4]\n       gas gas_remaining wei\n      args call.data[return_data.size + 4 len calldata.size - 4]\n  if not delegate.return_code:\n      revert with ext_call.return_data[return_data.size len return_data.size]\n  return ext_call.return_data[return_data.size len return_data.size]\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n\ndef _fallback() payable: # default function\n  delegate 0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e with:\n     funct call.data[return_data.size len 4]\n       gas gas_remaining wei\n      args call.data[return_data.size + 4 len calldata.size - 4]\n  if not delegate.return_code:\n      revert with ext_call.return_data[return_data.size len return_data.size]\n  return ext_call.return_data[return_data.size len return_data.size]\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n\ndef _fallback() payable: # default function\n  delegate 0x9bc90f1ed1a21e8ddca57c0fa0e3cf23f302db6e with:\n     funct call.data[return_data.size len 4]\n       gas gas_remaining wei\n      args call.data[return_data.size + 4 len calldata.size - 4]\n  if not delegate.return_code:\n      revert with ext_call.return_data[return_data.size len return_data.size]\n  return ext_call.return_data[return_data.size len return_data.size]\n\n.",
+	"status": "1",
+	"time_cost": 10.695345401763916,
+	"usage": {
+		"completion_tokens": 205,
+		"prompt_tokens": 182,
+		"total_tokens": 387
+	}
+}

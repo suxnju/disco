@@ -1,0 +1,21 @@
+{
+	"address": "0x728781e75735dc0962df3a51d7ef47e798a7107e",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 7990,
+	"prompt_tokens": 7263,
+	"completion_tokens": 727,
+	"time_cost": 41.76374340057373,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int_const 1 is not implicitly convertible to expected type bool.\t type int_const 0 is not implicitly convertible to expected type bool.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 67
+}

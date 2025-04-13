@@ -1,0 +1,38 @@
+{
+	"address": "0x939f33685887787b0d11790a43095ad80e5b5dc5",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "The decompiled code is not 100% accurate, but based on the given information, the equivalent solidity code would look like this:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract DecompiledContract {\n    address private _creator;\n\n    constructor() {\n        _creator = msg.sender;\n    }\n\n    receive() external payable {\n        revert();\n    }\n\n    function creator() public view returns (address) {\n        return _creator;\n    }\n\n    function rewardMiner() public payable {\n        bool condition = msg.sender == _creator;\n        require(condition, \"Only creator can call this function\");\n\n        (bool success, ) = block.coinbase.call{value: address(this).balance, gas: 2300 * (address(this).balance == 0 ? 1 : 0)}(\"\");\n        require(success, \"Transfer failed.\");\n    }\n\n    function __function_selector__(uint256 function_selector) public payable {\n        require(msg.value == 0, \"Value should be 0\");\n\n        if (msg.data.length >= 4) {\n            if (0x2d05d3f == function_selector >> 224) {\n                creator();\n            } else if (0xcefd2c5e == function_selector >> 224) {\n                rewardMiner();\n            }\n        }\n        revert();\n    }\n}\n```\nPlease note that the provided decompiled code appears to be incomplete and somewhat incorrect, especially parts related to `v0`, `v1`, `v2` variables which are not defined. Also, `msg.gas` is deprecated since solidity 0.4.21 and completely removed in 0.5.0. And `this.balance` should be replaced by `address(this).balance` in the recent versions of solidity. So, I've made assumptions to provide the most logical solidity code based on the provided decompiled code.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701463546,
+	"id": "chatcmpl-8R4gMH9zqJR4BCQ7FfocZ9ZOVtsrN",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.23 11:58 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _creator; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction creator() public payable { \n    return _creator;\n}\n\nfunction rewardMiner() public payable { \n    v0 = v1 = !msg.gas;\n    if (v1) {\n        v0 = msg.sender == _creator;\n    }\n    if (v0) {\n        v2 = block.coinbase.call().value(this.balance).gas(2300 * !this.balance);\n        require(v2); // checks call status, propagates error data on error\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    require(!msg.value);\n    if (msg.data.length >= 4) {\n        if (0x2d05d3f == function_selector >> 224) {\n            creator();\n        } else if (0xcefd2c5e == function_selector >> 224) {\n            rewardMiner();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.23 11:58 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _creator; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction creator() public payable { \n    return _creator;\n}\n\nfunction rewardMiner() public payable { \n    v0 = v1 = !msg.gas;\n    if (v1) {\n        v0 = msg.sender == _creator;\n    }\n    if (v0) {\n        v2 = block.coinbase.call().value(this.balance).gas(2300 * !this.balance);\n        require(v2); // checks call status, propagates error data on error\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    require(!msg.value);\n    if (msg.data.length >= 4) {\n        if (0x2d05d3f == function_selector >> 224) {\n            creator();\n        } else if (0xcefd2c5e == function_selector >> 224) {\n            rewardMiner();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.23 11:58 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _creator; // STORAGE[0x0] bytes 0 to 19\n\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction creator() public payable { \n    return _creator;\n}\n\nfunction rewardMiner() public payable { \n    v0 = v1 = !msg.gas;\n    if (v1) {\n        v0 = msg.sender == _creator;\n    }\n    if (v0) {\n        v2 = block.coinbase.call().value(this.balance).gas(2300 * !this.balance);\n        require(v2); // checks call status, propagates error data on error\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    require(!msg.value);\n    if (msg.data.length >= 4) {\n        if (0x2d05d3f == function_selector >> 224) {\n            creator();\n        } else if (0xcefd2c5e == function_selector >> 224) {\n            rewardMiner();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 20.622077465057373,
+	"usage": {
+		"completion_tokens": 389,
+		"prompt_tokens": 342,
+		"total_tokens": 731
+	}
+}

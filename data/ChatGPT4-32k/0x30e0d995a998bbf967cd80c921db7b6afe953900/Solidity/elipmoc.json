@@ -1,0 +1,38 @@
+{
+	"address": "0x30e0d995a998bbf967cd80c921db7b6afe953900",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Based on the decompiled EVM bytecode, the Solidity contract code could look something like this:\n\n```solidity\npragma solidity ^0.7.6;\n\ncontract LamboContract {\n    address private _buyLambo;\n\n    event Gift(address indexed from, uint256 value);\n    event Lambo(uint256 balance);\n\n    fallback() external payable {\n        emit Gift(msg.sender, msg.value);\n    }\n\n    function buyLambo() public {\n        require(block.timestamp > 0x7ab5de00 && msg.sender == _buyLambo, \"You are not allowed to buy Lambo\");\n        emit Lambo(address(this).balance);\n        (bool success, ) = msg.sender.call{value: address(this).balance, gas: address(this).balance * 2300}(\"\");\n        require(success, \"Transfer failed.\");\n    }\n}\n```\nPlease note that the `__function_selector__` function was omitted in the Solidity version because in Solidity, function dispatching is handled automatically based on the function signature and the provided data, so there's no need to manually handle function selectors as done in the lower-level EVM code.\n\nAlso, the `fallback` function is marked as `external` because from Solidity 0.5.0 onwards, a contract can have exactly one `fallback` function, declared using the `fallback` keyword, and this function cannot have arguments or return anything.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701467453,
+	"id": "chatcmpl-8R5hNVwnbVs7YF5M8LKZARWVlXxwU",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.24 14:27 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _buyLambo; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nGift(address, uint256);\nLambo(uint256);\n\nfunction fallback() public payable { \n    emit Gift(msg.sender, msg.value);\n}\n\nfunction buyLambo() public nonPayable { \n    v0 = v1 = block.timestamp > 0x7ab5de00;\n    if (v1) {\n        v0 = msg.sender == _buyLambo;\n    }\n    require(v0);\n    emit Lambo((address(this)).balance);\n    v2 = msg.sender.call().value((address(this)).balance).gas(!(address(this)).balance * 2300);\n    require(v2);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (0x4584afe5 == function_selector) {\n            buyLambo();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 14:27 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _buyLambo; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nGift(address, uint256);\nLambo(uint256);\n\nfunction fallback() public payable { \n    emit Gift(msg.sender, msg.value);\n}\n\nfunction buyLambo() public nonPayable { \n    v0 = v1 = block.timestamp > 0x7ab5de00;\n    if (v1) {\n        v0 = msg.sender == _buyLambo;\n    }\n    require(v0);\n    emit Lambo((address(this)).balance);\n    v2 = msg.sender.call().value((address(this)).balance).gas(!(address(this)).balance * 2300);\n    require(v2);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (0x4584afe5 == function_selector) {\n            buyLambo();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.24 14:27 UTC\n\n// Data structures and variables inferred from the use of storage instructions\naddress _buyLambo; // STORAGE[0x0] bytes 0 to 19\n\n// Events\nGift(address, uint256);\nLambo(uint256);\n\nfunction fallback() public payable { \n    emit Gift(msg.sender, msg.value);\n}\n\nfunction buyLambo() public nonPayable { \n    v0 = v1 = block.timestamp > 0x7ab5de00;\n    if (v1) {\n        v0 = msg.sender == _buyLambo;\n    }\n    require(v0);\n    emit Lambo((address(this)).balance);\n    v2 = msg.sender.call().value((address(this)).balance).gas(!(address(this)).balance * 2300);\n    require(v2);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 96;\n    if (msg.data.length >= 4) {\n        if (0x4584afe5 == function_selector) {\n            buyLambo();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 10.311353206634521,
+	"usage": {
+		"completion_tokens": 290,
+		"prompt_tokens": 331,
+		"total_tokens": 621
+	}
+}

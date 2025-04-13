@@ -1,0 +1,38 @@
+{
+	"address": "0x5c0f734916b17c38674ed5867eda22f8314672ec",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "The EVM bytecode decompiled code provided is not completely clear and seems to have inconsistencies. However, I can provide a Solidity contract that captures the general idea of the code. Here is a possible Solidity contract based on the given decompiled EVM Bytecode:\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\ncontract MyContract {\n    mapping (address => uint256) public owner_2;\n    mapping (address => uint256) public owner_3;\n    mapping (address => uint256) public map_4;\n    address payable public function_selector;\n    \n    function execute() external payable {\n        if (block.number - map_4[function_selector] >= 5900) {\n            (bool success, ) = function_selector.call{value: address(this).balance / 100}(\"\");\n            require(success, \"Call failed\");\n            map_4[function_selector] = block.number;\n        }\n        if (owner_2[msg.sender] > 0) {\n            uint256 amount = 5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900;\n            (bool success, ) = payable(msg.sender).call{value: amount}(\"\");\n            require(success, \"Call failed\");\n        }\n        owner_3[msg.sender] = block.number;\n        owner_2[msg.sender] += msg.value;\n    }\n}\n```\n\nThis contract includes a function `execute()` which involves checking and updating balances of some users and making certain operations based on the current block number.\n\nPlease note that this contract is only a rough approximation of the original EVM bytecode. There might be inaccuracies due to the incomplete and ambiguous nature of the original decompiled code.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701467201,
+	"id": "chatcmpl-8R5dJcZ5lfw9gNGKi9YMa71UzANEI",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.14 08:37 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) owner_2; // STORAGE[0x2]\nmapping (uint256 => [uint256]) owner_3; // STORAGE[0x3]\nmapping (uint256 => [uint256]) map_4; // STORAGE[0x4]\naddress ___function_selector__; // STORAGE[0x0] bytes 0 to 19\nuint160 stor_1_0_19; // STORAGE[0x1] bytes 0 to 19\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (block.number - map_4[___function_selector__] >= 5900) {\n        v0 = ___function_selector__.call().value(stor_1_0_19.balance / 100).gas(!(stor_1_0_19.balance / 100) * 2300);\n        require(v0); // checks call status, propagates error data on error\n        map_4[___function_selector__] = block.number;\n    }\n    if (owner_2[msg.sender]) {\n        v1 = msg.sender.call().value(5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900).gas(!(5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900) * 2300);\n        require(v1); // checks call status, propagates error data on error\n    }\n    owner_3[msg.sender] = block.number;\n    owner_3[msg.sender] += msg.value;\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.14 08:37 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) owner_2; // STORAGE[0x2]\nmapping (uint256 => [uint256]) owner_3; // STORAGE[0x3]\nmapping (uint256 => [uint256]) map_4; // STORAGE[0x4]\naddress ___function_selector__; // STORAGE[0x0] bytes 0 to 19\nuint160 stor_1_0_19; // STORAGE[0x1] bytes 0 to 19\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (block.number - map_4[___function_selector__] >= 5900) {\n        v0 = ___function_selector__.call().value(stor_1_0_19.balance / 100).gas(!(stor_1_0_19.balance / 100) * 2300);\n        require(v0); // checks call status, propagates error data on error\n        map_4[___function_selector__] = block.number;\n    }\n    if (owner_2[msg.sender]) {\n        v1 = msg.sender.call().value(5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900).gas(!(5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900) * 2300);\n        require(v1); // checks call status, propagates error data on error\n    }\n    owner_3[msg.sender] = block.number;\n    owner_3[msg.sender] += msg.value;\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.14 08:37 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) owner_2; // STORAGE[0x2]\nmapping (uint256 => [uint256]) owner_3; // STORAGE[0x3]\nmapping (uint256 => [uint256]) map_4; // STORAGE[0x4]\naddress ___function_selector__; // STORAGE[0x0] bytes 0 to 19\nuint160 stor_1_0_19; // STORAGE[0x1] bytes 0 to 19\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    if (block.number - map_4[___function_selector__] >= 5900) {\n        v0 = ___function_selector__.call().value(stor_1_0_19.balance / 100).gas(!(stor_1_0_19.balance / 100) * 2300);\n        require(v0); // checks call status, propagates error data on error\n        map_4[___function_selector__] = block.number;\n    }\n    if (owner_2[msg.sender]) {\n        v1 = msg.sender.call().value(5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900).gas(!(5 * ((block.number - owner_3[msg.sender]) * (owner_3[msg.sender] / 100)) / 5900) * 2300);\n        require(v1); // checks call status, propagates error data on error\n    }\n    owner_3[msg.sender] = block.number;\n    owner_3[msg.sender] += msg.value;\n}\n.",
+	"status": "1",
+	"time_cost": 16.393748998641968,
+	"usage": {
+		"completion_tokens": 363,
+		"prompt_tokens": 452,
+		"total_tokens": 815
+	}
+}

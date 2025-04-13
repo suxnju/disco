@@ -1,0 +1,21 @@
+{
+	"address": "0xbbc81d23ea2c3ec7e56d39296f0cbb648873a5d3",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1754,
+	"prompt_tokens": 1294,
+	"completion_tokens": 460,
+	"time_cost": 37.65040063858032,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type int128 is not implicitly convertible to expected type uint256.\t type int128 is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 46
+}

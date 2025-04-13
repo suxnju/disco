@@ -1,0 +1,21 @@
+{
+	"address": "0xc330c1a3c7db9c75f60aed0a9b7c0fc5fa22d5a2",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 2765,
+	"prompt_tokens": 2014,
+	"completion_tokens": 751,
+	"time_cost": 46.24222183227539,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t operator > not compatible with types address and int_const 0\t operator + not compatible with types address and int_const 1157...(70 digits omitted)...9935. arithmetic operations on addresses are not supported. convert to integer first before using them.\t type address is not implicitly convertible to expected type uint256.\t type int_const 0 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t type uint256 is not implicitly convertible to expected type address.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 25
+}

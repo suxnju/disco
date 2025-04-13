@@ -1,0 +1,21 @@
+{
+	"address": "0x5eee354e36ac51e9d3f7283005cab0c55f423b23",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3692,
+	"prompt_tokens": 3038,
+	"completion_tokens": 654,
+	"time_cost": 115.5265564918518,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address is not implicitly convertible to expected type address payable.\t operator / not compatible with types uint256 and address payable\t operator / not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t type address payable is not implicitly convertible to expected type uint256.\t operator / not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t type address payable is not implicitly convertible to expected type uint256.\t operator / not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t type address payable is not implicitly convertible to expected type uint256.\t operator / not compatible with types uint256 and address payable\t operator / not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t type address payable is not implicitly convertible to expected type uint256.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 11
+}

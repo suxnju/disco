@@ -1,0 +1,21 @@
+{
+	"address": "0x2b4ba323ab07da8250e896b6ff29bb96ddfe55a9",
+	"model": "panoramix_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1172,
+	"prompt_tokens": 713,
+	"completion_tokens": 459,
+	"time_cost": 27.691396474838257,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but is not exactly 40 hex digits. it is 41 hex digits. if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t operator < not compatible with types uint256 and address payable\t operator == not compatible with types address payable and uint256\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t operator == not compatible with types address payable and uint256\t type int128 is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "panoramix",
+	"source_sai": 3
+}

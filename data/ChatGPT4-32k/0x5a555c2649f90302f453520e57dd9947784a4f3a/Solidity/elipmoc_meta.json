@@ -1,0 +1,21 @@
+{
+	"address": "0x5a555c2649f90302f453520e57dd9947784a4f3a",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 4749,
+	"prompt_tokens": 4039,
+	"completion_tokens": 710,
+	"time_cost": 30.04255223274231,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type address is not implicitly convertible to expected type uint256.\t operator >= not compatible with types uint256[] storage ref and uint256\t type address is not implicitly convertible to expected type uint256.\t operator -= not compatible with types uint256[] storage ref and uint256\t type address is not implicitly convertible to expected type uint256.\t operator += not compatible with types uint256[] storage ref and uint256\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t operator <= not compatible with types uint256 and uint256[] storage ref\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t operator -= not compatible with types uint256[] storage ref and uint256\t type address is not implicitly convertible to expected type uint256.\t operator += not compatible with types uint256[] storage ref and uint256\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t return argument type uint256[] storage ref is not implicitly convertible to expected type (type of first return variable) uint256.\t type address is not implicitly convertible to expected type uint256.\t type address is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 51
+}

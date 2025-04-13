@@ -1,0 +1,21 @@
+{
+	"address": "0xcd0752c608e7285a250452f24d64c556411febe2",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 5813,
+	"prompt_tokens": 5376,
+	"completion_tokens": 437,
+	"time_cost": 25.84993052482605,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t data location must be \"memory\" for parameter in function, but none was given.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t undeclared identifier.\t data location must be \"memory\" for parameter in function, but none was given.\t undeclared identifier.\t undeclared identifier.\t data location must be \"memory\" for parameter in function, but none was given.\t undeclared identifier.\t undeclared identifier.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 16
+}

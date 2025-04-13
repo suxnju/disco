@@ -1,0 +1,39 @@
+{
+	"address": "0x90155a208f61880f76cd0b64b15674de2f775e1b",
+	"choices": {
+		"finish_reason": "stop",
+		"index": 0,
+		"logprobs": null,
+		"message": {
+			"content": "Your decompiled code seems to be pseudocode from EVM bytecode, which performs a delegatecall to an external contract and handles the return data. However, it's not correct Solidity syntax and contains some unrecognizable instructions. \n\nHere is an example of a similar Solidity contract that performs a delegatecall:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract Delegate {\n    address public target;\n\n    constructor(address _target) {\n        target = _target;\n    }\n\n    fallback() external payable {\n        (bool success, bytes memory data) = target.delegatecall(msg.data);\n        require(success, \"Delegatecall failed\");\n    }\n}\n```\n\nIn this contract, the constructor sets the target address to which we want to delegate calls. The fallback function is executed whenever the contract receives Ether (without data, or with data that does not match any function signature in the contract). It uses the delegatecall function to delegate the call to the target contract. If the delegatecall fails, it reverts all changes. \n\nPlease note that delegatecall is a low-level function similar to call. It's named 'delegate' because it delegates execution to the code of another contract: it runs the code of the target contract in the context of the calling contract. This can be useful in certain circumstances, but also makes it possible to inadvertently change the state of the calling contract. \n\nYou should provide a more accurate version of the original Solidity code to get a more precise translation.",
+			"function_call": null,
+			"role": "assistant",
+			"tool_calls": null
+		}
+	},
+	"created": 1711534557,
+	"id": "chatcmpl-97Kc1gyLq5dIFS4AbxTaK0zLowKlX",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled by library.dedaub.com\n// 2022.11.18 01:10 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    CALLDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), msg.data.length);\n    v0 = 0x6a86aa5d394741b4464c785bd7bf3d4c4bd87a6e.delegatecall(MEM[(RETURNDATASIZE()) len msg.data.length], MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())]).gas(msg.gas);\n    RETURNDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), RETURNDATASIZE());\n    require(v0RETURNDATASIZE(), RETURNDATASIZE());\n    return MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())];\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.11.18 01:10 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    CALLDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), msg.data.length);\n    v0 = 0x6a86aa5d394741b4464c785bd7bf3d4c4bd87a6e.delegatecall(MEM[(RETURNDATASIZE()) len msg.data.length], MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())]).gas(msg.gas);\n    RETURNDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), RETURNDATASIZE());\n    require(v0RETURNDATASIZE(), RETURNDATASIZE());\n    return MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())];\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled by library.dedaub.com\n// 2022.11.18 01:10 UTC\n\n\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__() public payable { \n    CALLDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), msg.data.length);\n    v0 = 0x6a86aa5d394741b4464c785bd7bf3d4c4bd87a6e.delegatecall(MEM[(RETURNDATASIZE()) len msg.data.length], MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())]).gas(msg.gas);\n    RETURNDATACOPY(RETURNDATASIZE(), RETURNDATASIZE(), RETURNDATASIZE());\n    require(v0RETURNDATASIZE(), RETURNDATASIZE());\n    return MEM[(RETURNDATASIZE()) len (RETURNDATASIZE())];\n}\n.",
+	"status": "1",
+	"time_cost": 35.5296733379364,
+	"usage": {
+		"completion_tokens": 300,
+		"prompt_tokens": 280,
+		"total_tokens": 580
+	}
+}

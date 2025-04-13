@@ -1,0 +1,38 @@
+{
+	"address": "0x3d76634e77fb9bbac457a0df209306f2fac67dbc",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity version of the above decompiled code:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract Contract {\n    function main() public {\n        assembly {\n            mstore(0x40,0x80)\n        }\n        \n        require(msg.data.length >= 0x04, \"Data length is less than 4\");\n\n        if (msg.data.length == 0) {\n            revert(\"Data length is 0\");\n        }\n    }\n}\n```\n\nPlease note that \"Unhandled termination\" is a type of error that cannot be simply translated into Solidity as it might occur due to various reasons. In the Solidity version of the code, I have used the `revert()` function to handle such cases which can be customized based on the actual logic of your contract.\n\nAlso, keep in mind that using inline assembly like in the example above is not recommended unless it's absolutely necessary. Solidity has built-in high-level constructs for most of the cases where you would need to use assembly. Using assembly code makes your contract harder to read, more error-prone and could potentially introduce security vulnerabilities.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700632013,
+	"id": "chatcmpl-8NaMXdKpQlbxoXUdpiJB2Dxk0zC1y",
+	"input_format": "DecompiledCode",
+	"ir": "contract Contract {\n    function main() {\n        memory[0x40:0x60] = 0x80;\n    \n        if (msg.data.length < 0x04) {\n            if (!msg.data.length) { stop(); }\n        \n            // Unhandled termination\n        } else {\n            // Unhandled termination\n        }\n    }\n}\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: contract Contract {\n    function main() {\n        memory[0x40:0x60] = 0x80;\n    \n        if (msg.data.length < 0x04) {\n            if (!msg.data.length) { stop(); }\n        \n            // Unhandled termination\n        } else {\n            // Unhandled termination\n        }\n    }\n}\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: contract Contract {\n    function main() {\n        memory[0x40:0x60] = 0x80;\n    \n        if (msg.data.length < 0x04) {\n            if (!msg.data.length) { stop(); }\n        \n            // Unhandled termination\n        } else {\n            // Unhandled termination\n        }\n    }\n}\n\n.",
+	"status": "1",
+	"time_cost": 8.366713762283325,
+	"usage": {
+		"completion_tokens": 229,
+		"prompt_tokens": 126,
+		"total_tokens": 355
+	}
+}

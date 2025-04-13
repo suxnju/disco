@@ -1,0 +1,21 @@
+{
+	"address": "0xd11ffbea1ce043a8d8dddb85f258b1b164af3da4",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3989,
+	"prompt_tokens": 3449,
+	"completion_tokens": 540,
+	"time_cost": 32.90059161186218,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " this looks like an address but has an invalid checksum. correct checksummed address: \"0xa5a5f62bfa22b1e42a98ce00131ea658d5e29b37\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t this looks like an address but has an invalid checksum. correct checksummed address: \"0x9115a6162d6bc3663dc7f4ea46ad87db6b9cb926\". if this is not used as an address, please prepend '00'. for more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals\t type address payable is not implicitly convertible to expected type uint256.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 20
+}

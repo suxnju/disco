@@ -1,0 +1,38 @@
+{
+	"address": "0x6ba9908db7340f82e75ac42468b8172dbf37c1d6",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Here is the Solidity code based on the decompiled code:\n\n```solidity\npragma solidity ^0.5.0;\n\ncontract MyContract {\n    mapping (address => uint256) private _hodl;\n    event Hodl(address indexed sender, uint256 value);\n\n    function() external payable {\n        revert();\n    }\n\n    function party() public { \n        require(block.timestamp > 0x5b89d680 && _hodl[msg.sender] > 0, \"Condition not met\");\n        uint256 amount = _hodl[msg.sender];\n        _hodl[msg.sender] = 0;\n        (bool success,) = msg.sender.call.value(amount).gas(amount * 2300)(\"\");\n        require(success);\n        emit Hodl(msg.sender, amount);\n    }\n\n    function hodlers(address _address) public view returns (uint256) { \n        return _hodl[_address];\n    }\n\n    function hodl() public payable { \n        _hodl[msg.sender] += msg.value;\n        emit Hodl(msg.sender, msg.value);\n    }\n}\n```\n\nNote:\n\n1. I have used the `pragma solidity ^0.5.0;` but you could replace it based on your solidity compiler version. \n\n2. The function fallback() is a default function that gets executed when no other function matches the sent request.\n\n3. In the function party(), I have assumed `v0 = v1 = block.timestamp > 0x5b89d680;` and `v0 = v2 = _hodl[msg.sender] > 0;` as two conditions that must be met for the party function to execute properly. \n\n4. The `__function_selector__` function was not included, as it is not clear what its purpose is. In Solidity, function selectors are usually handled automatically. If you have a specific use case, please clarify.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701462892,
+	"id": "chatcmpl-8R4VoBy0ZyVP1bVDBd6cf9Xt3kCwu",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.23 20:07 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _hodl; // STORAGE[0x0]\n\n// Events\nHodl(address, uint256);\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction party() public nonPayable { \n    v0 = v1 = block.timestamp > 0x5b89d680;\n    if (v1) {\n        v0 = v2 = _hodl[msg.sender] > 0;\n    }\n    require(v0);\n    _hodl[msg.sender] = 0;\n    v3 = msg.sender.call().value(_hodl[msg.sender]).gas(!_hodl[msg.sender] * 2300);\n    require(v3); // checks call status, propagates error data on error\n    emit 0xdc8f43545dbeec87c6f54e44dac2d8889f2a4b3bf0f62683cd7e1c6346128e7(msg.sender, _hodl[msg.sender]);\n}\n\nfunction hodlers(address varg0) public nonPayable { \n    return _hodl[varg0];\n}\n\nfunction hodl() public payable { \n    _hodl[msg.sender] = _hodl[msg.sender] + msg.value;\n    emit Hodl(msg.sender, msg.value);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x354284f2 == function_selector) {\n            party();\n        } else if (0x4a3f17e7 == function_selector) {\n            hodlers(address);\n        } else if (0x60f14509 == function_selector) {\n            hodl();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.23 20:07 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _hodl; // STORAGE[0x0]\n\n// Events\nHodl(address, uint256);\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction party() public nonPayable { \n    v0 = v1 = block.timestamp > 0x5b89d680;\n    if (v1) {\n        v0 = v2 = _hodl[msg.sender] > 0;\n    }\n    require(v0);\n    _hodl[msg.sender] = 0;\n    v3 = msg.sender.call().value(_hodl[msg.sender]).gas(!_hodl[msg.sender] * 2300);\n    require(v3); // checks call status, propagates error data on error\n    emit 0xdc8f43545dbeec87c6f54e44dac2d8889f2a4b3bf0f62683cd7e1c6346128e7(msg.sender, _hodl[msg.sender]);\n}\n\nfunction hodlers(address varg0) public nonPayable { \n    return _hodl[varg0];\n}\n\nfunction hodl() public payable { \n    _hodl[msg.sender] = _hodl[msg.sender] + msg.value;\n    emit Hodl(msg.sender, msg.value);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x354284f2 == function_selector) {\n            party();\n        } else if (0x4a3f17e7 == function_selector) {\n            hodlers(address);\n        } else if (0x60f14509 == function_selector) {\n            hodl();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.23 20:07 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _hodl; // STORAGE[0x0]\n\n// Events\nHodl(address, uint256);\n\nfunction fallback() public payable { \n    revert();\n}\n\nfunction party() public nonPayable { \n    v0 = v1 = block.timestamp > 0x5b89d680;\n    if (v1) {\n        v0 = v2 = _hodl[msg.sender] > 0;\n    }\n    require(v0);\n    _hodl[msg.sender] = 0;\n    v3 = msg.sender.call().value(_hodl[msg.sender]).gas(!_hodl[msg.sender] * 2300);\n    require(v3); // checks call status, propagates error data on error\n    emit 0xdc8f43545dbeec87c6f54e44dac2d8889f2a4b3bf0f62683cd7e1c6346128e7(msg.sender, _hodl[msg.sender]);\n}\n\nfunction hodlers(address varg0) public nonPayable { \n    return _hodl[varg0];\n}\n\nfunction hodl() public payable { \n    _hodl[msg.sender] = _hodl[msg.sender] + msg.value;\n    emit Hodl(msg.sender, msg.value);\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint32 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x354284f2 == function_selector) {\n            party();\n        } else if (0x4a3f17e7 == function_selector) {\n            hodlers(address);\n        } else if (0x60f14509 == function_selector) {\n            hodl();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 20.621591091156006,
+	"usage": {
+		"completion_tokens": 393,
+		"prompt_tokens": 499,
+		"total_tokens": 892
+	}
+}

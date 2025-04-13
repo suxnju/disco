@@ -1,0 +1,21 @@
+{
+	"address": "0x240f205c46e1607dc6f786fb313bde3dff068eb5",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1933,
+	"prompt_tokens": 1139,
+	"completion_tokens": 794,
+	"time_cost": 31.107513427734375,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " invalid type for argument in function call. invalid implicit conversion from uint256 to int256 requested.\t unary operator ! cannot be applied to type uint256\t invalid type for argument in function call. invalid implicit conversion from uint256 to int256 requested.\t invalid type for argument in function call. invalid implicit conversion from uint256 to int256 requested.\t invalid type for argument in function call. invalid implicit conversion from uint256 to int256 requested.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 14
+}

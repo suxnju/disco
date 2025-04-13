@@ -1,0 +1,21 @@
+{
+	"address": "0xce9ed0b322a1420da4b6990e3047796f57471336",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1987,
+	"prompt_tokens": 1302,
+	"completion_tokens": 685,
+	"time_cost": 43.60468769073486,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator + not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and int_const 1. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and uint256. arithmetic operations on addresses are not supported. convert to integer first before using them.\t operator + not compatible with types address payable and int_const 1. arithmetic operations on addresses are not supported. convert to integer first before using them.\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 17
+}

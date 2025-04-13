@@ -1,0 +1,21 @@
+{
+	"address": "0xd5524179cb7ae012f5b642c1d6d700bbaa76b96b",
+	"model": "ethervm_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1842,
+	"prompt_tokens": 1418,
+	"completion_tokens": 424,
+	"time_cost": 40.26088285446167,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"bytes calldata\" to \"uint256\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "ethervm",
+	"source_sai": 3
+}

@@ -1,0 +1,6 @@
+{
+	"Language": "Solidity",
+	"Source": "pragma solidity ^0.4.21;\r\n\r\ncontract Hellina{\r\n    address owner;\r\n    function Hellina(){\r\n        owner=msg.sender;\r\n    }\r\n    \r\n    function Buy() payable{\r\n        \r\n    }\r\n    \r\n    function Withdraw(){\r\n        owner.transfer(address(this).balance);\r\n    }\r\n}",
+	"ContractName": "Hellina",
+	"CompilerVersion": "v0.4.21+commit.dfe3193c"
+}

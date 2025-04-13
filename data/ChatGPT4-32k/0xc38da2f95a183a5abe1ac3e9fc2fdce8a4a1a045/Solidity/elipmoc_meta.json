@@ -1,0 +1,21 @@
+{
+	"address": "0xc38da2f95a183a5abe1ac3e9fc2fdce8a4a1a045",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1374,
+	"prompt_tokens": 943,
+	"completion_tokens": 431,
+	"time_cost": 22.632412433624268,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " identifier already declared.\t undeclared identifier. did you mean \"varg0\"?\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 7
+}

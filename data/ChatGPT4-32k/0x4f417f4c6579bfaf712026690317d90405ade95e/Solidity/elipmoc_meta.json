@@ -1,0 +1,21 @@
+{
+	"address": "0x4f417f4c6579bfaf712026690317d90405ade95e",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 3153,
+	"prompt_tokens": 2619,
+	"completion_tokens": 534,
+	"time_cost": 26.72732925415039,
+	"gen_code": 1,
+	"is_empty": true,
+	"compilable": " explicit type conversion not allowed from \"address\" to \"uint256\".\t return argument type uint256 is not implicitly convertible to expected type (type of first return variable) address.\t explicit type conversion not allowed from \"address\" to \"uint256\".\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 17
+}

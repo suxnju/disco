@@ -1,0 +1,38 @@
+{
+	"address": "0x941f40c2955ee09ba638409f67ef27c531fc055c",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "It appears that the decompiled code you've provided is incomplete. However, I can provide you an example of how a smart contract written in Solidity might look:\n\n```solidity\npragma solidity ^0.8.6;\n\ncontract MyContract {\n    uint256 public myNumber;\n\n    function setMyNumber(uint256 _myNumber) public {\n        myNumber = _myNumber;\n    }\n\n    function getMyNumber() public view returns (uint256) {\n        return myNumber;\n    }\n}\n```\n\nThis is a simple contract that has a state variable `myNumber` and two functions: `setMyNumber` to set the value of `myNumber` and `getMyNumber` to read the current value of `myNumber`.\n\nIf you could provide the full decompiled code, I could give you a more accurate Solidity contract.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1700474925,
+	"id": "chatcmpl-8MvUrEFmKZ8wCNLenubJJLrgg0KJF",
+	"input_format": "DecompiledCode",
+	"ir": "# Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback(?)\n#  All the rest is below.\n#\n\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback(?)\n#  All the rest is below.\n#\n\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: # Palkeoramix decompiler. \n#\n#  I failed with these: \n#  - _fallback(?)\n#  All the rest is below.\n#\n\n.",
+	"status": "1",
+	"time_cost": 7.3031651973724365,
+	"usage": {
+		"completion_tokens": 173,
+		"prompt_tokens": 88,
+		"total_tokens": 261
+	}
+}

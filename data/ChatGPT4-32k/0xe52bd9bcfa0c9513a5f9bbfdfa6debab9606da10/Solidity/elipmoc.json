@@ -1,0 +1,38 @@
+{
+	"address": "0xe52bd9bcfa0c9513a5f9bbfdfa6debab9606da10",
+	"choices": [
+		{
+			"finish_reason": "stop",
+			"index": 0,
+			"message": {
+				"content": "Below is the recompiled Solidity code based on the given decompiled code.\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyContract {\n    mapping (address => uint256) private _withdraw;\n    mapping (address => uint256) private _fallback;\n\n    function fallback() public payable {\n        _fallback[msg.sender] = block.number;\n        _withdraw[msg.sender] = msg.value;\n    }\n\n    function withdraw() public {\n        require(tx.origin == msg.sender, 'calling from smart contract is not allowed');\n\n        if (block.number - _fallback[msg.sender] <= 100) {\n            bool v0 = false;\n            uint256 v1 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100;\n            v0 = v1 > 0;\n            \n            if (v1) {\n                v0 = v1 <= address(this).balance;\n            }\n            \n            if (v0) {\n                (bool success, ) = msg.sender.call{value: v1, gas: (v1 * 2300)};\n                require(success);\n                _withdraw[msg.sender] = 0;\n            }\n        }\n    }\n\n    function __function_selector__(uint256 function_selector) public payable {\n        uint256 MEM;\n        MEM = 128;\n        if (msg.data.length >= 4) {\n            if (0x3ccfd60b == function_selector >> 224) {\n                withdraw();\n            } else {\n                fallback();\n            }\n        } else {\n            fallback();\n        }\n    }\n}\n```\n\nPlease note that the `__function_selector__` function would not normally be present in a Solidity contract. It's represented here because it was part of the decompiled code.",
+				"role": "assistant"
+			}
+		}
+	],
+	"created": 1701470272,
+	"id": "chatcmpl-8R6Qq7EvYHk6SfNQg88vSQ6KP5bSN",
+	"input_format": "DecompiledCode",
+	"ir": "// Decompiled at www.contract-library.com\n// 2021.08.16 19:39 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _withdraw; // STORAGE[0x0]\nmapping (uint256 => [uint256]) _fallback; // STORAGE[0x1]\n\n\nfunction fallback() public payable { \n    _fallback[msg.sender] = block.number;\n    _fallback[msg.sender] = msg.value;\n}\n\nfunction withdraw() public nonPayable { \n    require(address(tx.origin) == msg.sender, 'calling from smart is not allowed');\n    if (block.number - _fallback[msg.sender] <= 100) {\n        v0 = v1 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100 > 0;\n        if (v1) {\n            v0 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100 <= (address(this)).balance;\n        }\n        if (v0) {\n            v2 = msg.sender.call().value(_withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100).gas(!(_withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100) * 2300);\n            require(v2); // checks call status, propagates error data on error\n            _withdraw[msg.sender] = 0;\n        }\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x3ccfd60b == function_selector >> 224) {\n            withdraw();\n        }\n    }\n    fallback();\n}\n",
+	"language": "Solidity",
+	"messages": [
+		{
+			"content": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.",
+			"role": "system"
+		},
+		{
+			"content": "The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.16 19:39 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _withdraw; // STORAGE[0x0]\nmapping (uint256 => [uint256]) _fallback; // STORAGE[0x1]\n\n\nfunction fallback() public payable { \n    _fallback[msg.sender] = block.number;\n    _fallback[msg.sender] = msg.value;\n}\n\nfunction withdraw() public nonPayable { \n    require(address(tx.origin) == msg.sender, 'calling from smart is not allowed');\n    if (block.number - _fallback[msg.sender] <= 100) {\n        v0 = v1 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100 > 0;\n        if (v1) {\n            v0 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100 <= (address(this)).balance;\n        }\n        if (v0) {\n            v2 = msg.sender.call().value(_withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100).gas(!(_withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100) * 2300);\n            require(v2); // checks call status, propagates error data on error\n            _withdraw[msg.sender] = 0;\n        }\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x3ccfd60b == function_selector >> 224) {\n            withdraw();\n        }\n    }\n    fallback();\n}\n.",
+			"role": "user"
+		}
+	],
+	"model": "gpt-4-32k",
+	"object": "chat.completion",
+	"prompts": "You are an experienced smart contract developer that excels at Solidity program languages. Please write a contract code by the following decompiled code lifted from EVM Bytecode.The following is the decompiled code: // Decompiled at www.contract-library.com\n// 2021.08.16 19:39 UTC\n\n// Data structures and variables inferred from the use of storage instructions\nmapping (uint256 => [uint256]) _withdraw; // STORAGE[0x0]\nmapping (uint256 => [uint256]) _fallback; // STORAGE[0x1]\n\n\nfunction fallback() public payable { \n    _fallback[msg.sender] = block.number;\n    _fallback[msg.sender] = msg.value;\n}\n\nfunction withdraw() public nonPayable { \n    require(address(tx.origin) == msg.sender, 'calling from smart is not allowed');\n    if (block.number - _fallback[msg.sender] <= 100) {\n        v0 = v1 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100 > 0;\n        if (v1) {\n            v0 = _withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100 <= (address(this)).balance;\n        }\n        if (v0) {\n            v2 = msg.sender.call().value(_withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100).gas(!(_withdraw[msg.sender] * (100 + (block.number - _fallback[msg.sender])) / 100) * 2300);\n            require(v2); // checks call status, propagates error data on error\n            _withdraw[msg.sender] = 0;\n        }\n    }\n}\n\n// Note: The function selector is not present in the original solidity code.\n// However, we display it for the sake of completeness.\n\nfunction __function_selector__(uint256 function_selector) public payable { \n    MEM[64] = 128;\n    if (msg.data.length >= 4) {\n        if (0x3ccfd60b == function_selector >> 224) {\n            withdraw();\n        }\n    }\n    fallback();\n}\n.",
+	"status": "1",
+	"time_cost": 35.41931486129761,
+	"usage": {
+		"completion_tokens": 369,
+		"prompt_tokens": 460,
+		"total_tokens": 829
+	}
+}

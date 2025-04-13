@@ -1,0 +1,21 @@
+{
+	"address": "0x748f9a0ac36b123c7e4f687f7737f759628c4392",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1948,
+	"prompt_tokens": 1349,
+	"completion_tokens": 599,
+	"time_cost": 38.576387882232666,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " explicit type conversion not allowed from \"address\" to \"bytes memory\".\t different number of components on the left hand side (1) than on the right hand side (2).\t operator & not compatible with types uint256 and int_const -256\t explicit type conversion not allowed from \"address\" to \"bytes memory\".\t different number of components on the left hand side (1) than on the right hand side (2).\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 9
+}

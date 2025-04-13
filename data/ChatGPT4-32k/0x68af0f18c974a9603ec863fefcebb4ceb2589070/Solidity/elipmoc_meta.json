@@ -1,0 +1,21 @@
+{
+	"address": "0x68af0f18c974a9603ec863fefcebb4ceb2589070",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1720,
+	"prompt_tokens": 1126,
+	"completion_tokens": 594,
+	"time_cost": 29.00424838066101,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator == not compatible with types bytes32 and uint256\t unary operator ! cannot be applied to type uint8\t type uint8 is not implicitly convertible to expected type bool.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 8
+}

@@ -1,0 +1,21 @@
+{
+	"address": "0x2af47a65da8cd66729b4209c22017d6a5c2d2400",
+	"model": "description_v1111_1",
+	"input_format": "TemplateDescription",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 18800,
+	"prompt_tokens": 17986,
+	"completion_tokens": 814,
+	"time_cost": 55.623576641082764,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type bytes32 is not implicitly convertible to expected type uint256.\t explicit type conversion not allowed from \"string memory\" to \"uint256\".\t",
+	"version": 0,
+	"n_sai": 0.0,
+	"language": "Solidity",
+	"time": 1,
+	"input_type": "description_v1111",
+	"source_sai": 65
+}

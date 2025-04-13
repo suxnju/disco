@@ -1,0 +1,21 @@
+{
+	"address": "0xac935d89f390c700e69230b369cb83e7eb0ea3d2",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 1722,
+	"prompt_tokens": 1085,
+	"completion_tokens": 637,
+	"time_cost": 30.53378391265869,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " operator & not compatible with types int_const -256 and uint256\t type int_const -255 is not implicitly convertible to expected type uint256. cannot implicitly convert signed literal to unsigned type.\t member \"push\" not found or not visible after argument-dependent lookup in uint256[] storage ref.\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 15
+}

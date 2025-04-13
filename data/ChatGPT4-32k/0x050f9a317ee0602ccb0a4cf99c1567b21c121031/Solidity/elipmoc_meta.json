@@ -1,0 +1,21 @@
+{
+	"address": "0x050f9a317ee0602ccb0a4cf99c1567b21c121031",
+	"model": "elipmoc_1",
+	"input_format": "DecompiledCode",
+	"output_format": "Solidity",
+	"status": "1",
+	"token_exceeded": 0,
+	"n_tokens": 593,
+	"prompt_tokens": 275,
+	"completion_tokens": 318,
+	"time_cost": 14.239128828048706,
+	"gen_code": 1,
+	"is_empty": false,
+	"compilable": " type bool is not implicitly convertible to expected type tuple(bool,bytes memory).\t",
+	"language": "Solidity",
+	"version": 0,
+	"n_sai": 0.0,
+	"time": 1,
+	"input_type": "elipmoc",
+	"source_sai": 1
+}
